@@ -52,16 +52,12 @@ def read_ascii_stl(path: Path) -> list[Triangle]:
     return [tuple(vertices[i : i + 3]) for i in range(0, len(vertices) - 2, 3)]  # type: ignore[misc]
 
 
-def rotate(point: Vec3, yaw: float, pitch: float) -> Vec3:
+def project(point: Vec3) -> Vec3:
     x, y, z = point
-    cy = math.cos(yaw)
-    sy = math.sin(yaw)
-    cp = math.cos(pitch)
-    sp = math.sin(pitch)
-    x1 = x * cy - y * sy
-    y1 = x * sy + y * cy
-    z1 = z
-    return (x1, y1 * cp - z1 * sp, y1 * sp + z1 * cp)
+    screen_x = (x - y) * 0.8660254
+    screen_y = (x + y) * 0.42 - z * 1.12
+    depth = x + y + z * 1.2
+    return (screen_x, screen_y, depth)
 
 
 def normal(a: Vec3, b: Vec3, c: Vec3) -> Vec3:
@@ -82,14 +78,12 @@ def render_stl(path: Path, out_path: Path, size: tuple[int, int] = (1600, 1000))
         return
 
     triangles = read_ascii_stl(path)
-    yaw = math.radians(-38)
-    pitch = math.radians(30)
     projected = []
     xs: list[float] = []
     ys: list[float] = []
     for tri in triangles:
-        transformed = [rotate(point, yaw, pitch) for point in tri]
-        projected.append(transformed)
+        transformed = [project(point) for point in tri]
+        projected.append((tri, transformed))
         xs.extend(point[0] for point in transformed)
         ys.extend(point[1] for point in transformed)
 
@@ -101,7 +95,7 @@ def render_stl(path: Path, out_path: Path, size: tuple[int, int] = (1600, 1000))
     min_x, max_x = min(xs), max(xs)
     min_y, max_y = min(ys), max(ys)
     scale = min((width - pad * 2) / (max_x - min_x), (height - pad * 2) / (max_y - min_y))
-    light = rotate((-0.35, -0.55, 1.0), yaw, pitch)
+    light = (-0.35, -0.55, 1.0)
     light_mag = math.sqrt(sum(v * v for v in light)) or 1.0
     light = tuple(v / light_mag for v in light)
 
@@ -112,17 +106,17 @@ def render_stl(path: Path, out_path: Path, size: tuple[int, int] = (1600, 1000))
     def screen(point: Vec3) -> tuple[float, float]:
         return (
             pad + (point[0] - min_x) * scale,
-            height - pad - (point[1] - min_y) * scale,
+            pad + (point[1] - min_y) * scale,
         )
 
     shaded = []
-    for tri in projected:
-        depth = sum(point[2] for point in tri) / 3.0
-        n = normal(*tri)
-        intensity = max(0.48, min(1.0, 0.55 + 0.45 * sum(n[i] * light[i] for i in range(3))))
+    for original, transformed in projected:
+        depth = sum(point[2] for point in transformed) / 3.0
+        n = normal(*original)
+        intensity = max(0.52, min(1.0, 0.62 + 0.38 * abs(sum(n[i] * light[i] for i in range(3)))))
         base = (205, 174, 105)
         color = tuple(max(0, min(255, int(channel * intensity))) for channel in base)
-        shaded.append((depth, [screen(point) for point in tri], color))
+        shaded.append((depth, [screen(point) for point in transformed], color))
 
     for _, points, color in sorted(shaded, key=lambda item: item[0]):
         draw.polygon(points, fill=color)

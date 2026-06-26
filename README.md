@@ -14,6 +14,15 @@ This is a printable/viewable parametric model of one proposed construction seque
 
 The files are a conceptual geometry model, not an archaeological claim. The defaults use a Giza-like slope ratio at tabletop scale: 160 mm square base and 101.8 mm height.
 
+## Preview
+
+<p>
+  <img src="release/thingiverse/images/cover_full_ramp_system.png" alt="Full temporary ramp system model" width="24%">
+  <img src="release/thingiverse/images/capstone_before_deramping.png" alt="Capstone set before top-down deramping" width="24%">
+  <img src="release/thingiverse/images/partial_top_down_deramping.png" alt="Partial top-down deramping state" width="24%">
+  <img src="release/thingiverse/images/finished_pyramid.png" alt="Finished pyramid state" width="24%">
+</p>
+
 ## Quick Start
 
 ```bash
