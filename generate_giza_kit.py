@@ -464,6 +464,13 @@ def make_stepped_core(p: KitParams) -> Mesh:
     return mesh
 
 
+def make_display_core_below_capstone(p: KitParams) -> Mesh:
+    mesh = Mesh("display_inner_core_below_capstone")
+    for i in range(max(0, p.courses - 1)):
+        add_stepped_core_course(mesh, p, i)
+    return mesh
+
+
 def backfill_half_at_level(p: KitParams, level: int) -> float:
     level = min(max(level, 0), p.courses)
     if level == p.courses:
@@ -1303,6 +1310,7 @@ def generate(p: KitParams) -> list[dict[str, object]]:
 
     manifest: list[dict[str, object]] = []
     core = make_stepped_core(p)
+    display_core_below_capstone = make_display_core_below_capstone(p)
     full_backfill = make_temporary_backfill(p)
     cut_backfill = make_cut_temporary_backfill(p)
     ramps_all, ramp_faces, ramp_segments = make_ramps(p)
@@ -1390,11 +1398,11 @@ def generate(p: KitParams) -> list[dict[str, object]]:
         ),
         (
             "stage_03_upper_ramps_removed_top_casing_added.stl",
-            combine("stage_03_top_down_deramping", [core, top_remaining_backfill, top_supported_ramps, capstone, *upper_casing]),
+            combine("stage_03_top_down_deramping", [display_core_below_capstone, top_remaining_backfill, top_supported_ramps, capstone, *upper_casing]),
         ),
         (
             "stage_04_lower_ramps_remaining_more_casing_added.stl",
-            combine("stage_04_more_casing", [core, mid_remaining_backfill, mid_supported_ramps, capstone, *mid_casing]),
+            combine("stage_04_more_casing", [display_core_below_capstone, mid_remaining_backfill, mid_supported_ramps, capstone, *mid_casing]),
         ),
         (
             "stage_05_finished_pyramid_core_casing_capstone.stl",
@@ -1419,7 +1427,7 @@ def generate(p: KitParams) -> list[dict[str, object]]:
         ),
         (
             "constructed_03_partial_top_down_deramping.stl",
-            combine("constructed_03_partial_top_down_deramping", [core, top_remaining_backfill, top_supported_ramps, capstone, *upper_casing]),
+            combine("constructed_03_partial_top_down_deramping", [display_core_below_capstone, top_remaining_backfill, top_supported_ramps, capstone, *upper_casing]),
         ),
         (
             "constructed_04_finished_pyramid.stl",

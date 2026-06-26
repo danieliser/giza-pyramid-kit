@@ -7,6 +7,10 @@ from collections import Counter
 
 from generate_giza_kit import (
     KitParams,
+    combine,
+    make_capstone,
+    make_casing_ring,
+    make_display_core_below_capstone,
     make_internal_chamber_layer,
     make_cut_temporary_backfill_layer,
     make_cut_temporary_backfill,
@@ -128,14 +132,37 @@ def validate_ramps() -> list[str]:
     return errors
 
 
+def validate_capstone_transition() -> list[str]:
+    params = KitParams()
+    errors: list[str] = []
+    display_top = combine(
+        "capstone_transition_check",
+        [
+            make_display_core_below_capstone(params),
+            make_casing_ring(params, params.casing_rings - 1, include_caps=False),
+            make_capstone(params),
+        ],
+    )
+    cap_base_z = params.core_height_mm
+    cap_half = params.capstone_base_half_mm
+    stray_vertices = 0
+    for tri in display_top.triangles:
+        for x, y, z in tri:
+            if abs(z - cap_base_z) <= 0.001 and max(abs(x), abs(y)) > cap_half + 0.01:
+                stray_vertices += 1
+    if stray_vertices:
+        errors.append(f"capstone transition has {stray_vertices} vertices forming a shelf outside the capstone footprint")
+    return errors
+
+
 def main() -> None:
-    errors = validate_ramps()
+    errors = [*validate_ramps(), *validate_capstone_transition()]
     if errors:
         print("Geometry validation failed:")
         for error in errors:
             print(f"- {error}")
         raise SystemExit(1)
-    print("Geometry validation passed: single switchback ramps, notched landings, cut mound, local underfill, and chamber reference have positive geometry.")
+    print("Geometry validation passed: single switchback ramps, notched landings, cut mound, local underfill, chamber reference, and capstone transition are clean.")
 
 
 if __name__ == "__main__":
