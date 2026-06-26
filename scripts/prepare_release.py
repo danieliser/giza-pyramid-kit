@@ -74,27 +74,6 @@ def project(point: Vec3) -> Vec3:
     return (screen_x, screen_y, depth)
 
 
-def normal(a: Vec3, b: Vec3, c: Vec3) -> Vec3:
-    ux, uy, uz = (b[0] - a[0], b[1] - a[1], b[2] - a[2])
-    vx, vy, vz = (c[0] - a[0], c[1] - a[1], c[2] - a[2])
-    nx = uy * vz - uz * vy
-    ny = uz * vx - ux * vz
-    nz = ux * vy - uy * vx
-    mag = math.sqrt(nx * nx + ny * ny + nz * nz) or 1.0
-    return (nx / mag, ny / mag, nz / mag)
-
-
-def shade_color(base: Rgb, tri: Triangle, light: Vec3) -> Rgb:
-    n = normal(*tri)
-    facing = abs(sum(n[i] * light[i] for i in range(3)))
-    cx = sum(point[0] for point in tri) / 3.0
-    cy = sum(point[1] for point in tri) / 3.0
-    cz = sum(point[2] for point in tri) / 3.0
-    grain = 0.94 + 0.06 * (0.5 + 0.5 * math.sin(cx * 0.19 + cy * 0.13 + cz * 0.31))
-    intensity = (0.56 + 0.44 * facing) * grain
-    return tuple(max(0, min(255, int(channel * intensity))) for channel in base)
-
-
 def build_render_scenes() -> list[tuple[str, list[RenderPart]]]:
     params = KitParams()
     cut_backfill = make_cut_temporary_backfill(params)
@@ -154,7 +133,7 @@ def build_render_scenes() -> list[tuple[str, list[RenderPart]]]:
 def render_scene(parts: list[RenderPart], out_path: Path, size: tuple[int, int] = (1600, 1000)) -> None:
     try:
         import numpy as np
-        from PIL import Image
+        from PIL import Image, ImageFilter
     except Exception as exc:  # pragma: no cover - optional release nicety
         print(f"Skipping renders; Pillow is unavailable: {exc}")
         return
@@ -162,6 +141,10 @@ def render_scene(parts: list[RenderPart], out_path: Path, size: tuple[int, int] 
     projected: list[tuple[Triangle, list[Vec3], Rgb, float]] = []
     xs: list[float] = []
     ys: list[float] = []
+    depths: list[float] = []
+    world_xs: list[float] = []
+    world_ys: list[float] = []
+    world_zs: list[float] = []
     for part_order, (mesh, base_color) in enumerate(parts):
         depth_bias = part_order * 0.01
         for tri in mesh.triangles:
@@ -169,6 +152,10 @@ def render_scene(parts: list[RenderPart], out_path: Path, size: tuple[int, int] 
             projected.append((tri, transformed, base_color, depth_bias))
             xs.extend(point[0] for point in transformed)
             ys.extend(point[1] for point in transformed)
+            depths.extend(point[2] for point in transformed)
+            world_xs.extend(point[0] for point in tri)
+            world_ys.extend(point[1] for point in tri)
+            world_zs.extend(point[2] for point in tri)
 
     if not projected:
         return
@@ -177,10 +164,15 @@ def render_scene(parts: list[RenderPart], out_path: Path, size: tuple[int, int] 
     pad = 80
     min_x, max_x = min(xs), max(xs)
     min_y, max_y = min(ys), max(ys)
+    min_depth, max_depth = min(depths), max(depths)
+    min_world_x, max_world_x = min(world_xs), max(world_xs)
+    min_world_y, max_world_y = min(world_ys), max(world_ys)
+    min_world_z, max_world_z = min(world_zs), max(world_zs)
+    depth_range = max(max_depth - min_depth, 0.000001)
+    world_x_range = max(max_world_x - min_world_x, 0.000001)
+    world_y_range = max(max_world_y - min_world_y, 0.000001)
+    world_z_range = max(max_world_z - min_world_z, 0.000001)
     scale = min((width - pad * 2) / (max_x - min_x), (height - pad * 2) / (max_y - min_y))
-    light = (-0.35, -0.55, 1.0)
-    light_mag = math.sqrt(sum(v * v for v in light)) or 1.0
-    light = tuple(v / light_mag for v in light)  # type: ignore[assignment]
 
     image = np.zeros((height, width, 3), dtype=np.uint8)
     image[:, :] = (246, 240, 223)
@@ -225,11 +217,42 @@ def render_scene(parts: list[RenderPart], out_path: Path, size: tuple[int, int] 
             continue
 
         z_slice[update] = depth[update]
+        world_x = w0 * original[0][0] + w1 * original[1][0] + w2 * original[2][0]
+        world_y = w0 * original[0][1] + w1 * original[1][1] + w2 * original[2][1]
+        world_z = w0 * original[0][2] + w1 * original[1][2] + w2 * original[2][2]
+        z_tone = (world_z - min_world_z) / world_z_range
+        xy_tone = 0.5 * ((world_x - min_world_x) / world_x_range) + 0.5 * ((world_y - min_world_y) / world_y_range)
+        depth_tone = (depth - min_depth) / depth_range
+        tone = 0.74 + 0.15 * z_tone + 0.08 * depth_tone + 0.03 * xy_tone
+        tone = np.clip(tone, 0.68, 1.03)
+        base = np.array(base_color, dtype=np.float32)
+        color = np.clip(tone[..., None] * base, 0, 255).astype(np.uint8)
         image_slice = image[min_py : max_py + 1, min_px : max_px + 1]
-        image_slice[update] = shade_color(base_color, original, light)
+        image_slice[update] = color[update]
+
+    valid = np.isfinite(zbuffer)
+    edge = np.zeros((height, width), dtype=bool)
+    edge_threshold = max(depth_range / 260.0, 0.7)
+    upper = valid[:-1, :] & valid[1:, :]
+    vertical_diff = np.zeros_like(zbuffer[:-1, :])
+    vertical_diff[upper] = np.abs(zbuffer[:-1, :][upper] - zbuffer[1:, :][upper])
+    vertical_jump = upper & (vertical_diff > edge_threshold)
+    edge[:-1, :] |= vertical_jump
+    edge[1:, :] |= vertical_jump
+    horizontal = valid[:, :-1] & valid[:, 1:]
+    horizontal_diff = np.zeros_like(zbuffer[:, :-1])
+    horizontal_diff[horizontal] = np.abs(zbuffer[:, :-1][horizontal] - zbuffer[:, 1:][horizontal])
+    horizontal_jump = horizontal & (horizontal_diff > edge_threshold)
+    edge[:, :-1] |= horizontal_jump
+    edge[:, 1:] |= horizontal_jump
+    edge[:-1, :] |= valid[:-1, :] & ~valid[1:, :]
+    edge[1:, :] |= valid[1:, :] & ~valid[:-1, :]
+    edge[:, :-1] |= valid[:, :-1] & ~valid[:, 1:]
+    edge[:, 1:] |= valid[:, 1:] & ~valid[:, :-1]
+    image[edge] = (image[edge].astype(np.float32) * 0.78).astype(np.uint8)
 
     out_path.parent.mkdir(parents=True, exist_ok=True)
-    Image.fromarray(image).save(out_path)
+    Image.fromarray(image).filter(ImageFilter.SMOOTH).save(out_path)
 
 
 def copy_tree(src: Path, dst: Path) -> None:
