@@ -411,6 +411,7 @@ def add_square_frustum_shell(
     outer1: float,
     inner0: float,
     inner1: float,
+    include_caps: bool = True,
 ) -> None:
     if z1 <= z0 or outer0 <= 0 or outer1 <= 0:
         return
@@ -425,8 +426,9 @@ def add_square_frustum_shell(
         j = (i + 1) % 4
         mesh.add_quad(outer_bottom[i], outer_bottom[j], outer_top[j], outer_top[i])
         mesh.add_quad(inner_bottom[j], inner_bottom[i], inner_top[i], inner_top[j])
-        mesh.add_quad(outer_bottom[j], outer_bottom[i], inner_bottom[i], inner_bottom[j])
-        mesh.add_quad(outer_top[i], outer_top[j], inner_top[j], inner_top[i])
+        if include_caps:
+            mesh.add_quad(outer_bottom[j], outer_bottom[i], inner_bottom[i], inner_bottom[j])
+            mesh.add_quad(outer_top[i], outer_top[j], inner_top[j], inner_top[i])
 
 
 def add_stepped_core_course(mesh: Mesh, p: KitParams, level: int) -> None:
@@ -582,7 +584,7 @@ def make_cut_temporary_backfill_layer(p: KitParams, level: int) -> Mesh:
     return mesh
 
 
-def make_casing_ring(p: KitParams, ring_index_bottom_up: int) -> Mesh:
+def make_casing_ring(p: KitParams, ring_index_bottom_up: int, include_caps: bool = True) -> Mesh:
     mesh = Mesh(f"casing_ring_{ring_index_bottom_up + 1:02d}_bottom_up")
     z0 = p.core_height_mm * ring_index_bottom_up / p.casing_rings
     z1 = p.core_height_mm * (ring_index_bottom_up + 1) / p.casing_rings
@@ -592,7 +594,7 @@ def make_casing_ring(p: KitParams, ring_index_bottom_up: int) -> Mesh:
     inner1 = core_half_at_fraction(p, z1 / p.core_height_mm) + p.casing_clearance_mm
     inner0 = min(inner0, outer0 - p.min_casing_wall_mm)
     inner1 = min(inner1, outer1 - p.min_casing_wall_mm)
-    add_square_frustum_shell(mesh, z0, z1, outer0, outer1, inner0, inner1)
+    add_square_frustum_shell(mesh, z0, z1, outer0, outer1, inner0, inner1, include_caps=include_caps)
     return mesh
 
 
@@ -1029,6 +1031,12 @@ def make_capstone(p: KitParams) -> Mesh:
     return mesh
 
 
+def make_finished_pyramid_surface(p: KitParams) -> Mesh:
+    mesh = Mesh("finished_pyramid_smooth_surface")
+    add_square_frustum_solid(mesh, 0.0, p.height_mm, p.base_mm / 2.0, 0.0)
+    return mesh
+
+
 def make_reuse_stockpile(p: KitParams) -> Mesh:
     mesh = Mesh("reuse_material_stockpile_for_next_pyramid")
     block_w = 14.0
@@ -1302,9 +1310,11 @@ def generate(p: KitParams) -> list[dict[str, object]]:
     supported_ramps_all = combine("temporary_switchback_ramps_all_sides_local_underfill", [ramp_underfill_all, ramps_all])
     platform = make_platform(p)
     capstone = make_capstone(p)
+    finished_surface = make_finished_pyramid_surface(p)
     chambers = make_internal_chambers_reference(p)
     subterranean_chambers = make_subterranean_chambers_reference(p)
     casing_rings = [make_casing_ring(p, i) for i in range(p.casing_rings)]
+    display_casing_rings = [make_casing_ring(p, i, include_caps=False) for i in range(p.casing_rings)]
     reuse_stockpile = make_reuse_stockpile(p)
     next_seed = make_next_foundation_seed(p)
 
@@ -1353,7 +1363,7 @@ def generate(p: KitParams) -> list[dict[str, object]]:
     export_mesh(subterranean_chambers, demo_parts / "internal_chambers_subterranean_precut.stl", manifest, root, printable=False)
     export_mesh(reuse_stockpile, demo_parts / "reuse_material_stockpile_for_next_pyramid.stl", manifest, root, printable=False)
     export_mesh(next_seed, demo_parts / "next_pyramid_seed_foundation.stl", manifest, root, printable=False)
-    for top_order, ring in enumerate(reversed(casing_rings), start=1):
+    for top_order, ring in enumerate(reversed(display_casing_rings), start=1):
         export_mesh(ring, demo_parts / f"casing_ring_top_{top_order:02d}.stl", manifest, root, printable=False)
 
     top_threshold = p.core_height_mm * 0.62
@@ -1366,8 +1376,8 @@ def generate(p: KitParams) -> list[dict[str, object]]:
     mid_remaining_ramps, _, _ = make_ramps(p, max_z=mid_threshold)
     top_supported_ramps = combine("top_remaining_local_underfilled_ramps", [top_remaining_underfill, top_remaining_ramps])
     mid_supported_ramps = combine("mid_remaining_local_underfilled_ramps", [mid_remaining_underfill, mid_remaining_ramps])
-    upper_casing = [ring for i, ring in enumerate(casing_rings) if (i / p.casing_rings) >= 0.62]
-    mid_casing = [ring for i, ring in enumerate(casing_rings) if (i / p.casing_rings) >= 0.28]
+    upper_casing = [ring for i, ring in enumerate(display_casing_rings) if (i / p.casing_rings) >= 0.62]
+    mid_casing = [ring for i, ring in enumerate(display_casing_rings) if (i / p.casing_rings) >= 0.28]
 
     stages = [
         (
@@ -1388,11 +1398,11 @@ def generate(p: KitParams) -> list[dict[str, object]]:
         ),
         (
             "stage_05_finished_pyramid_core_casing_capstone.stl",
-            combine("stage_05_finished_pyramid", [core, *casing_rings, capstone]),
+            finished_surface,
         ),
         (
             "stage_06_finished_pyramid_with_reuse_material_for_next_one.stl",
-            combine("stage_06_reuse_material", [core, *casing_rings, capstone, reuse_stockpile, next_seed]),
+            combine("stage_06_reuse_material", [finished_surface, reuse_stockpile, next_seed]),
         ),
     ]
     for filename, stage in stages:
@@ -1413,7 +1423,7 @@ def generate(p: KitParams) -> list[dict[str, object]]:
         ),
         (
             "constructed_04_finished_pyramid.stl",
-            combine("constructed_04_finished_pyramid", [core, *casing_rings, capstone]),
+            finished_surface,
         ),
     ]
     for filename, state in constructed_states:

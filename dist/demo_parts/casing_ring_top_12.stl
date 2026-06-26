@@ -27,34 +27,6 @@ solid casing_ring_05_bottom_up
       vertex 37.51582 -37.51582 29.625
     endloop
   endfacet
-  facet normal 0 0 -1
-    outer loop
-      vertex 61.37525 -61.37525 23.7
-      vertex -61.37525 -61.37525 23.7
-      vertex -40.55265 -40.55265 23.7
-    endloop
-  endfacet
-  facet normal 0 0 -1
-    outer loop
-      vertex 61.37525 -61.37525 23.7
-      vertex -40.55265 -40.55265 23.7
-      vertex 40.55265 -40.55265 23.7
-    endloop
-  endfacet
-  facet normal 0 0 1
-    outer loop
-      vertex -56.71906 -56.71906 29.625
-      vertex 56.71906 -56.71906 29.625
-      vertex 37.51582 -37.51582 29.625
-    endloop
-  endfacet
-  facet normal 0 0 1
-    outer loop
-      vertex -56.71906 -56.71906 29.625
-      vertex 37.51582 -37.51582 29.625
-      vertex -37.51582 -37.51582 29.625
-    endloop
-  endfacet
   facet normal 0.7862647 -0 0.6178898
     outer loop
       vertex 61.37525 -61.37525 23.7
@@ -83,34 +55,6 @@ solid casing_ring_05_bottom_up
       vertex 37.51582 37.51582 29.625
     endloop
   endfacet
-  facet normal 0 -0 -1
-    outer loop
-      vertex 61.37525 61.37525 23.7
-      vertex 61.37525 -61.37525 23.7
-      vertex 40.55265 -40.55265 23.7
-    endloop
-  endfacet
-  facet normal 0 0 -1
-    outer loop
-      vertex 61.37525 61.37525 23.7
-      vertex 40.55265 -40.55265 23.7
-      vertex 40.55265 40.55265 23.7
-    endloop
-  endfacet
-  facet normal 0 -0 1
-    outer loop
-      vertex 56.71906 -56.71906 29.625
-      vertex 56.71906 56.71906 29.625
-      vertex 37.51582 37.51582 29.625
-    endloop
-  endfacet
-  facet normal 0 0 1
-    outer loop
-      vertex 56.71906 -56.71906 29.625
-      vertex 37.51582 37.51582 29.625
-      vertex 37.51582 -37.51582 29.625
-    endloop
-  endfacet
   facet normal 0 0.7862647 0.6178898
     outer loop
       vertex 61.37525 61.37525 23.7
@@ -139,34 +83,6 @@ solid casing_ring_05_bottom_up
       vertex -37.51582 37.51582 29.625
     endloop
   endfacet
-  facet normal 0 0 -1
-    outer loop
-      vertex -61.37525 61.37525 23.7
-      vertex 61.37525 61.37525 23.7
-      vertex 40.55265 40.55265 23.7
-    endloop
-  endfacet
-  facet normal 0 0 -1
-    outer loop
-      vertex -61.37525 61.37525 23.7
-      vertex 40.55265 40.55265 23.7
-      vertex -40.55265 40.55265 23.7
-    endloop
-  endfacet
-  facet normal 0 0 1
-    outer loop
-      vertex 56.71906 56.71906 29.625
-      vertex -56.71906 56.71906 29.625
-      vertex -37.51582 37.51582 29.625
-    endloop
-  endfacet
-  facet normal 0 0 1
-    outer loop
-      vertex 56.71906 56.71906 29.625
-      vertex -37.51582 37.51582 29.625
-      vertex 37.51582 37.51582 29.625
-    endloop
-  endfacet
   facet normal -0.7862647 0 0.6178898
     outer loop
       vertex -61.37525 61.37525 23.7
@@ -193,34 +109,6 @@ solid casing_ring_05_bottom_up
       vertex -40.55265 -40.55265 23.7
       vertex -37.51582 37.51582 29.625
       vertex -37.51582 -37.51582 29.625
-    endloop
-  endfacet
-  facet normal 0 0 -1
-    outer loop
-      vertex -61.37525 -61.37525 23.7
-      vertex -61.37525 61.37525 23.7
-      vertex -40.55265 40.55265 23.7
-    endloop
-  endfacet
-  facet normal 0 0 -1
-    outer loop
-      vertex -61.37525 -61.37525 23.7
-      vertex -40.55265 40.55265 23.7
-      vertex -40.55265 -40.55265 23.7
-    endloop
-  endfacet
-  facet normal 0 0 1
-    outer loop
-      vertex -56.71906 56.71906 29.625
-      vertex -56.71906 -56.71906 29.625
-      vertex -37.51582 -37.51582 29.625
-    endloop
-  endfacet
-  facet normal 0 0 1
-    outer loop
-      vertex -56.71906 56.71906 29.625
-      vertex -37.51582 -37.51582 29.625
-      vertex -37.51582 37.51582 29.625
     endloop
   endfacet
 endsolid casing_ring_05_bottom_up

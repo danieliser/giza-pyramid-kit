@@ -9393,34 +9393,6 @@ solid stage_04_more_casing
       vertex 34.47898 -34.47898 35.55
     endloop
   endfacet
-  facet normal 0 0 -1
-    outer loop
-      vertex 56.71906 -56.71906 29.625
-      vertex -56.71906 -56.71906 29.625
-      vertex -37.51582 -37.51582 29.625
-    endloop
-  endfacet
-  facet normal 0 0 -1
-    outer loop
-      vertex 56.71906 -56.71906 29.625
-      vertex -37.51582 -37.51582 29.625
-      vertex 37.51582 -37.51582 29.625
-    endloop
-  endfacet
-  facet normal 0 0 1
-    outer loop
-      vertex -52.06287 -52.06287 35.55
-      vertex 52.06287 -52.06287 35.55
-      vertex 34.47898 -34.47898 35.55
-    endloop
-  endfacet
-  facet normal 0 0 1
-    outer loop
-      vertex -52.06287 -52.06287 35.55
-      vertex 34.47898 -34.47898 35.55
-      vertex -34.47898 -34.47898 35.55
-    endloop
-  endfacet
   facet normal 0.7862647 -0 0.6178898
     outer loop
       vertex 56.71906 -56.71906 29.625
@@ -9449,34 +9421,6 @@ solid stage_04_more_casing
       vertex 34.47898 34.47898 35.55
     endloop
   endfacet
-  facet normal 0 -0 -1
-    outer loop
-      vertex 56.71906 56.71906 29.625
-      vertex 56.71906 -56.71906 29.625
-      vertex 37.51582 -37.51582 29.625
-    endloop
-  endfacet
-  facet normal 0 0 -1
-    outer loop
-      vertex 56.71906 56.71906 29.625
-      vertex 37.51582 -37.51582 29.625
-      vertex 37.51582 37.51582 29.625
-    endloop
-  endfacet
-  facet normal 0 -0 1
-    outer loop
-      vertex 52.06287 -52.06287 35.55
-      vertex 52.06287 52.06287 35.55
-      vertex 34.47898 34.47898 35.55
-    endloop
-  endfacet
-  facet normal 0 0 1
-    outer loop
-      vertex 52.06287 -52.06287 35.55
-      vertex 34.47898 34.47898 35.55
-      vertex 34.47898 -34.47898 35.55
-    endloop
-  endfacet
   facet normal 0 0.7862647 0.6178898
     outer loop
       vertex 56.71906 56.71906 29.625
@@ -9503,34 +9447,6 @@ solid stage_04_more_casing
       vertex -37.51582 37.51582 29.625
       vertex 34.47898 34.47898 35.55
       vertex -34.47898 34.47898 35.55
-    endloop
-  endfacet
-  facet normal 0 0 -1
-    outer loop
-      vertex -56.71906 56.71906 29.625
-      vertex 56.71906 56.71906 29.625
-      vertex 37.51582 37.51582 29.625
-    endloop
-  endfacet
-  facet normal 0 0 -1
-    outer loop
-      vertex -56.71906 56.71906 29.625
-      vertex 37.51582 37.51582 29.625
-      vertex -37.51582 37.51582 29.625
-    endloop
-  endfacet
-  facet normal 0 0 1
-    outer loop
-      vertex 52.06287 52.06287 35.55
-      vertex -52.06287 52.06287 35.55
-      vertex -34.47898 34.47898 35.55
-    endloop
-  endfacet
-  facet normal 0 0 1
-    outer loop
-      vertex 52.06287 52.06287 35.55
-      vertex -34.47898 34.47898 35.55
-      vertex 34.47898 34.47898 35.55
     endloop
   endfacet
   facet normal -0.7862647 0 0.6178898
@@ -9561,34 +9477,6 @@ solid stage_04_more_casing
       vertex -34.47898 -34.47898 35.55
     endloop
   endfacet
-  facet normal 0 0 -1
-    outer loop
-      vertex -56.71906 -56.71906 29.625
-      vertex -56.71906 56.71906 29.625
-      vertex -37.51582 37.51582 29.625
-    endloop
-  endfacet
-  facet normal 0 0 -1
-    outer loop
-      vertex -56.71906 -56.71906 29.625
-      vertex -37.51582 37.51582 29.625
-      vertex -37.51582 -37.51582 29.625
-    endloop
-  endfacet
-  facet normal 0 0 1
-    outer loop
-      vertex -52.06287 52.06287 35.55
-      vertex -52.06287 -52.06287 35.55
-      vertex -34.47898 -34.47898 35.55
-    endloop
-  endfacet
-  facet normal 0 0 1
-    outer loop
-      vertex -52.06287 52.06287 35.55
-      vertex -34.47898 -34.47898 35.55
-      vertex -34.47898 34.47898 35.55
-    endloop
-  endfacet
   facet normal 0 -0.7862647 0.6178898
     outer loop
       vertex -52.06287 -52.06287 35.55
@@ -9615,34 +9503,6 @@ solid stage_04_more_casing
       vertex 34.47898 -34.47898 35.55
       vertex -31.44214 -31.44214 41.475
       vertex 31.44214 -31.44214 41.475
-    endloop
-  endfacet
-  facet normal 0 0 -1
-    outer loop
-      vertex 52.06287 -52.06287 35.55
-      vertex -52.06287 -52.06287 35.55
-      vertex -34.47898 -34.47898 35.55
-    endloop
-  endfacet
-  facet normal 0 0 -1
-    outer loop
-      vertex 52.06287 -52.06287 35.55
-      vertex -34.47898 -34.47898 35.55
-      vertex 34.47898 -34.47898 35.55
-    endloop
-  endfacet
-  facet normal 0 0 1
-    outer loop
-      vertex -47.40668 -47.40668 41.475
-      vertex 47.40668 -47.40668 41.475
-      vertex 31.44214 -31.44214 41.475
-    endloop
-  endfacet
-  facet normal 0 0 1
-    outer loop
-      vertex -47.40668 -47.40668 41.475
-      vertex 31.44214 -31.44214 41.475
-      vertex -31.44214 -31.44214 41.475
     endloop
   endfacet
   facet normal 0.7862647 -0 0.6178898
@@ -9673,34 +9533,6 @@ solid stage_04_more_casing
       vertex 31.44214 31.44214 41.475
     endloop
   endfacet
-  facet normal 0 -0 -1
-    outer loop
-      vertex 52.06287 52.06287 35.55
-      vertex 52.06287 -52.06287 35.55
-      vertex 34.47898 -34.47898 35.55
-    endloop
-  endfacet
-  facet normal 0 0 -1
-    outer loop
-      vertex 52.06287 52.06287 35.55
-      vertex 34.47898 -34.47898 35.55
-      vertex 34.47898 34.47898 35.55
-    endloop
-  endfacet
-  facet normal 0 -0 1
-    outer loop
-      vertex 47.40668 -47.40668 41.475
-      vertex 47.40668 47.40668 41.475
-      vertex 31.44214 31.44214 41.475
-    endloop
-  endfacet
-  facet normal 0 0 1
-    outer loop
-      vertex 47.40668 -47.40668 41.475
-      vertex 31.44214 31.44214 41.475
-      vertex 31.44214 -31.44214 41.475
-    endloop
-  endfacet
   facet normal 0 0.7862647 0.6178898
     outer loop
       vertex 52.06287 52.06287 35.55
@@ -9727,34 +9559,6 @@ solid stage_04_more_casing
       vertex -34.47898 34.47898 35.55
       vertex 31.44214 31.44214 41.475
       vertex -31.44214 31.44214 41.475
-    endloop
-  endfacet
-  facet normal 0 0 -1
-    outer loop
-      vertex -52.06287 52.06287 35.55
-      vertex 52.06287 52.06287 35.55
-      vertex 34.47898 34.47898 35.55
-    endloop
-  endfacet
-  facet normal 0 0 -1
-    outer loop
-      vertex -52.06287 52.06287 35.55
-      vertex 34.47898 34.47898 35.55
-      vertex -34.47898 34.47898 35.55
-    endloop
-  endfacet
-  facet normal 0 0 1
-    outer loop
-      vertex 47.40668 47.40668 41.475
-      vertex -47.40668 47.40668 41.475
-      vertex -31.44214 31.44214 41.475
-    endloop
-  endfacet
-  facet normal 0 0 1
-    outer loop
-      vertex 47.40668 47.40668 41.475
-      vertex -31.44214 31.44214 41.475
-      vertex 31.44214 31.44214 41.475
     endloop
   endfacet
   facet normal -0.7862647 0 0.6178898
@@ -9785,34 +9589,6 @@ solid stage_04_more_casing
       vertex -31.44214 -31.44214 41.475
     endloop
   endfacet
-  facet normal 0 0 -1
-    outer loop
-      vertex -52.06287 -52.06287 35.55
-      vertex -52.06287 52.06287 35.55
-      vertex -34.47898 34.47898 35.55
-    endloop
-  endfacet
-  facet normal 0 0 -1
-    outer loop
-      vertex -52.06287 -52.06287 35.55
-      vertex -34.47898 34.47898 35.55
-      vertex -34.47898 -34.47898 35.55
-    endloop
-  endfacet
-  facet normal 0 0 1
-    outer loop
-      vertex -47.40668 47.40668 41.475
-      vertex -47.40668 -47.40668 41.475
-      vertex -31.44214 -31.44214 41.475
-    endloop
-  endfacet
-  facet normal 0 0 1
-    outer loop
-      vertex -47.40668 47.40668 41.475
-      vertex -31.44214 -31.44214 41.475
-      vertex -31.44214 31.44214 41.475
-    endloop
-  endfacet
   facet normal 0 -0.7862647 0.6178898
     outer loop
       vertex -47.40668 -47.40668 41.475
@@ -9839,34 +9615,6 @@ solid stage_04_more_casing
       vertex 31.44214 -31.44214 41.475
       vertex -28.4053 -28.4053 47.4
       vertex 28.4053 -28.4053 47.4
-    endloop
-  endfacet
-  facet normal 0 0 -1
-    outer loop
-      vertex 47.40668 -47.40668 41.475
-      vertex -47.40668 -47.40668 41.475
-      vertex -31.44214 -31.44214 41.475
-    endloop
-  endfacet
-  facet normal 0 0 -1
-    outer loop
-      vertex 47.40668 -47.40668 41.475
-      vertex -31.44214 -31.44214 41.475
-      vertex 31.44214 -31.44214 41.475
-    endloop
-  endfacet
-  facet normal 0 0 1
-    outer loop
-      vertex -42.75049 -42.75049 47.4
-      vertex 42.75049 -42.75049 47.4
-      vertex 28.4053 -28.4053 47.4
-    endloop
-  endfacet
-  facet normal 0 0 1
-    outer loop
-      vertex -42.75049 -42.75049 47.4
-      vertex 28.4053 -28.4053 47.4
-      vertex -28.4053 -28.4053 47.4
     endloop
   endfacet
   facet normal 0.7862647 -0 0.6178898
@@ -9897,34 +9645,6 @@ solid stage_04_more_casing
       vertex 28.4053 28.4053 47.4
     endloop
   endfacet
-  facet normal 0 -0 -1
-    outer loop
-      vertex 47.40668 47.40668 41.475
-      vertex 47.40668 -47.40668 41.475
-      vertex 31.44214 -31.44214 41.475
-    endloop
-  endfacet
-  facet normal 0 0 -1
-    outer loop
-      vertex 47.40668 47.40668 41.475
-      vertex 31.44214 -31.44214 41.475
-      vertex 31.44214 31.44214 41.475
-    endloop
-  endfacet
-  facet normal 0 -0 1
-    outer loop
-      vertex 42.75049 -42.75049 47.4
-      vertex 42.75049 42.75049 47.4
-      vertex 28.4053 28.4053 47.4
-    endloop
-  endfacet
-  facet normal 0 0 1
-    outer loop
-      vertex 42.75049 -42.75049 47.4
-      vertex 28.4053 28.4053 47.4
-      vertex 28.4053 -28.4053 47.4
-    endloop
-  endfacet
   facet normal 0 0.7862647 0.6178898
     outer loop
       vertex 47.40668 47.40668 41.475
@@ -9951,34 +9671,6 @@ solid stage_04_more_casing
       vertex -31.44214 31.44214 41.475
       vertex 28.4053 28.4053 47.4
       vertex -28.4053 28.4053 47.4
-    endloop
-  endfacet
-  facet normal 0 0 -1
-    outer loop
-      vertex -47.40668 47.40668 41.475
-      vertex 47.40668 47.40668 41.475
-      vertex 31.44214 31.44214 41.475
-    endloop
-  endfacet
-  facet normal 0 0 -1
-    outer loop
-      vertex -47.40668 47.40668 41.475
-      vertex 31.44214 31.44214 41.475
-      vertex -31.44214 31.44214 41.475
-    endloop
-  endfacet
-  facet normal 0 0 1
-    outer loop
-      vertex 42.75049 42.75049 47.4
-      vertex -42.75049 42.75049 47.4
-      vertex -28.4053 28.4053 47.4
-    endloop
-  endfacet
-  facet normal 0 0 1
-    outer loop
-      vertex 42.75049 42.75049 47.4
-      vertex -28.4053 28.4053 47.4
-      vertex 28.4053 28.4053 47.4
     endloop
   endfacet
   facet normal -0.7862647 0 0.6178898
@@ -10009,34 +9701,6 @@ solid stage_04_more_casing
       vertex -28.4053 -28.4053 47.4
     endloop
   endfacet
-  facet normal 0 0 -1
-    outer loop
-      vertex -47.40668 -47.40668 41.475
-      vertex -47.40668 47.40668 41.475
-      vertex -31.44214 31.44214 41.475
-    endloop
-  endfacet
-  facet normal 0 0 -1
-    outer loop
-      vertex -47.40668 -47.40668 41.475
-      vertex -31.44214 31.44214 41.475
-      vertex -31.44214 -31.44214 41.475
-    endloop
-  endfacet
-  facet normal 0 0 1
-    outer loop
-      vertex -42.75049 42.75049 47.4
-      vertex -42.75049 -42.75049 47.4
-      vertex -28.4053 -28.4053 47.4
-    endloop
-  endfacet
-  facet normal 0 0 1
-    outer loop
-      vertex -42.75049 42.75049 47.4
-      vertex -28.4053 -28.4053 47.4
-      vertex -28.4053 28.4053 47.4
-    endloop
-  endfacet
   facet normal 0 -0.7862647 0.6178898
     outer loop
       vertex -42.75049 -42.75049 47.4
@@ -10063,34 +9727,6 @@ solid stage_04_more_casing
       vertex 28.4053 -28.4053 47.4
       vertex -25.36847 -25.36847 53.325
       vertex 25.36847 -25.36847 53.325
-    endloop
-  endfacet
-  facet normal 0 0 -1
-    outer loop
-      vertex 42.75049 -42.75049 47.4
-      vertex -42.75049 -42.75049 47.4
-      vertex -28.4053 -28.4053 47.4
-    endloop
-  endfacet
-  facet normal 0 0 -1
-    outer loop
-      vertex 42.75049 -42.75049 47.4
-      vertex -28.4053 -28.4053 47.4
-      vertex 28.4053 -28.4053 47.4
-    endloop
-  endfacet
-  facet normal 0 0 1
-    outer loop
-      vertex -38.0943 -38.0943 53.325
-      vertex 38.0943 -38.0943 53.325
-      vertex 25.36847 -25.36847 53.325
-    endloop
-  endfacet
-  facet normal 0 0 1
-    outer loop
-      vertex -38.0943 -38.0943 53.325
-      vertex 25.36847 -25.36847 53.325
-      vertex -25.36847 -25.36847 53.325
     endloop
   endfacet
   facet normal 0.7862647 -0 0.6178898
@@ -10121,34 +9757,6 @@ solid stage_04_more_casing
       vertex 25.36847 25.36847 53.325
     endloop
   endfacet
-  facet normal 0 -0 -1
-    outer loop
-      vertex 42.75049 42.75049 47.4
-      vertex 42.75049 -42.75049 47.4
-      vertex 28.4053 -28.4053 47.4
-    endloop
-  endfacet
-  facet normal 0 0 -1
-    outer loop
-      vertex 42.75049 42.75049 47.4
-      vertex 28.4053 -28.4053 47.4
-      vertex 28.4053 28.4053 47.4
-    endloop
-  endfacet
-  facet normal 0 -0 1
-    outer loop
-      vertex 38.0943 -38.0943 53.325
-      vertex 38.0943 38.0943 53.325
-      vertex 25.36847 25.36847 53.325
-    endloop
-  endfacet
-  facet normal 0 0 1
-    outer loop
-      vertex 38.0943 -38.0943 53.325
-      vertex 25.36847 25.36847 53.325
-      vertex 25.36847 -25.36847 53.325
-    endloop
-  endfacet
   facet normal 0 0.7862647 0.6178898
     outer loop
       vertex 42.75049 42.75049 47.4
@@ -10175,34 +9783,6 @@ solid stage_04_more_casing
       vertex -28.4053 28.4053 47.4
       vertex 25.36847 25.36847 53.325
       vertex -25.36847 25.36847 53.325
-    endloop
-  endfacet
-  facet normal 0 0 -1
-    outer loop
-      vertex -42.75049 42.75049 47.4
-      vertex 42.75049 42.75049 47.4
-      vertex 28.4053 28.4053 47.4
-    endloop
-  endfacet
-  facet normal 0 0 -1
-    outer loop
-      vertex -42.75049 42.75049 47.4
-      vertex 28.4053 28.4053 47.4
-      vertex -28.4053 28.4053 47.4
-    endloop
-  endfacet
-  facet normal 0 0 1
-    outer loop
-      vertex 38.0943 38.0943 53.325
-      vertex -38.0943 38.0943 53.325
-      vertex -25.36847 25.36847 53.325
-    endloop
-  endfacet
-  facet normal 0 0 1
-    outer loop
-      vertex 38.0943 38.0943 53.325
-      vertex -25.36847 25.36847 53.325
-      vertex 25.36847 25.36847 53.325
     endloop
   endfacet
   facet normal -0.7862647 0 0.6178898
@@ -10233,34 +9813,6 @@ solid stage_04_more_casing
       vertex -25.36847 -25.36847 53.325
     endloop
   endfacet
-  facet normal 0 0 -1
-    outer loop
-      vertex -42.75049 -42.75049 47.4
-      vertex -42.75049 42.75049 47.4
-      vertex -28.4053 28.4053 47.4
-    endloop
-  endfacet
-  facet normal 0 0 -1
-    outer loop
-      vertex -42.75049 -42.75049 47.4
-      vertex -28.4053 28.4053 47.4
-      vertex -28.4053 -28.4053 47.4
-    endloop
-  endfacet
-  facet normal 0 0 1
-    outer loop
-      vertex -38.0943 38.0943 53.325
-      vertex -38.0943 -38.0943 53.325
-      vertex -25.36847 -25.36847 53.325
-    endloop
-  endfacet
-  facet normal 0 0 1
-    outer loop
-      vertex -38.0943 38.0943 53.325
-      vertex -25.36847 -25.36847 53.325
-      vertex -25.36847 25.36847 53.325
-    endloop
-  endfacet
   facet normal 0 -0.7862647 0.6178898
     outer loop
       vertex -38.0943 -38.0943 53.325
@@ -10287,34 +9839,6 @@ solid stage_04_more_casing
       vertex 25.36847 -25.36847 53.325
       vertex -22.33163 -22.33163 59.25
       vertex 22.33163 -22.33163 59.25
-    endloop
-  endfacet
-  facet normal 0 0 -1
-    outer loop
-      vertex 38.0943 -38.0943 53.325
-      vertex -38.0943 -38.0943 53.325
-      vertex -25.36847 -25.36847 53.325
-    endloop
-  endfacet
-  facet normal 0 0 -1
-    outer loop
-      vertex 38.0943 -38.0943 53.325
-      vertex -25.36847 -25.36847 53.325
-      vertex 25.36847 -25.36847 53.325
-    endloop
-  endfacet
-  facet normal 0 0 1
-    outer loop
-      vertex -33.43811 -33.43811 59.25
-      vertex 33.43811 -33.43811 59.25
-      vertex 22.33163 -22.33163 59.25
-    endloop
-  endfacet
-  facet normal 0 0 1
-    outer loop
-      vertex -33.43811 -33.43811 59.25
-      vertex 22.33163 -22.33163 59.25
-      vertex -22.33163 -22.33163 59.25
     endloop
   endfacet
   facet normal 0.7862647 -0 0.6178898
@@ -10345,34 +9869,6 @@ solid stage_04_more_casing
       vertex 22.33163 22.33163 59.25
     endloop
   endfacet
-  facet normal 0 -0 -1
-    outer loop
-      vertex 38.0943 38.0943 53.325
-      vertex 38.0943 -38.0943 53.325
-      vertex 25.36847 -25.36847 53.325
-    endloop
-  endfacet
-  facet normal 0 0 -1
-    outer loop
-      vertex 38.0943 38.0943 53.325
-      vertex 25.36847 -25.36847 53.325
-      vertex 25.36847 25.36847 53.325
-    endloop
-  endfacet
-  facet normal 0 -0 1
-    outer loop
-      vertex 33.43811 -33.43811 59.25
-      vertex 33.43811 33.43811 59.25
-      vertex 22.33163 22.33163 59.25
-    endloop
-  endfacet
-  facet normal 0 0 1
-    outer loop
-      vertex 33.43811 -33.43811 59.25
-      vertex 22.33163 22.33163 59.25
-      vertex 22.33163 -22.33163 59.25
-    endloop
-  endfacet
   facet normal 0 0.7862647 0.6178898
     outer loop
       vertex 38.0943 38.0943 53.325
@@ -10399,34 +9895,6 @@ solid stage_04_more_casing
       vertex -25.36847 25.36847 53.325
       vertex 22.33163 22.33163 59.25
       vertex -22.33163 22.33163 59.25
-    endloop
-  endfacet
-  facet normal 0 0 -1
-    outer loop
-      vertex -38.0943 38.0943 53.325
-      vertex 38.0943 38.0943 53.325
-      vertex 25.36847 25.36847 53.325
-    endloop
-  endfacet
-  facet normal 0 0 -1
-    outer loop
-      vertex -38.0943 38.0943 53.325
-      vertex 25.36847 25.36847 53.325
-      vertex -25.36847 25.36847 53.325
-    endloop
-  endfacet
-  facet normal 0 0 1
-    outer loop
-      vertex 33.43811 33.43811 59.25
-      vertex -33.43811 33.43811 59.25
-      vertex -22.33163 22.33163 59.25
-    endloop
-  endfacet
-  facet normal 0 0 1
-    outer loop
-      vertex 33.43811 33.43811 59.25
-      vertex -22.33163 22.33163 59.25
-      vertex 22.33163 22.33163 59.25
     endloop
   endfacet
   facet normal -0.7862647 0 0.6178898
@@ -10457,34 +9925,6 @@ solid stage_04_more_casing
       vertex -22.33163 -22.33163 59.25
     endloop
   endfacet
-  facet normal 0 0 -1
-    outer loop
-      vertex -38.0943 -38.0943 53.325
-      vertex -38.0943 38.0943 53.325
-      vertex -25.36847 25.36847 53.325
-    endloop
-  endfacet
-  facet normal 0 0 -1
-    outer loop
-      vertex -38.0943 -38.0943 53.325
-      vertex -25.36847 25.36847 53.325
-      vertex -25.36847 -25.36847 53.325
-    endloop
-  endfacet
-  facet normal 0 0 1
-    outer loop
-      vertex -33.43811 33.43811 59.25
-      vertex -33.43811 -33.43811 59.25
-      vertex -22.33163 -22.33163 59.25
-    endloop
-  endfacet
-  facet normal 0 0 1
-    outer loop
-      vertex -33.43811 33.43811 59.25
-      vertex -22.33163 -22.33163 59.25
-      vertex -22.33163 22.33163 59.25
-    endloop
-  endfacet
   facet normal 0 -0.7862647 0.6178898
     outer loop
       vertex -33.43811 -33.43811 59.25
@@ -10511,34 +9951,6 @@ solid stage_04_more_casing
       vertex 22.33163 -22.33163 59.25
       vertex -19.29479 -19.29479 65.175
       vertex 19.29479 -19.29479 65.175
-    endloop
-  endfacet
-  facet normal 0 0 -1
-    outer loop
-      vertex 33.43811 -33.43811 59.25
-      vertex -33.43811 -33.43811 59.25
-      vertex -22.33163 -22.33163 59.25
-    endloop
-  endfacet
-  facet normal 0 0 -1
-    outer loop
-      vertex 33.43811 -33.43811 59.25
-      vertex -22.33163 -22.33163 59.25
-      vertex 22.33163 -22.33163 59.25
-    endloop
-  endfacet
-  facet normal 0 0 1
-    outer loop
-      vertex -28.78193 -28.78193 65.175
-      vertex 28.78193 -28.78193 65.175
-      vertex 19.29479 -19.29479 65.175
-    endloop
-  endfacet
-  facet normal 0 0 1
-    outer loop
-      vertex -28.78193 -28.78193 65.175
-      vertex 19.29479 -19.29479 65.175
-      vertex -19.29479 -19.29479 65.175
     endloop
   endfacet
   facet normal 0.7862647 -0 0.6178898
@@ -10569,34 +9981,6 @@ solid stage_04_more_casing
       vertex 19.29479 19.29479 65.175
     endloop
   endfacet
-  facet normal 0 -0 -1
-    outer loop
-      vertex 33.43811 33.43811 59.25
-      vertex 33.43811 -33.43811 59.25
-      vertex 22.33163 -22.33163 59.25
-    endloop
-  endfacet
-  facet normal 0 0 -1
-    outer loop
-      vertex 33.43811 33.43811 59.25
-      vertex 22.33163 -22.33163 59.25
-      vertex 22.33163 22.33163 59.25
-    endloop
-  endfacet
-  facet normal 0 -0 1
-    outer loop
-      vertex 28.78193 -28.78193 65.175
-      vertex 28.78193 28.78193 65.175
-      vertex 19.29479 19.29479 65.175
-    endloop
-  endfacet
-  facet normal 0 0 1
-    outer loop
-      vertex 28.78193 -28.78193 65.175
-      vertex 19.29479 19.29479 65.175
-      vertex 19.29479 -19.29479 65.175
-    endloop
-  endfacet
   facet normal 0 0.7862647 0.6178898
     outer loop
       vertex 33.43811 33.43811 59.25
@@ -10623,34 +10007,6 @@ solid stage_04_more_casing
       vertex -22.33163 22.33163 59.25
       vertex 19.29479 19.29479 65.175
       vertex -19.29479 19.29479 65.175
-    endloop
-  endfacet
-  facet normal 0 0 -1
-    outer loop
-      vertex -33.43811 33.43811 59.25
-      vertex 33.43811 33.43811 59.25
-      vertex 22.33163 22.33163 59.25
-    endloop
-  endfacet
-  facet normal 0 0 -1
-    outer loop
-      vertex -33.43811 33.43811 59.25
-      vertex 22.33163 22.33163 59.25
-      vertex -22.33163 22.33163 59.25
-    endloop
-  endfacet
-  facet normal 0 0 1
-    outer loop
-      vertex 28.78193 28.78193 65.175
-      vertex -28.78193 28.78193 65.175
-      vertex -19.29479 19.29479 65.175
-    endloop
-  endfacet
-  facet normal 0 0 1
-    outer loop
-      vertex 28.78193 28.78193 65.175
-      vertex -19.29479 19.29479 65.175
-      vertex 19.29479 19.29479 65.175
     endloop
   endfacet
   facet normal -0.7862647 0 0.6178898
@@ -10681,34 +10037,6 @@ solid stage_04_more_casing
       vertex -19.29479 -19.29479 65.175
     endloop
   endfacet
-  facet normal 0 0 -1
-    outer loop
-      vertex -33.43811 -33.43811 59.25
-      vertex -33.43811 33.43811 59.25
-      vertex -22.33163 22.33163 59.25
-    endloop
-  endfacet
-  facet normal 0 0 -1
-    outer loop
-      vertex -33.43811 -33.43811 59.25
-      vertex -22.33163 22.33163 59.25
-      vertex -22.33163 -22.33163 59.25
-    endloop
-  endfacet
-  facet normal 0 0 1
-    outer loop
-      vertex -28.78193 28.78193 65.175
-      vertex -28.78193 -28.78193 65.175
-      vertex -19.29479 -19.29479 65.175
-    endloop
-  endfacet
-  facet normal 0 0 1
-    outer loop
-      vertex -28.78193 28.78193 65.175
-      vertex -19.29479 -19.29479 65.175
-      vertex -19.29479 19.29479 65.175
-    endloop
-  endfacet
   facet normal 0 -0.7862647 0.6178898
     outer loop
       vertex -28.78193 -28.78193 65.175
@@ -10735,34 +10063,6 @@ solid stage_04_more_casing
       vertex 19.29479 -19.29479 65.175
       vertex -16.25796 -16.25796 71.1
       vertex 16.25796 -16.25796 71.1
-    endloop
-  endfacet
-  facet normal 0 0 -1
-    outer loop
-      vertex 28.78193 -28.78193 65.175
-      vertex -28.78193 -28.78193 65.175
-      vertex -19.29479 -19.29479 65.175
-    endloop
-  endfacet
-  facet normal 0 0 -1
-    outer loop
-      vertex 28.78193 -28.78193 65.175
-      vertex -19.29479 -19.29479 65.175
-      vertex 19.29479 -19.29479 65.175
-    endloop
-  endfacet
-  facet normal 0 0 1
-    outer loop
-      vertex -24.12574 -24.12574 71.1
-      vertex 24.12574 -24.12574 71.1
-      vertex 16.25796 -16.25796 71.1
-    endloop
-  endfacet
-  facet normal 0 0 1
-    outer loop
-      vertex -24.12574 -24.12574 71.1
-      vertex 16.25796 -16.25796 71.1
-      vertex -16.25796 -16.25796 71.1
     endloop
   endfacet
   facet normal 0.7862647 -0 0.6178898
@@ -10793,34 +10093,6 @@ solid stage_04_more_casing
       vertex 16.25796 16.25796 71.1
     endloop
   endfacet
-  facet normal 0 -0 -1
-    outer loop
-      vertex 28.78193 28.78193 65.175
-      vertex 28.78193 -28.78193 65.175
-      vertex 19.29479 -19.29479 65.175
-    endloop
-  endfacet
-  facet normal 0 0 -1
-    outer loop
-      vertex 28.78193 28.78193 65.175
-      vertex 19.29479 -19.29479 65.175
-      vertex 19.29479 19.29479 65.175
-    endloop
-  endfacet
-  facet normal 0 -0 1
-    outer loop
-      vertex 24.12574 -24.12574 71.1
-      vertex 24.12574 24.12574 71.1
-      vertex 16.25796 16.25796 71.1
-    endloop
-  endfacet
-  facet normal 0 0 1
-    outer loop
-      vertex 24.12574 -24.12574 71.1
-      vertex 16.25796 16.25796 71.1
-      vertex 16.25796 -16.25796 71.1
-    endloop
-  endfacet
   facet normal 0 0.7862647 0.6178898
     outer loop
       vertex 28.78193 28.78193 65.175
@@ -10847,34 +10119,6 @@ solid stage_04_more_casing
       vertex -19.29479 19.29479 65.175
       vertex 16.25796 16.25796 71.1
       vertex -16.25796 16.25796 71.1
-    endloop
-  endfacet
-  facet normal 0 0 -1
-    outer loop
-      vertex -28.78193 28.78193 65.175
-      vertex 28.78193 28.78193 65.175
-      vertex 19.29479 19.29479 65.175
-    endloop
-  endfacet
-  facet normal 0 0 -1
-    outer loop
-      vertex -28.78193 28.78193 65.175
-      vertex 19.29479 19.29479 65.175
-      vertex -19.29479 19.29479 65.175
-    endloop
-  endfacet
-  facet normal 0 0 1
-    outer loop
-      vertex 24.12574 24.12574 71.1
-      vertex -24.12574 24.12574 71.1
-      vertex -16.25796 16.25796 71.1
-    endloop
-  endfacet
-  facet normal 0 0 1
-    outer loop
-      vertex 24.12574 24.12574 71.1
-      vertex -16.25796 16.25796 71.1
-      vertex 16.25796 16.25796 71.1
     endloop
   endfacet
   facet normal -0.7862647 0 0.6178898
@@ -10905,34 +10149,6 @@ solid stage_04_more_casing
       vertex -16.25796 -16.25796 71.1
     endloop
   endfacet
-  facet normal 0 0 -1
-    outer loop
-      vertex -28.78193 -28.78193 65.175
-      vertex -28.78193 28.78193 65.175
-      vertex -19.29479 19.29479 65.175
-    endloop
-  endfacet
-  facet normal 0 0 -1
-    outer loop
-      vertex -28.78193 -28.78193 65.175
-      vertex -19.29479 19.29479 65.175
-      vertex -19.29479 -19.29479 65.175
-    endloop
-  endfacet
-  facet normal 0 0 1
-    outer loop
-      vertex -24.12574 24.12574 71.1
-      vertex -24.12574 -24.12574 71.1
-      vertex -16.25796 -16.25796 71.1
-    endloop
-  endfacet
-  facet normal 0 0 1
-    outer loop
-      vertex -24.12574 24.12574 71.1
-      vertex -16.25796 -16.25796 71.1
-      vertex -16.25796 16.25796 71.1
-    endloop
-  endfacet
   facet normal 0 -0.7862647 0.6178898
     outer loop
       vertex -24.12574 -24.12574 71.1
@@ -10959,34 +10175,6 @@ solid stage_04_more_casing
       vertex 16.25796 -16.25796 71.1
       vertex -13.22112 -13.22112 77.025
       vertex 13.22112 -13.22112 77.025
-    endloop
-  endfacet
-  facet normal 0 0 -1
-    outer loop
-      vertex 24.12574 -24.12574 71.1
-      vertex -24.12574 -24.12574 71.1
-      vertex -16.25796 -16.25796 71.1
-    endloop
-  endfacet
-  facet normal 0 0 -1
-    outer loop
-      vertex 24.12574 -24.12574 71.1
-      vertex -16.25796 -16.25796 71.1
-      vertex 16.25796 -16.25796 71.1
-    endloop
-  endfacet
-  facet normal 0 0 1
-    outer loop
-      vertex -19.46955 -19.46955 77.025
-      vertex 19.46955 -19.46955 77.025
-      vertex 13.22112 -13.22112 77.025
-    endloop
-  endfacet
-  facet normal 0 0 1
-    outer loop
-      vertex -19.46955 -19.46955 77.025
-      vertex 13.22112 -13.22112 77.025
-      vertex -13.22112 -13.22112 77.025
     endloop
   endfacet
   facet normal 0.7862647 -0 0.6178898
@@ -11017,34 +10205,6 @@ solid stage_04_more_casing
       vertex 13.22112 13.22112 77.025
     endloop
   endfacet
-  facet normal 0 -0 -1
-    outer loop
-      vertex 24.12574 24.12574 71.1
-      vertex 24.12574 -24.12574 71.1
-      vertex 16.25796 -16.25796 71.1
-    endloop
-  endfacet
-  facet normal 0 0 -1
-    outer loop
-      vertex 24.12574 24.12574 71.1
-      vertex 16.25796 -16.25796 71.1
-      vertex 16.25796 16.25796 71.1
-    endloop
-  endfacet
-  facet normal 0 -0 1
-    outer loop
-      vertex 19.46955 -19.46955 77.025
-      vertex 19.46955 19.46955 77.025
-      vertex 13.22112 13.22112 77.025
-    endloop
-  endfacet
-  facet normal 0 0 1
-    outer loop
-      vertex 19.46955 -19.46955 77.025
-      vertex 13.22112 13.22112 77.025
-      vertex 13.22112 -13.22112 77.025
-    endloop
-  endfacet
   facet normal 0 0.7862647 0.6178898
     outer loop
       vertex 24.12574 24.12574 71.1
@@ -11071,34 +10231,6 @@ solid stage_04_more_casing
       vertex -16.25796 16.25796 71.1
       vertex 13.22112 13.22112 77.025
       vertex -13.22112 13.22112 77.025
-    endloop
-  endfacet
-  facet normal 0 0 -1
-    outer loop
-      vertex -24.12574 24.12574 71.1
-      vertex 24.12574 24.12574 71.1
-      vertex 16.25796 16.25796 71.1
-    endloop
-  endfacet
-  facet normal 0 0 -1
-    outer loop
-      vertex -24.12574 24.12574 71.1
-      vertex 16.25796 16.25796 71.1
-      vertex -16.25796 16.25796 71.1
-    endloop
-  endfacet
-  facet normal 0 0 1
-    outer loop
-      vertex 19.46955 19.46955 77.025
-      vertex -19.46955 19.46955 77.025
-      vertex -13.22112 13.22112 77.025
-    endloop
-  endfacet
-  facet normal 0 0 1
-    outer loop
-      vertex 19.46955 19.46955 77.025
-      vertex -13.22112 13.22112 77.025
-      vertex 13.22112 13.22112 77.025
     endloop
   endfacet
   facet normal -0.7862647 0 0.6178898
@@ -11129,34 +10261,6 @@ solid stage_04_more_casing
       vertex -13.22112 -13.22112 77.025
     endloop
   endfacet
-  facet normal 0 0 -1
-    outer loop
-      vertex -24.12574 -24.12574 71.1
-      vertex -24.12574 24.12574 71.1
-      vertex -16.25796 16.25796 71.1
-    endloop
-  endfacet
-  facet normal 0 0 -1
-    outer loop
-      vertex -24.12574 -24.12574 71.1
-      vertex -16.25796 16.25796 71.1
-      vertex -16.25796 -16.25796 71.1
-    endloop
-  endfacet
-  facet normal 0 0 1
-    outer loop
-      vertex -19.46955 19.46955 77.025
-      vertex -19.46955 -19.46955 77.025
-      vertex -13.22112 -13.22112 77.025
-    endloop
-  endfacet
-  facet normal 0 0 1
-    outer loop
-      vertex -19.46955 19.46955 77.025
-      vertex -13.22112 -13.22112 77.025
-      vertex -13.22112 13.22112 77.025
-    endloop
-  endfacet
   facet normal 0 -0.7862647 0.6178898
     outer loop
       vertex -19.46955 -19.46955 77.025
@@ -11183,34 +10287,6 @@ solid stage_04_more_casing
       vertex 13.22112 -13.22112 77.025
       vertex -10.18428 -10.18428 82.95
       vertex 10.18428 -10.18428 82.95
-    endloop
-  endfacet
-  facet normal 0 0 -1
-    outer loop
-      vertex 19.46955 -19.46955 77.025
-      vertex -19.46955 -19.46955 77.025
-      vertex -13.22112 -13.22112 77.025
-    endloop
-  endfacet
-  facet normal 0 0 -1
-    outer loop
-      vertex 19.46955 -19.46955 77.025
-      vertex -13.22112 -13.22112 77.025
-      vertex 13.22112 -13.22112 77.025
-    endloop
-  endfacet
-  facet normal 0 0 1
-    outer loop
-      vertex -14.81336 -14.81336 82.95
-      vertex 14.81336 -14.81336 82.95
-      vertex 10.18428 -10.18428 82.95
-    endloop
-  endfacet
-  facet normal 0 0 1
-    outer loop
-      vertex -14.81336 -14.81336 82.95
-      vertex 10.18428 -10.18428 82.95
-      vertex -10.18428 -10.18428 82.95
     endloop
   endfacet
   facet normal 0.7862647 -0 0.6178898
@@ -11241,34 +10317,6 @@ solid stage_04_more_casing
       vertex 10.18428 10.18428 82.95
     endloop
   endfacet
-  facet normal 0 -0 -1
-    outer loop
-      vertex 19.46955 19.46955 77.025
-      vertex 19.46955 -19.46955 77.025
-      vertex 13.22112 -13.22112 77.025
-    endloop
-  endfacet
-  facet normal 0 0 -1
-    outer loop
-      vertex 19.46955 19.46955 77.025
-      vertex 13.22112 -13.22112 77.025
-      vertex 13.22112 13.22112 77.025
-    endloop
-  endfacet
-  facet normal 0 -0 1
-    outer loop
-      vertex 14.81336 -14.81336 82.95
-      vertex 14.81336 14.81336 82.95
-      vertex 10.18428 10.18428 82.95
-    endloop
-  endfacet
-  facet normal 0 0 1
-    outer loop
-      vertex 14.81336 -14.81336 82.95
-      vertex 10.18428 10.18428 82.95
-      vertex 10.18428 -10.18428 82.95
-    endloop
-  endfacet
   facet normal 0 0.7862647 0.6178898
     outer loop
       vertex 19.46955 19.46955 77.025
@@ -11295,34 +10343,6 @@ solid stage_04_more_casing
       vertex -13.22112 13.22112 77.025
       vertex 10.18428 10.18428 82.95
       vertex -10.18428 10.18428 82.95
-    endloop
-  endfacet
-  facet normal 0 0 -1
-    outer loop
-      vertex -19.46955 19.46955 77.025
-      vertex 19.46955 19.46955 77.025
-      vertex 13.22112 13.22112 77.025
-    endloop
-  endfacet
-  facet normal 0 0 -1
-    outer loop
-      vertex -19.46955 19.46955 77.025
-      vertex 13.22112 13.22112 77.025
-      vertex -13.22112 13.22112 77.025
-    endloop
-  endfacet
-  facet normal 0 0 1
-    outer loop
-      vertex 14.81336 14.81336 82.95
-      vertex -14.81336 14.81336 82.95
-      vertex -10.18428 10.18428 82.95
-    endloop
-  endfacet
-  facet normal 0 0 1
-    outer loop
-      vertex 14.81336 14.81336 82.95
-      vertex -10.18428 10.18428 82.95
-      vertex 10.18428 10.18428 82.95
     endloop
   endfacet
   facet normal -0.7862647 0 0.6178898
@@ -11353,34 +10373,6 @@ solid stage_04_more_casing
       vertex -10.18428 -10.18428 82.95
     endloop
   endfacet
-  facet normal 0 0 -1
-    outer loop
-      vertex -19.46955 -19.46955 77.025
-      vertex -19.46955 19.46955 77.025
-      vertex -13.22112 13.22112 77.025
-    endloop
-  endfacet
-  facet normal 0 0 -1
-    outer loop
-      vertex -19.46955 -19.46955 77.025
-      vertex -13.22112 13.22112 77.025
-      vertex -13.22112 -13.22112 77.025
-    endloop
-  endfacet
-  facet normal 0 0 1
-    outer loop
-      vertex -14.81336 14.81336 82.95
-      vertex -14.81336 -14.81336 82.95
-      vertex -10.18428 -10.18428 82.95
-    endloop
-  endfacet
-  facet normal 0 0 1
-    outer loop
-      vertex -14.81336 14.81336 82.95
-      vertex -10.18428 -10.18428 82.95
-      vertex -10.18428 10.18428 82.95
-    endloop
-  endfacet
   facet normal 0 -0.7862647 0.6178898
     outer loop
       vertex -14.81336 -14.81336 82.95
@@ -11407,34 +10399,6 @@ solid stage_04_more_casing
       vertex 10.18428 -10.18428 82.95
       vertex -7.147446 -7.147446 88.875
       vertex 7.147446 -7.147446 88.875
-    endloop
-  endfacet
-  facet normal 0 0 -1
-    outer loop
-      vertex 14.81336 -14.81336 82.95
-      vertex -14.81336 -14.81336 82.95
-      vertex -10.18428 -10.18428 82.95
-    endloop
-  endfacet
-  facet normal 0 0 -1
-    outer loop
-      vertex 14.81336 -14.81336 82.95
-      vertex -10.18428 -10.18428 82.95
-      vertex 10.18428 -10.18428 82.95
-    endloop
-  endfacet
-  facet normal 0 0 1
-    outer loop
-      vertex -10.15717 -10.15717 88.875
-      vertex 10.15717 -10.15717 88.875
-      vertex 7.147446 -7.147446 88.875
-    endloop
-  endfacet
-  facet normal 0 0 1
-    outer loop
-      vertex -10.15717 -10.15717 88.875
-      vertex 7.147446 -7.147446 88.875
-      vertex -7.147446 -7.147446 88.875
     endloop
   endfacet
   facet normal 0.7862647 -0 0.6178898
@@ -11465,34 +10429,6 @@ solid stage_04_more_casing
       vertex 7.147446 7.147446 88.875
     endloop
   endfacet
-  facet normal 0 -0 -1
-    outer loop
-      vertex 14.81336 14.81336 82.95
-      vertex 14.81336 -14.81336 82.95
-      vertex 10.18428 -10.18428 82.95
-    endloop
-  endfacet
-  facet normal 0 0 -1
-    outer loop
-      vertex 14.81336 14.81336 82.95
-      vertex 10.18428 -10.18428 82.95
-      vertex 10.18428 10.18428 82.95
-    endloop
-  endfacet
-  facet normal 0 -0 1
-    outer loop
-      vertex 10.15717 -10.15717 88.875
-      vertex 10.15717 10.15717 88.875
-      vertex 7.147446 7.147446 88.875
-    endloop
-  endfacet
-  facet normal 0 0 1
-    outer loop
-      vertex 10.15717 -10.15717 88.875
-      vertex 7.147446 7.147446 88.875
-      vertex 7.147446 -7.147446 88.875
-    endloop
-  endfacet
   facet normal 0 0.7862647 0.6178898
     outer loop
       vertex 14.81336 14.81336 82.95
@@ -11519,34 +10455,6 @@ solid stage_04_more_casing
       vertex -10.18428 10.18428 82.95
       vertex 7.147446 7.147446 88.875
       vertex -7.147446 7.147446 88.875
-    endloop
-  endfacet
-  facet normal 0 0 -1
-    outer loop
-      vertex -14.81336 14.81336 82.95
-      vertex 14.81336 14.81336 82.95
-      vertex 10.18428 10.18428 82.95
-    endloop
-  endfacet
-  facet normal 0 0 -1
-    outer loop
-      vertex -14.81336 14.81336 82.95
-      vertex 10.18428 10.18428 82.95
-      vertex -10.18428 10.18428 82.95
-    endloop
-  endfacet
-  facet normal 0 0 1
-    outer loop
-      vertex 10.15717 10.15717 88.875
-      vertex -10.15717 10.15717 88.875
-      vertex -7.147446 7.147446 88.875
-    endloop
-  endfacet
-  facet normal 0 0 1
-    outer loop
-      vertex 10.15717 10.15717 88.875
-      vertex -7.147446 7.147446 88.875
-      vertex 7.147446 7.147446 88.875
     endloop
   endfacet
   facet normal -0.7862647 0 0.6178898
@@ -11577,34 +10485,6 @@ solid stage_04_more_casing
       vertex -7.147446 -7.147446 88.875
     endloop
   endfacet
-  facet normal 0 0 -1
-    outer loop
-      vertex -14.81336 -14.81336 82.95
-      vertex -14.81336 14.81336 82.95
-      vertex -10.18428 10.18428 82.95
-    endloop
-  endfacet
-  facet normal 0 0 -1
-    outer loop
-      vertex -14.81336 -14.81336 82.95
-      vertex -10.18428 10.18428 82.95
-      vertex -10.18428 -10.18428 82.95
-    endloop
-  endfacet
-  facet normal 0 0 1
-    outer loop
-      vertex -10.15717 10.15717 88.875
-      vertex -10.15717 -10.15717 88.875
-      vertex -7.147446 -7.147446 88.875
-    endloop
-  endfacet
-  facet normal 0 0 1
-    outer loop
-      vertex -10.15717 10.15717 88.875
-      vertex -7.147446 -7.147446 88.875
-      vertex -7.147446 7.147446 88.875
-    endloop
-  endfacet
   facet normal 0 -0.7862647 0.6178898
     outer loop
       vertex -10.15717 -10.15717 88.875
@@ -11631,34 +10511,6 @@ solid stage_04_more_casing
       vertex 7.147446 -7.147446 88.875
       vertex -4.110609 -4.110609 94.8
       vertex 4.110609 -4.110609 94.8
-    endloop
-  endfacet
-  facet normal 0 0 -1
-    outer loop
-      vertex 10.15717 -10.15717 88.875
-      vertex -10.15717 -10.15717 88.875
-      vertex -7.147446 -7.147446 88.875
-    endloop
-  endfacet
-  facet normal 0 0 -1
-    outer loop
-      vertex 10.15717 -10.15717 88.875
-      vertex -7.147446 -7.147446 88.875
-      vertex 7.147446 -7.147446 88.875
-    endloop
-  endfacet
-  facet normal 0 0 1
-    outer loop
-      vertex -5.500982 -5.500982 94.8
-      vertex 5.500982 -5.500982 94.8
-      vertex 4.110609 -4.110609 94.8
-    endloop
-  endfacet
-  facet normal 0 0 1
-    outer loop
-      vertex -5.500982 -5.500982 94.8
-      vertex 4.110609 -4.110609 94.8
-      vertex -4.110609 -4.110609 94.8
     endloop
   endfacet
   facet normal 0.7862647 -0 0.6178898
@@ -11689,34 +10541,6 @@ solid stage_04_more_casing
       vertex 4.110609 4.110609 94.8
     endloop
   endfacet
-  facet normal 0 -0 -1
-    outer loop
-      vertex 10.15717 10.15717 88.875
-      vertex 10.15717 -10.15717 88.875
-      vertex 7.147446 -7.147446 88.875
-    endloop
-  endfacet
-  facet normal 0 0 -1
-    outer loop
-      vertex 10.15717 10.15717 88.875
-      vertex 7.147446 -7.147446 88.875
-      vertex 7.147446 7.147446 88.875
-    endloop
-  endfacet
-  facet normal 0 -0 1
-    outer loop
-      vertex 5.500982 -5.500982 94.8
-      vertex 5.500982 5.500982 94.8
-      vertex 4.110609 4.110609 94.8
-    endloop
-  endfacet
-  facet normal 0 0 1
-    outer loop
-      vertex 5.500982 -5.500982 94.8
-      vertex 4.110609 4.110609 94.8
-      vertex 4.110609 -4.110609 94.8
-    endloop
-  endfacet
   facet normal 0 0.7862647 0.6178898
     outer loop
       vertex 10.15717 10.15717 88.875
@@ -11745,34 +10569,6 @@ solid stage_04_more_casing
       vertex -4.110609 4.110609 94.8
     endloop
   endfacet
-  facet normal 0 0 -1
-    outer loop
-      vertex -10.15717 10.15717 88.875
-      vertex 10.15717 10.15717 88.875
-      vertex 7.147446 7.147446 88.875
-    endloop
-  endfacet
-  facet normal 0 0 -1
-    outer loop
-      vertex -10.15717 10.15717 88.875
-      vertex 7.147446 7.147446 88.875
-      vertex -7.147446 7.147446 88.875
-    endloop
-  endfacet
-  facet normal 0 0 1
-    outer loop
-      vertex 5.500982 5.500982 94.8
-      vertex -5.500982 5.500982 94.8
-      vertex -4.110609 4.110609 94.8
-    endloop
-  endfacet
-  facet normal 0 0 1
-    outer loop
-      vertex 5.500982 5.500982 94.8
-      vertex -4.110609 4.110609 94.8
-      vertex 4.110609 4.110609 94.8
-    endloop
-  endfacet
   facet normal -0.7862647 0 0.6178898
     outer loop
       vertex -10.15717 10.15717 88.875
@@ -11799,34 +10595,6 @@ solid stage_04_more_casing
       vertex -7.147446 -7.147446 88.875
       vertex -4.110609 4.110609 94.8
       vertex -4.110609 -4.110609 94.8
-    endloop
-  endfacet
-  facet normal 0 0 -1
-    outer loop
-      vertex -10.15717 -10.15717 88.875
-      vertex -10.15717 10.15717 88.875
-      vertex -7.147446 7.147446 88.875
-    endloop
-  endfacet
-  facet normal 0 0 -1
-    outer loop
-      vertex -10.15717 -10.15717 88.875
-      vertex -7.147446 7.147446 88.875
-      vertex -7.147446 -7.147446 88.875
-    endloop
-  endfacet
-  facet normal 0 0 1
-    outer loop
-      vertex -5.500982 5.500982 94.8
-      vertex -5.500982 -5.500982 94.8
-      vertex -4.110609 -4.110609 94.8
-    endloop
-  endfacet
-  facet normal 0 0 1
-    outer loop
-      vertex -5.500982 5.500982 94.8
-      vertex -4.110609 -4.110609 94.8
-      vertex -4.110609 4.110609 94.8
     endloop
   endfacet
 endsolid stage_04_more_casing
