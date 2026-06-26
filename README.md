@@ -25,11 +25,7 @@ The files are a conceptual geometry model, not an archaeological claim. The defa
 
 ## Quick Start
 
-Live demo:
-
-```text
-https://danieliser.github.io/giza-pyramid-kit/demo/
-```
+[Open the live demo](https://danieliser.github.io/giza-pyramid-kit/demo/)
 
 Local demo:
 

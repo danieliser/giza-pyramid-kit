@@ -63,11 +63,7 @@ The browser demo is static. Once pushed, GitHub Pages can serve the repository r
 
 Because `dist/` contains the downloadable STL kit, it is intentionally kept in version control. `.gitattributes` marks STL files as binary/generated to avoid noisy diffs.
 
-This repo is configured to publish from `main` at the repository root with `.nojekyll` enabled. The expected live URL is:
-
-```text
-https://danieliser.github.io/giza-pyramid-kit/demo/
-```
+This repo is configured to publish from `main` at the repository root with `.nojekyll` enabled. The expected live URL is [the animated demo](https://danieliser.github.io/giza-pyramid-kit/demo/).
 
 ## Maker-Site Release
 
