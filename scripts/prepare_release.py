@@ -74,6 +74,16 @@ def project(point: Vec3) -> Vec3:
     return (screen_x, screen_y, depth)
 
 
+def normal(a: Vec3, b: Vec3, c: Vec3) -> Vec3:
+    ux, uy, uz = (b[0] - a[0], b[1] - a[1], b[2] - a[2])
+    vx, vy, vz = (c[0] - a[0], c[1] - a[1], c[2] - a[2])
+    nx = uy * vz - uz * vy
+    ny = uz * vx - ux * vz
+    nz = ux * vy - uy * vx
+    mag = math.sqrt(nx * nx + ny * ny + nz * nz) or 1.0
+    return (nx / mag, ny / mag, nz / mag)
+
+
 def build_render_scenes() -> list[tuple[str, list[RenderPart]]]:
     params = KitParams()
     cut_backfill = make_cut_temporary_backfill(params)
@@ -130,10 +140,58 @@ def build_render_scenes() -> list[tuple[str, list[RenderPart]]]:
     ]
 
 
+def visible_mesh_edges(mesh: Mesh, screen, zbuffer, depth_bias: float, crease_dot: float = 0.72) -> list[tuple[tuple[float, float], tuple[float, float]]]:
+    edges: dict[tuple[Vec3, Vec3], list[tuple[Vec3, Vec3, Vec3, Vec3]]] = {}
+
+    def vertex_key(vertex: Vec3) -> Vec3:
+        return tuple(round(value, 4) for value in vertex)  # type: ignore[return-value]
+
+    def edge_key(a: Vec3, b: Vec3) -> tuple[Vec3, Vec3]:
+        ak = vertex_key(a)
+        bk = vertex_key(b)
+        return (ak, bk) if ak <= bk else (bk, ak)
+
+    def add_edge(a: Vec3, b: Vec3, tri: Triangle, n: Vec3) -> None:
+        edges.setdefault(edge_key(a, b), []).append((a, b, tri[0], n))
+
+    for tri in mesh.triangles:
+        n = normal(*tri)
+        add_edge(tri[0], tri[1], tri, n)
+        add_edge(tri[1], tri[2], tri, n)
+        add_edge(tri[2], tri[0], tri, n)
+
+    height, width = zbuffer.shape
+    result: list[tuple[tuple[float, float], tuple[float, float]]] = []
+    for records in edges.values():
+        if len(records) == 1:
+            should_draw = True
+        elif len(records) == 2:
+            n0 = records[0][3]
+            n1 = records[1][3]
+            dot = sum(n0[i] * n1[i] for i in range(3))
+            should_draw = dot < crease_dot
+        else:
+            should_draw = False
+        if not should_draw:
+            continue
+
+        a, b = records[0][0], records[0][1]
+        midpoint = ((a[0] + b[0]) * 0.5, (a[1] + b[1]) * 0.5, (a[2] + b[2]) * 0.5)
+        sx, sy = screen(project(midpoint))
+        px = min(width - 1, max(0, int(round(sx))))
+        py = min(height - 1, max(0, int(round(sy))))
+        edge_depth = project(midpoint)[2] + depth_bias
+        if not math.isfinite(float(zbuffer[py, px])) or edge_depth < float(zbuffer[py, px]) - 1.8:
+            continue
+
+        result.append((screen(project(a)), screen(project(b))))
+    return result
+
+
 def render_scene(parts: list[RenderPart], out_path: Path, size: tuple[int, int] = (1600, 1000)) -> None:
     try:
         import numpy as np
-        from PIL import Image, ImageFilter
+        from PIL import Image, ImageDraw, ImageFilter
     except Exception as exc:  # pragma: no cover - optional release nicety
         print(f"Skipping renders; Pillow is unavailable: {exc}")
         return
@@ -249,10 +307,31 @@ def render_scene(parts: list[RenderPart], out_path: Path, size: tuple[int, int] 
     edge[1:, :] |= valid[1:, :] & ~valid[:-1, :]
     edge[:, :-1] |= valid[:, :-1] & ~valid[:, 1:]
     edge[:, 1:] |= valid[:, 1:] & ~valid[:, :-1]
-    image[edge] = (image[edge].astype(np.float32) * 0.78).astype(np.uint8)
+    image[edge] = (image[edge].astype(np.float32) * 0.83).astype(np.uint8)
+
+    model_mask = Image.fromarray((valid * 255).astype(np.uint8), mode="L")
+    shadow = Image.new("RGBA", size, (0, 0, 0, 0))
+    shadow_alpha = model_mask.filter(ImageFilter.GaussianBlur(12))
+    shadow_alpha = shadow_alpha.point(lambda value: int(value * 0.18))
+    shadow.paste((88, 62, 28, 255), (26, 24), shadow_alpha)
+
+    model_image = Image.fromarray(image).filter(ImageFilter.SMOOTH)
+    background = Image.new("RGB", size, (246, 240, 223))
+    ground = Image.new("RGB", size, (234, 217, 184))
+    background.paste(ground, (0, height - 165))
+    final = Image.alpha_composite(background.convert("RGBA"), shadow).convert("RGB")
+    final.paste(model_image, (0, 0), model_mask.filter(ImageFilter.MaxFilter(3)))
+
+    edge_overlay = Image.new("RGBA", size, (0, 0, 0, 0))
+    edge_draw = ImageDraw.Draw(edge_overlay)
+    for part_order, (mesh, _) in enumerate(parts):
+        depth_bias = part_order * 0.01
+        for start, end in visible_mesh_edges(mesh, screen, zbuffer, depth_bias):
+            edge_draw.line((start[0], start[1], end[0], end[1]), fill=(72, 52, 27, 118), width=1)
+    final = Image.alpha_composite(final.convert("RGBA"), edge_overlay).convert("RGB")
 
     out_path.parent.mkdir(parents=True, exist_ok=True)
-    Image.fromarray(image).filter(ImageFilter.SMOOTH).save(out_path)
+    final.save(out_path)
 
 
 def copy_tree(src: Path, dst: Path) -> None:
