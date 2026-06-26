@@ -73,7 +73,7 @@ The model is useful precisely because it is arguable. You can point to a ramp, l
 
 - GitHub repository: https://github.com/danieliser/giza-pyramid-kit
 - Maker-site release packet: `release/thingiverse/giza-pyramid-construction-theory-stl-kit-v0.1.0.zip`
-- Local animated demo: run `make serve` and open `http://localhost:8026/demo/`
+- Animated demo: https://danieliser.github.io/giza-pyramid-kit/demo/
 
 ## Next
 

@@ -75,7 +75,7 @@ The included Python generator can regenerate the full STL set with different bas
 ## Links
 
 - GitHub project: https://github.com/danieliser/giza-pyramid-kit
-- Animated demo: publish the GitHub Pages demo from the repo, or run `make serve` locally and open `/demo/`
+- Animated demo: https://danieliser.github.io/giza-pyramid-kit/demo/
 
 ## Tags
 

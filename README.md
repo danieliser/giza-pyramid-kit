@@ -25,6 +25,14 @@ The files are a conceptual geometry model, not an archaeological claim. The defa
 
 ## Quick Start
 
+Live demo:
+
+```text
+https://danieliser.github.io/giza-pyramid-kit/demo/
+```
+
+Local demo:
+
 ```bash
 make generate
 make validate
