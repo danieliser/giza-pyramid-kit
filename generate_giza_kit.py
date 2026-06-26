@@ -403,6 +403,15 @@ def add_square_frustum_solid(mesh: Mesh, z0: float, z1: float, half0: float, hal
         mesh.add_quad(bottom[i], bottom[(i + 1) % 4], top[(i + 1) % 4], top[i])
 
 
+def add_square_frustum_sides(mesh: Mesh, z0: float, z1: float, half0: float, half1: float) -> None:
+    if half0 <= 0 or half1 <= 0 or z1 <= z0:
+        return
+    bottom = square_corners(half0, z0)
+    top = square_corners(half1, z1)
+    for i in range(4):
+        mesh.add_quad(bottom[i], bottom[(i + 1) % 4], top[(i + 1) % 4], top[i])
+
+
 def add_square_frustum_shell(
     mesh: Mesh,
     z0: float,
@@ -461,6 +470,17 @@ def make_stepped_core(p: KitParams) -> Mesh:
     mesh = Mesh("inner_stepped_mound_core")
     for i in range(p.courses):
         add_stepped_core_course(mesh, p, i)
+    return mesh
+
+
+def make_display_stepped_core(p: KitParams) -> Mesh:
+    mesh = Mesh("display_inner_core_blended_to_capstone")
+    for i in range(p.courses - 1):
+        add_stepped_core_course(mesh, p, i)
+    z0 = course_z(p, p.courses - 1)
+    z1 = p.core_height_mm
+    half0 = core_half_at_fraction(p, (p.courses - 1) / p.courses)
+    add_square_frustum_sides(mesh, z0, z1, half0, p.capstone_base_half_mm)
     return mesh
 
 
@@ -1303,6 +1323,7 @@ def generate(p: KitParams) -> list[dict[str, object]]:
 
     manifest: list[dict[str, object]] = []
     core = make_stepped_core(p)
+    display_core = make_display_stepped_core(p)
     full_backfill = make_temporary_backfill(p)
     cut_backfill = make_cut_temporary_backfill(p)
     ramps_all, ramp_faces, ramp_segments = make_ramps(p)
@@ -1376,8 +1397,9 @@ def generate(p: KitParams) -> list[dict[str, object]]:
     mid_remaining_ramps, _, _ = make_ramps(p, max_z=mid_threshold)
     top_supported_ramps = combine("top_remaining_local_underfilled_ramps", [top_remaining_underfill, top_remaining_ramps])
     mid_supported_ramps = combine("mid_remaining_local_underfilled_ramps", [mid_remaining_underfill, mid_remaining_ramps])
-    upper_casing = [ring for i, ring in enumerate(display_casing_rings) if (i / p.casing_rings) >= 0.62]
-    mid_casing = [ring for i, ring in enumerate(display_casing_rings) if (i / p.casing_rings) >= 0.28]
+    staged_display_casing = display_casing_rings[:-1]
+    upper_casing = [ring for i, ring in enumerate(staged_display_casing) if (i / p.casing_rings) >= 0.62]
+    mid_casing = [ring for i, ring in enumerate(staged_display_casing) if (i / p.casing_rings) >= 0.28]
 
     stages = [
         (
@@ -1390,11 +1412,11 @@ def generate(p: KitParams) -> list[dict[str, object]]:
         ),
         (
             "stage_03_upper_ramps_removed_top_casing_added.stl",
-            combine("stage_03_top_down_deramping", [core, top_remaining_backfill, top_supported_ramps, capstone, *upper_casing]),
+            combine("stage_03_top_down_deramping", [display_core, top_remaining_backfill, top_supported_ramps, capstone, *upper_casing]),
         ),
         (
             "stage_04_lower_ramps_remaining_more_casing_added.stl",
-            combine("stage_04_more_casing", [core, mid_remaining_backfill, mid_supported_ramps, capstone, *mid_casing]),
+            combine("stage_04_more_casing", [display_core, mid_remaining_backfill, mid_supported_ramps, capstone, *mid_casing]),
         ),
         (
             "stage_05_finished_pyramid_core_casing_capstone.stl",
@@ -1419,7 +1441,7 @@ def generate(p: KitParams) -> list[dict[str, object]]:
         ),
         (
             "constructed_03_partial_top_down_deramping.stl",
-            combine("constructed_03_partial_top_down_deramping", [core, top_remaining_backfill, top_supported_ramps, capstone, *upper_casing]),
+            combine("constructed_03_partial_top_down_deramping", [display_core, top_remaining_backfill, top_supported_ramps, capstone, *upper_casing]),
         ),
         (
             "constructed_04_finished_pyramid.stl",
