@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Giza switchback STL demo</title>
+    <link rel="icon" href="data:," />
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <main id="app">
+      <section id="viewport" aria-label="Animated STL assembly viewer"></section>
+      <aside class="panel" aria-label="Timeline controls">
+        <div>
+          <p class="label">Giza construction sequence</p>
+          <h1 id="stage-title">Loading STL parts</h1>
+        </div>
+        <p id="stage-note" class="note">Preparing the assembly-coordinate meshes.</p>
+        <div class="controls">
+          <button id="play" type="button">Pause</button>
+          <button id="reset" type="button">Reset</button>
+          <label class="range-label" for="timeline">Timeline</label>
+          <input id="timeline" type="range" min="0" max="1000" value="0" />
+          <label class="range-label value-label" for="structure-opacity">
+            <span>Pyramid opacity</span>
+            <output id="structure-opacity-value" for="structure-opacity">100%</output>
+          </label>
+          <input id="structure-opacity" type="range" min="0" max="100" value="100" />
+          <label class="range-label value-label" for="chamber-opacity">
+            <span>Chamber opacity</span>
+            <output id="chamber-opacity-value" for="chamber-opacity">100%</output>
+          </label>
+          <input id="chamber-opacity" type="range" min="0" max="100" value="100" />
+        </div>
+        <div class="toggles" aria-label="Layer toggles">
+          <label><input id="toggle-core" type="checkbox" checked /> Inner mound</label>
+          <label><input id="toggle-mound" type="checkbox" checked /> Cut mound</label>
+          <label><input id="toggle-ramps" type="checkbox" checked /> Ramps</label>
+          <label><input id="toggle-casing" type="checkbox" checked /> Casing</label>
+          <label><input id="toggle-chambers" type="checkbox" checked /> Chambers</label>
+        </div>
+      </aside>
+      <div id="loading" role="status">Loading STL parts...</div>
+    </main>
+    <script type="importmap">
+      {
+        "imports": {
+          "three": "https://cdn.jsdelivr.net/npm/three@0.165.0/build/three.module.js",
+          "three/addons/": "https://cdn.jsdelivr.net/npm/three@0.165.0/examples/jsm/"
+        }
+      }
+    </script>
+    <script type="module" src="./app.js"></script>
+  </body>
+</html>

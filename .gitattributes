@@ -1,0 +1,3 @@
+*.stl binary
+dist/** linguist-generated=true
+dist/manifest.json linguist-generated=true

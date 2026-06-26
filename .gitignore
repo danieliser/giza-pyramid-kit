@@ -1,0 +1,17 @@
+__pycache__/
+*.py[cod]
+*$py.class
+
+.DS_Store
+.playwright-cli/
+
+.env
+.env.*
+*.log
+
+# Local slicer/project exports.
+*.3mf
+*.gcode
+*.gx
+
+# Keep generated STL outputs in dist/ for GitHub releases/downloads.

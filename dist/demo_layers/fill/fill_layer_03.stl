@@ -1,0 +1,86 @@
+solid temporary_cut_stepped_mound_layer_03
+  facet normal 0 0 -1
+    outer loop
+      vertex -100.6024 100.6024 11.85
+      vertex 100.6024 100.6024 11.85
+      vertex 100.6024 -100.6024 11.85
+    endloop
+  endfacet
+  facet normal 0 0 -1
+    outer loop
+      vertex -100.6024 100.6024 11.85
+      vertex 100.6024 -100.6024 11.85
+      vertex -100.6024 -100.6024 11.85
+    endloop
+  endfacet
+  facet normal 0 0 1
+    outer loop
+      vertex -100.6024 -100.6024 17.775
+      vertex 100.6024 -100.6024 17.775
+      vertex 100.6024 100.6024 17.775
+    endloop
+  endfacet
+  facet normal 0 0 1
+    outer loop
+      vertex -100.6024 -100.6024 17.775
+      vertex 100.6024 100.6024 17.775
+      vertex -100.6024 100.6024 17.775
+    endloop
+  endfacet
+  facet normal 0 -1 0
+    outer loop
+      vertex -100.6024 -100.6024 11.85
+      vertex 100.6024 -100.6024 11.85
+      vertex 100.6024 -100.6024 17.775
+    endloop
+  endfacet
+  facet normal 0 -1 0
+    outer loop
+      vertex -100.6024 -100.6024 11.85
+      vertex 100.6024 -100.6024 17.775
+      vertex -100.6024 -100.6024 17.775
+    endloop
+  endfacet
+  facet normal 1 0 0
+    outer loop
+      vertex 100.6024 -100.6024 11.85
+      vertex 100.6024 100.6024 11.85
+      vertex 100.6024 100.6024 17.775
+    endloop
+  endfacet
+  facet normal 1 0 0
+    outer loop
+      vertex 100.6024 -100.6024 11.85
+      vertex 100.6024 100.6024 17.775
+      vertex 100.6024 -100.6024 17.775
+    endloop
+  endfacet
+  facet normal 0 1 0
+    outer loop
+      vertex 100.6024 100.6024 11.85
+      vertex -100.6024 100.6024 11.85
+      vertex -100.6024 100.6024 17.775
+    endloop
+  endfacet
+  facet normal 0 1 -0
+    outer loop
+      vertex 100.6024 100.6024 11.85
+      vertex -100.6024 100.6024 17.775
+      vertex 100.6024 100.6024 17.775
+    endloop
+  endfacet
+  facet normal -1 0 0
+    outer loop
+      vertex -100.6024 100.6024 11.85
+      vertex -100.6024 -100.6024 11.85
+      vertex -100.6024 -100.6024 17.775
+    endloop
+  endfacet
+  facet normal -1 0 0
+    outer loop
+      vertex -100.6024 100.6024 11.85
+      vertex -100.6024 -100.6024 17.775
+      vertex -100.6024 100.6024 17.775
+    endloop
+  endfacet
+endsolid temporary_cut_stepped_mound_layer_03

@@ -1,0 +1,114 @@
+solid inner_stepped_mound_layer_15
+  facet normal 0 -1 0
+    outer loop
+      vertex -9.484283 -9.484283 82.95
+      vertex 9.484283 -9.484283 82.95
+      vertex 9.484283 -9.484283 88.875
+    endloop
+  endfacet
+  facet normal 0 -1 0
+    outer loop
+      vertex -9.484283 -9.484283 82.95
+      vertex 9.484283 -9.484283 88.875
+      vertex -9.484283 -9.484283 88.875
+    endloop
+  endfacet
+  facet normal 1 0 0
+    outer loop
+      vertex 9.484283 -9.484283 82.95
+      vertex 9.484283 9.484283 82.95
+      vertex 9.484283 9.484283 88.875
+    endloop
+  endfacet
+  facet normal 1 0 0
+    outer loop
+      vertex 9.484283 -9.484283 82.95
+      vertex 9.484283 9.484283 88.875
+      vertex 9.484283 -9.484283 88.875
+    endloop
+  endfacet
+  facet normal 0 1 0
+    outer loop
+      vertex 9.484283 9.484283 82.95
+      vertex -9.484283 9.484283 82.95
+      vertex -9.484283 9.484283 88.875
+    endloop
+  endfacet
+  facet normal 0 1 -0
+    outer loop
+      vertex 9.484283 9.484283 82.95
+      vertex -9.484283 9.484283 88.875
+      vertex 9.484283 9.484283 88.875
+    endloop
+  endfacet
+  facet normal -1 0 0
+    outer loop
+      vertex -9.484283 9.484283 82.95
+      vertex -9.484283 -9.484283 82.95
+      vertex -9.484283 -9.484283 88.875
+    endloop
+  endfacet
+  facet normal -1 0 0
+    outer loop
+      vertex -9.484283 9.484283 82.95
+      vertex -9.484283 -9.484283 88.875
+      vertex -9.484283 9.484283 88.875
+    endloop
+  endfacet
+  facet normal 0 0 1
+    outer loop
+      vertex -9.484283 -9.484283 88.875
+      vertex 9.484283 -9.484283 88.875
+      vertex 9.484283 -6.447446 88.875
+    endloop
+  endfacet
+  facet normal 0 0 1
+    outer loop
+      vertex -9.484283 -9.484283 88.875
+      vertex 9.484283 -6.447446 88.875
+      vertex -9.484283 -6.447446 88.875
+    endloop
+  endfacet
+  facet normal 0 0 1
+    outer loop
+      vertex 6.447446 -6.447446 88.875
+      vertex 9.484283 -6.447446 88.875
+      vertex 9.484283 6.447446 88.875
+    endloop
+  endfacet
+  facet normal 0 0 1
+    outer loop
+      vertex 6.447446 -6.447446 88.875
+      vertex 9.484283 6.447446 88.875
+      vertex 6.447446 6.447446 88.875
+    endloop
+  endfacet
+  facet normal 0 0 1
+    outer loop
+      vertex -9.484283 6.447446 88.875
+      vertex 9.484283 6.447446 88.875
+      vertex 9.484283 9.484283 88.875
+    endloop
+  endfacet
+  facet normal 0 0 1
+    outer loop
+      vertex -9.484283 6.447446 88.875
+      vertex 9.484283 9.484283 88.875
+      vertex -9.484283 9.484283 88.875
+    endloop
+  endfacet
+  facet normal 0 0 1
+    outer loop
+      vertex -9.484283 -6.447446 88.875
+      vertex -6.447446 -6.447446 88.875
+      vertex -6.447446 6.447446 88.875
+    endloop
+  endfacet
+  facet normal 0 0 1
+    outer loop
+      vertex -9.484283 -6.447446 88.875
+      vertex -6.447446 6.447446 88.875
+      vertex -9.484283 6.447446 88.875
+    endloop
+  endfacet
+endsolid inner_stepped_mound_layer_15

@@ -1,0 +1,142 @@
+solid ramp_corner_nw_level_06
+  facet normal 0 0 1
+    outer loop
+      vertex 2 13.7 8.725
+      vertex 2 2 8.725
+      vertex 20 2 8.725
+    endloop
+  endfacet
+  facet normal 0 0 -1
+    outer loop
+      vertex 20 2 0
+      vertex 2 2 0
+      vertex 2 13.7 0
+    endloop
+  endfacet
+  facet normal 0 -0 1
+    outer loop
+      vertex 20 2 8.725
+      vertex 20 20 8.725
+      vertex 8.3 20 8.725
+    endloop
+  endfacet
+  facet normal 0 0 -1
+    outer loop
+      vertex 8.3 20 0
+      vertex 20 20 0
+      vertex 20 2 0
+    endloop
+  endfacet
+  facet normal 0 0 1
+    outer loop
+      vertex 20 2 8.725
+      vertex 8.3 20 8.725
+      vertex 8.3 13.7 8.725
+    endloop
+  endfacet
+  facet normal 0 0 -1
+    outer loop
+      vertex 8.3 13.7 0
+      vertex 8.3 20 0
+      vertex 20 2 0
+    endloop
+  endfacet
+  facet normal 0 0 1
+    outer loop
+      vertex 20 2 8.725
+      vertex 8.3 13.7 8.725
+      vertex 2 13.7 8.725
+    endloop
+  endfacet
+  facet normal 0 0 -1
+    outer loop
+      vertex 2 13.7 0
+      vertex 8.3 13.7 0
+      vertex 20 2 0
+    endloop
+  endfacet
+  facet normal 0 -1 0
+    outer loop
+      vertex 2 2 0
+      vertex 20 2 0
+      vertex 20 2 8.725
+    endloop
+  endfacet
+  facet normal 0 -1 0
+    outer loop
+      vertex 2 2 0
+      vertex 20 2 8.725
+      vertex 2 2 8.725
+    endloop
+  endfacet
+  facet normal 1 0 0
+    outer loop
+      vertex 20 2 0
+      vertex 20 20 0
+      vertex 20 20 8.725
+    endloop
+  endfacet
+  facet normal 1 0 0
+    outer loop
+      vertex 20 2 0
+      vertex 20 20 8.725
+      vertex 20 2 8.725
+    endloop
+  endfacet
+  facet normal 0 1 0
+    outer loop
+      vertex 20 20 0
+      vertex 8.3 20 0
+      vertex 8.3 20 8.725
+    endloop
+  endfacet
+  facet normal 0 1 -0
+    outer loop
+      vertex 20 20 0
+      vertex 8.3 20 8.725
+      vertex 20 20 8.725
+    endloop
+  endfacet
+  facet normal -1 0 0
+    outer loop
+      vertex 8.3 20 0
+      vertex 8.3 13.7 0
+      vertex 8.3 13.7 8.725
+    endloop
+  endfacet
+  facet normal -1 0 0
+    outer loop
+      vertex 8.3 20 0
+      vertex 8.3 13.7 8.725
+      vertex 8.3 20 8.725
+    endloop
+  endfacet
+  facet normal 0 1 0
+    outer loop
+      vertex 8.3 13.7 0
+      vertex 2 13.7 0
+      vertex 2 13.7 8.725
+    endloop
+  endfacet
+  facet normal 0 1 -0
+    outer loop
+      vertex 8.3 13.7 0
+      vertex 2 13.7 8.725
+      vertex 8.3 13.7 8.725
+    endloop
+  endfacet
+  facet normal -1 0 0
+    outer loop
+      vertex 2 13.7 0
+      vertex 2 2 0
+      vertex 2 2 8.725
+    endloop
+  endfacet
+  facet normal -1 0 0
+    outer loop
+      vertex 2 13.7 0
+      vertex 2 2 8.725
+      vertex 2 13.7 8.725
+    endloop
+  endfacet
+endsolid ramp_corner_nw_level_06

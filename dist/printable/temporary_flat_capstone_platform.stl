@@ -1,0 +1,86 @@
+solid temporary_flat_capstone_platform
+  facet normal 0 0 -1
+    outer loop
+      vertex 2 90.75619 0
+      vertex 90.75619 90.75619 0
+      vertex 90.75619 2 0
+    endloop
+  endfacet
+  facet normal 0 0 -1
+    outer loop
+      vertex 2 90.75619 0
+      vertex 90.75619 2 0
+      vertex 2 2 0
+    endloop
+  endfacet
+  facet normal 0 0 1
+    outer loop
+      vertex 2 2 0.9
+      vertex 90.75619 2 0.9
+      vertex 90.75619 90.75619 0.9
+    endloop
+  endfacet
+  facet normal 0 0 1
+    outer loop
+      vertex 2 2 0.9
+      vertex 90.75619 90.75619 0.9
+      vertex 2 90.75619 0.9
+    endloop
+  endfacet
+  facet normal 0 -1 0
+    outer loop
+      vertex 2 2 0
+      vertex 90.75619 2 0
+      vertex 90.75619 2 0.9
+    endloop
+  endfacet
+  facet normal 0 -1 0
+    outer loop
+      vertex 2 2 0
+      vertex 90.75619 2 0.9
+      vertex 2 2 0.9
+    endloop
+  endfacet
+  facet normal 1 0 0
+    outer loop
+      vertex 90.75619 2 0
+      vertex 90.75619 90.75619 0
+      vertex 90.75619 90.75619 0.9
+    endloop
+  endfacet
+  facet normal 1 0 0
+    outer loop
+      vertex 90.75619 2 0
+      vertex 90.75619 90.75619 0.9
+      vertex 90.75619 2 0.9
+    endloop
+  endfacet
+  facet normal 0 1 0
+    outer loop
+      vertex 90.75619 90.75619 0
+      vertex 2 90.75619 0
+      vertex 2 90.75619 0.9
+    endloop
+  endfacet
+  facet normal 0 1 -0
+    outer loop
+      vertex 90.75619 90.75619 0
+      vertex 2 90.75619 0.9
+      vertex 90.75619 90.75619 0.9
+    endloop
+  endfacet
+  facet normal -1 0 0
+    outer loop
+      vertex 2 90.75619 0
+      vertex 2 2 0
+      vertex 2 2 0.9
+    endloop
+  endfacet
+  facet normal -1 0 0
+    outer loop
+      vertex 2 90.75619 0
+      vertex 2 2 0.9
+      vertex 2 90.75619 0.9
+    endloop
+  endfacet
+endsolid temporary_flat_capstone_platform

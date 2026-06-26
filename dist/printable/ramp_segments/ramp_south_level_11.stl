@@ -1,0 +1,142 @@
+solid ramp_face_3_level_11
+  facet normal -0 0 -1
+    outer loop
+      vertex 138.0181 20 0
+      vertex 36.00452 2 0
+      vertex 36.00452 20 0
+    endloop
+  endfacet
+  facet normal 0 -0 -1
+    outer loop
+      vertex 138.0181 20 0
+      vertex 138.0181 2 0
+      vertex 36.00452 2 0
+    endloop
+  endfacet
+  facet normal -0 0 -1
+    outer loop
+      vertex 36.00452 20 0
+      vertex 2 2 0
+      vertex 2 20 0
+    endloop
+  endfacet
+  facet normal 0 -0 -1
+    outer loop
+      vertex 36.00452 20 0
+      vertex 36.00452 2 0
+      vertex 2 2 0
+    endloop
+  endfacet
+  facet normal 0.0579828 0 0.9983176
+    outer loop
+      vertex 138.0181 20 2.8
+      vertex 36.00452 20 8.725
+      vertex 36.00452 2 8.725
+    endloop
+  endfacet
+  facet normal 0.0579828 0 0.9983176
+    outer loop
+      vertex 138.0181 20 2.8
+      vertex 36.00452 2 8.725
+      vertex 138.0181 2 2.8
+    endloop
+  endfacet
+  facet normal 0 0 1
+    outer loop
+      vertex 36.00452 20 8.725
+      vertex 2 20 8.725
+      vertex 2 2 8.725
+    endloop
+  endfacet
+  facet normal 0 0 1
+    outer loop
+      vertex 36.00452 20 8.725
+      vertex 2 2 8.725
+      vertex 36.00452 2 8.725
+    endloop
+  endfacet
+  facet normal 0 1 0
+    outer loop
+      vertex 138.0181 20 0
+      vertex 36.00452 20 0
+      vertex 36.00452 20 8.725
+    endloop
+  endfacet
+  facet normal 0 1 -0
+    outer loop
+      vertex 138.0181 20 0
+      vertex 36.00452 20 8.725
+      vertex 138.0181 20 2.8
+    endloop
+  endfacet
+  facet normal 0 1 0
+    outer loop
+      vertex 36.00452 20 0
+      vertex 2 20 0
+      vertex 2 20 8.725
+    endloop
+  endfacet
+  facet normal 0 1 -0
+    outer loop
+      vertex 36.00452 20 0
+      vertex 2 20 8.725
+      vertex 36.00452 20 8.725
+    endloop
+  endfacet
+  facet normal 0 -1 0
+    outer loop
+      vertex 138.0181 2 0
+      vertex 36.00452 2 8.725
+      vertex 36.00452 2 0
+    endloop
+  endfacet
+  facet normal 0 -1 0
+    outer loop
+      vertex 138.0181 2 0
+      vertex 138.0181 2 2.8
+      vertex 36.00452 2 8.725
+    endloop
+  endfacet
+  facet normal 0 -1 0
+    outer loop
+      vertex 36.00452 2 0
+      vertex 2 2 8.725
+      vertex 2 2 0
+    endloop
+  endfacet
+  facet normal 0 -1 0
+    outer loop
+      vertex 36.00452 2 0
+      vertex 36.00452 2 8.725
+      vertex 2 2 8.725
+    endloop
+  endfacet
+  facet normal 1 0 0
+    outer loop
+      vertex 138.0181 2 0
+      vertex 138.0181 20 0
+      vertex 138.0181 20 2.8
+    endloop
+  endfacet
+  facet normal 1 0 0
+    outer loop
+      vertex 138.0181 2 0
+      vertex 138.0181 20 2.8
+      vertex 138.0181 2 2.8
+    endloop
+  endfacet
+  facet normal -1 0 0
+    outer loop
+      vertex 2 20 0
+      vertex 2 2 0
+      vertex 2 2 8.725
+    endloop
+  endfacet
+  facet normal -1 0 0
+    outer loop
+      vertex 2 20 0
+      vertex 2 2 8.725
+      vertex 2 20 8.725
+    endloop
+  endfacet
+endsolid ramp_face_3_level_11

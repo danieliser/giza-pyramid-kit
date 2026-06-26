@@ -1,0 +1,114 @@
+solid inner_stepped_mound_layer_12
+  facet normal 0 -1 0
+    outer loop
+      vertex -18.59479 -18.59479 65.175
+      vertex 18.59479 -18.59479 65.175
+      vertex 18.59479 -18.59479 71.1
+    endloop
+  endfacet
+  facet normal 0 -1 0
+    outer loop
+      vertex -18.59479 -18.59479 65.175
+      vertex 18.59479 -18.59479 71.1
+      vertex -18.59479 -18.59479 71.1
+    endloop
+  endfacet
+  facet normal 1 0 0
+    outer loop
+      vertex 18.59479 -18.59479 65.175
+      vertex 18.59479 18.59479 65.175
+      vertex 18.59479 18.59479 71.1
+    endloop
+  endfacet
+  facet normal 1 0 0
+    outer loop
+      vertex 18.59479 -18.59479 65.175
+      vertex 18.59479 18.59479 71.1
+      vertex 18.59479 -18.59479 71.1
+    endloop
+  endfacet
+  facet normal 0 1 0
+    outer loop
+      vertex 18.59479 18.59479 65.175
+      vertex -18.59479 18.59479 65.175
+      vertex -18.59479 18.59479 71.1
+    endloop
+  endfacet
+  facet normal 0 1 -0
+    outer loop
+      vertex 18.59479 18.59479 65.175
+      vertex -18.59479 18.59479 71.1
+      vertex 18.59479 18.59479 71.1
+    endloop
+  endfacet
+  facet normal -1 0 0
+    outer loop
+      vertex -18.59479 18.59479 65.175
+      vertex -18.59479 -18.59479 65.175
+      vertex -18.59479 -18.59479 71.1
+    endloop
+  endfacet
+  facet normal -1 0 0
+    outer loop
+      vertex -18.59479 18.59479 65.175
+      vertex -18.59479 -18.59479 71.1
+      vertex -18.59479 18.59479 71.1
+    endloop
+  endfacet
+  facet normal 0 0 1
+    outer loop
+      vertex -18.59479 -18.59479 71.1
+      vertex 18.59479 -18.59479 71.1
+      vertex 18.59479 -15.55796 71.1
+    endloop
+  endfacet
+  facet normal 0 0 1
+    outer loop
+      vertex -18.59479 -18.59479 71.1
+      vertex 18.59479 -15.55796 71.1
+      vertex -18.59479 -15.55796 71.1
+    endloop
+  endfacet
+  facet normal 0 0 1
+    outer loop
+      vertex 15.55796 -15.55796 71.1
+      vertex 18.59479 -15.55796 71.1
+      vertex 18.59479 15.55796 71.1
+    endloop
+  endfacet
+  facet normal 0 0 1
+    outer loop
+      vertex 15.55796 -15.55796 71.1
+      vertex 18.59479 15.55796 71.1
+      vertex 15.55796 15.55796 71.1
+    endloop
+  endfacet
+  facet normal 0 0 1
+    outer loop
+      vertex -18.59479 15.55796 71.1
+      vertex 18.59479 15.55796 71.1
+      vertex 18.59479 18.59479 71.1
+    endloop
+  endfacet
+  facet normal 0 0 1
+    outer loop
+      vertex -18.59479 15.55796 71.1
+      vertex 18.59479 18.59479 71.1
+      vertex -18.59479 18.59479 71.1
+    endloop
+  endfacet
+  facet normal 0 0 1
+    outer loop
+      vertex -18.59479 -15.55796 71.1
+      vertex -15.55796 -15.55796 71.1
+      vertex -15.55796 15.55796 71.1
+    endloop
+  endfacet
+  facet normal 0 0 1
+    outer loop
+      vertex -18.59479 -15.55796 71.1
+      vertex -15.55796 15.55796 71.1
+      vertex -18.59479 15.55796 71.1
+    endloop
+  endfacet
+endsolid inner_stepped_mound_layer_12

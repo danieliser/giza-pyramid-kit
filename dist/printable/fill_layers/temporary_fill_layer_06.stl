@@ -1,0 +1,86 @@
+solid temporary_cut_stepped_mound_layer_06
+  facet normal 0 0 -1
+    outer loop
+      vertex 2 175.2676 0
+      vertex 175.2676 175.2676 0
+      vertex 175.2676 2 0
+    endloop
+  endfacet
+  facet normal 0 0 -1
+    outer loop
+      vertex 2 175.2676 0
+      vertex 175.2676 2 0
+      vertex 2 2 0
+    endloop
+  endfacet
+  facet normal 0 0 1
+    outer loop
+      vertex 2 2 5.925
+      vertex 175.2676 2 5.925
+      vertex 175.2676 175.2676 5.925
+    endloop
+  endfacet
+  facet normal 0 0 1
+    outer loop
+      vertex 2 2 5.925
+      vertex 175.2676 175.2676 5.925
+      vertex 2 175.2676 5.925
+    endloop
+  endfacet
+  facet normal 0 -1 0
+    outer loop
+      vertex 2 2 0
+      vertex 175.2676 2 0
+      vertex 175.2676 2 5.925
+    endloop
+  endfacet
+  facet normal 0 -1 0
+    outer loop
+      vertex 2 2 0
+      vertex 175.2676 2 5.925
+      vertex 2 2 5.925
+    endloop
+  endfacet
+  facet normal 1 0 0
+    outer loop
+      vertex 175.2676 2 0
+      vertex 175.2676 175.2676 0
+      vertex 175.2676 175.2676 5.925
+    endloop
+  endfacet
+  facet normal 1 0 0
+    outer loop
+      vertex 175.2676 2 0
+      vertex 175.2676 175.2676 5.925
+      vertex 175.2676 2 5.925
+    endloop
+  endfacet
+  facet normal 0 1 0
+    outer loop
+      vertex 175.2676 175.2676 0
+      vertex 2 175.2676 0
+      vertex 2 175.2676 5.925
+    endloop
+  endfacet
+  facet normal 0 1 -0
+    outer loop
+      vertex 175.2676 175.2676 0
+      vertex 2 175.2676 5.925
+      vertex 175.2676 175.2676 5.925
+    endloop
+  endfacet
+  facet normal -1 0 0
+    outer loop
+      vertex 2 175.2676 0
+      vertex 2 2 0
+      vertex 2 2 5.925
+    endloop
+  endfacet
+  facet normal -1 0 0
+    outer loop
+      vertex 2 175.2676 0
+      vertex 2 2 5.925
+      vertex 2 175.2676 5.925
+    endloop
+  endfacet
+endsolid temporary_cut_stepped_mound_layer_06
