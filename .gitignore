@@ -15,3 +15,7 @@ __pycache__/
 *.gx
 
 # Keep generated STL outputs in dist/ for GitHub releases/downloads.
+
+# Maker-site release bundles are reproducible via `make release`.
+release/thingiverse/upload_bundle/
+release/thingiverse/*.zip

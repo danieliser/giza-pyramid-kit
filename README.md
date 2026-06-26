@@ -33,8 +33,9 @@ No Python package install is required; the generator uses only the Python standa
 - `demo/` contains the static animated viewer.
 - `dist/` contains generated printable STLs, demo STLs, constructed states, and the manifest. It is intentionally included for GitHub downloads.
 - `docs/PRINTING.md` has scale and printer notes, including Flashforge Adventurer 4 Pro guidance.
-- `docs/PUBLISHING.md` has the GitHub publishing checklist.
-- `docs/BLOG_POST_DRAFT.md` is a draft article for danieliser.com.
+- `docs/PUBLISHING.md` has the GitHub and maker-site publishing checklist.
+- `docs/BLOG_POST_DRAFT.md` is a ready-draft article for danieliser.com.
+- `release/thingiverse/` contains maker-site listing copy, upload checklist, generated preview renders, and the upload bundle.
 
 ## Source Theory Notes
 
@@ -185,6 +186,16 @@ python3 validate_geometry.py
 
 It checks that single-switchback ramps, notched corner landings, cut mound, and local underfill have positive geometry with upward sloped walking faces.
 
+## Maker-Site Release
+
+Build the Thingiverse/Printables-style upload packet with:
+
+```bash
+make release
+```
+
+This creates preview renders, a curated upload folder, and `release/thingiverse/giza-pyramid-construction-theory-stl-kit-v0.1.0.zip`.
+
 ## License
 
-No open-source license has been selected yet. Choose a license before encouraging reuse or contributions on a public GitHub repository.
+No final open-source or model-sharing license has been selected yet. The maker-site release notes recommend Creative Commons Attribution-NonCommercial-ShareAlike 4.0 as a starting point, but the final license should be selected deliberately before publishing.

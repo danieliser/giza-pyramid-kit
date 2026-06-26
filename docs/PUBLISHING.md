@@ -62,3 +62,29 @@ git push -u origin main
 The browser demo is static. Once pushed, GitHub Pages can serve the repository root or a Pages branch, and the demo can be opened at `/demo/` after the generated `dist/` files are present.
 
 Because `dist/` contains the downloadable STL kit, it is intentionally kept in version control. `.gitattributes` marks STL files as binary/generated to avoid noisy diffs.
+
+## Maker-Site Release
+
+Use this for Thingiverse, Printables, MakerWorld, or similar STL hosts:
+
+```bash
+make release
+```
+
+The release target regenerates and validates the STL set, creates simple PNG renders, builds a curated upload folder, and writes:
+
+```text
+release/thingiverse/giza-pyramid-construction-theory-stl-kit-v0.1.0.zip
+```
+
+The maker-site copy lives in:
+
+```text
+release/thingiverse/LISTING.md
+release/thingiverse/UPLOAD_CHECKLIST.md
+release/thingiverse/LICENSE_NOTE.md
+```
+
+The bundle intentionally does not silently assign a final public license. Select the license in the platform upload UI before publishing. The recommended starting point for this educational kit is `Creative Commons Attribution-NonCommercial-ShareAlike 4.0`.
+
+Replace the generated preview renders with real print photos when a physical test print is available.
