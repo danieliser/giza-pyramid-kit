@@ -1,0 +1,15 @@
+{
+  "version": "1.0",
+  "type": "rich",
+  "provider_name": "Giza Pyramid Kit",
+  "provider_url": "https://github.com/danieliser/giza-pyramid-kit",
+  "title": "Giza Pyramid Construction Theory STL Demo",
+  "author_name": "Daniel Iser",
+  "author_url": "https://github.com/danieliser",
+  "thumbnail_url": "https://danieliser.github.io/giza-pyramid-kit/release/thingiverse/images/capstone_before_deramping.png",
+  "thumbnail_width": 1600,
+  "thumbnail_height": 1000,
+  "width": 1200,
+  "height": 750,
+  "html": "<a href=\"https://danieliser.github.io/giza-pyramid-kit/demo/\">Open the animated Giza Pyramid Construction Theory STL demo</a>"
+}
