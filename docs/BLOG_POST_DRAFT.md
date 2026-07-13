@@ -1,80 +1,234 @@
 ---
-title: "A Printable Giza Construction Theory"
+title: "Printing a Pyramid Theory: A Buildable Giza Construction Model"
 slug: "printable-giza-construction-theory"
-date: 2026-06-26
+date: 2026-07-13
 status: ready-draft
-excerpt: "A parametric STL kit and browser demo for exploring a top-down pyramid construction hypothesis with ramps, layers, capstone placement, casing stones, chambers, and reusable temporary material."
+excerpt: "A story about turning a speculative top-down pyramid construction idea into a printable STL kit, a browser animation, and a physical way to argue with the geometry."
 tags:
   - 3d-printing
   - geometry
   - pyramids
   - experiments
   - stl
-hero_image: "/images/giza-pyramid-kit/cover_full_ramp_system.png"
+hero_image: "https://danieliser.github.io/giza-pyramid-kit/release/thingiverse/images/capstone_before_deramping.png"
+canonical_url: "https://danieliser.com/printable-giza-construction-theory"
 ---
 
-# A Printable Giza Construction Theory
+# Printing a Pyramid Theory
 
-I wanted a physical model of a pyramid construction theory that is easier to understand with your hands than with a diagram.
+Some ideas are hard to judge while they are trapped in words.
 
-The theory I modeled is not the familiar spiral-ramp story. This version is closer to the Huni Choi / DamiLee top-down idea: first build an oversized stepped working mass with switchback ramps and a broad flat platform at the top, place a small capstone, then remove the temporary material from the top down while adding the final casing stones. The removed material becomes stock for the next pyramid and surrounding works.
+The pyramids are especially like that. Say "ramp" and everyone nods, but which ramp? A straight ramp so huge it becomes its own engineering problem? A spiral ramp wrapping the monument and hiding the corners that need alignment? Internal corridors? Levers? A work platform? Temporary mass? Reused stone?
 
-That is a wonderfully physical idea. It is about mass, sequence, access, sight lines, and reuse. A static pyramid does not show much of that. So I turned the construction sequence into a parametric STL kit.
+Most explanations of the Great Pyramid collapse into a diagram too quickly. The diagram tells you what the theory wants to be true. It does not always tell you whether the geometry can breathe.
 
-## What The Model Shows
+So I built a printable version of one of the stranger recent ideas: a Giza pyramid construction theory where the pyramid is first overbuilt as a stepped working mass, the capstone is placed on a broad flat platform, and then the temporary ramps and fill are removed from the top down while the final casing is installed.
 
-The kit breaks the construction sequence into printable and viewable stages:
+<figure>
+  <img
+    src="https://danieliser.github.io/giza-pyramid-kit/release/thingiverse/images/capstone_before_deramping.png"
+    alt="A rendered capstone set on a broad temporary platform before top-down deramping."
+  />
+  <figcaption>The moment that made the idea click for me: the capstone is already set, but the pyramid is still inside a temporary construction machine.</figcaption>
+</figure>
 
+## The Idea That Sent Me Down The Ramp
+
+The model in this repo follows the broad shape of the Huni Choi / DamiLee version of the top-down theory. It is **not** the familiar spiral ramp theory, and it is not the integrated-edge-ramp theory I initially confused it with.
+
+The public trail I found looks roughly like this:
+
+- Huni Choi has a public project page for the theory: [Huni Choi Pyramid](https://www.facebook.com/HuniChoiPyramid/).
+- EgyptToday covered Choi's book in 2022: [Korean researcher publishes book on miracle of Great Pyramid of Giza](https://www.egypttoday.com/Article/4/116959/Korean-researcher-publishes-book-on-miracle-of-Great-Pyramid-of).
+- DamiLee popularized the idea in the video [This New Pyramid Theory Explains the Missing Evidence](https://www.youtube.com/watch?v=h5kWDOuY2Uo).
+- There is a useful skeptical discussion on r/egyptology: [Opinions on Huni Choi](https://www.reddit.com/r/egyptology/comments/1qukphc/opinions_on_huni_choi/).
+- OpenCulture wrote a short summary: [Were the Egyptian Pyramids Not Built Up, But Carved Down?](https://www.openculture.com/2026/02/were-the-egyptian-pyramids-not-built-up-but-carved-down.html).
+- A secondary written summary of the DamiLee video captures the recycling claim and mass-number framing: [This New Pyramid Theory Explains the Missing Evidence](https://wealthness42.substack.com/p/this-new-pyramid-theory-explains).
+
+The claim, as I understand it, is wonderfully physical:
+
+1. First, the builders create an oversized stepped mass, not the finished pyramid.
+2. Around that mass, they build a single-switchback ramp system with broad landings.
+3. The top becomes a flat work deck large enough to place the pyramidion/capstone early.
+4. Once the capstone is set and aligned, the temporary ramp/fill structure is dismantled downward.
+5. As each course clears, casing stones are placed and aligned.
+6. The removed material is not waste; it becomes feedstock for later pyramids, foundations, and the surrounding Giza works.
+
+That last point is the hook. It turns the plateau into a material flow problem, not just a monument problem.
+
+I am not presenting this as archaeological proof. I am treating it as a geometry prompt: if the idea were true, what would the construction machine have to look like?
+
+## Watch The Model Build And Unbuild Itself
+
+The repo includes a live Three.js demo that loops through the sequence: below-grade chamber, stepped inner mound, temporary fill, switchback ramps, capstone, top-down deramping, casing, and reuse pile.
+
+<div style="position: relative; width: 100%; aspect-ratio: 16 / 9; border: 1px solid rgba(0,0,0,0.14); border-radius: 8px; overflow: hidden; background: #f6f2e8;">
+  <iframe
+    src="https://danieliser.github.io/giza-pyramid-kit/demo/"
+    title="Animated Giza pyramid construction theory STL demo"
+    loading="lazy"
+    allowfullscreen
+    style="position: absolute; inset: 0; width: 100%; height: 100%; border: 0;"
+  ></iframe>
+</div>
+
+<p><a href="https://danieliser.github.io/giza-pyramid-kit/demo/">Open the looping demo in a new tab</a>.</p>
+
+The animation matters because the theory is temporal. A still image shows a strange stepped pyramid with ramps. The loop shows the real question: can the build state become the finished state without asking invisible scaffolding to do all the work?
+
+## Turning A Theory Into Parts
+
+The first version was too diagrammatic. Ramps were thin. Corners did not meet cleanly. Some ramp faces wound inside-out. There were visible air gaps between ramp levels that could not exist in a real construction mass.
+
+That was the point where the project stopped being "make a cool model" and became "make the theory answer to geometry."
+
+The current generator produces:
+
+- an inner stepped mound/core
 - a below-grade chamber cut
-- layer-by-layer stepped inner mound pieces
+- sliced chamber references that appear course by course
 - temporary fill layers
-- single-switchback ramp layers
-- notched corner landings for sight-line alignment
-- a broad top work platform
-- a small capstone/pyramidion
-- removable casing rings added from the top downward
-- optional chamber reference inserts
-- optional stockpile pieces representing reused temporary material
-
-There is also a browser demo that animates the same idea: build the working mass upward course by course, set the capstone, dismantle the temporary ramp/fill system from the top down, add casing as the ramps come off, and grow a reuse pile as material is removed.
-
-## Why Print It
-
-The useful thing about a printed model is that it makes constraints visible.
-
-If ramps are too thin, they stop feeling like construction paths. If landings do not connect, the theory stops reading as a build system. If the top platform is too small, the capstone stage feels wrong. If chamber references float through everything, the model becomes a diagram instead of a plausible sequence.
-
-Iterating on the STL forced those questions into geometry. The ramps had to become solid. The gaps between ramp levels had to be backfilled. The chambers had to be sliced by construction course. The model needed both assembled states and separate pieces, because the whole point is to build it up and then take it down.
-
-## What Is In The Kit
-
-The GitHub project includes:
-
-- a dependency-free Python STL generator
-- printable STL outputs
+- single-switchback ramp layers on all four sides
+- notched corner landings
+- a broad temporary top platform
+- a small pyramidion/capstone
+- removable casing rings
 - constructed-state STL snapshots
-- modular ramp and layer pieces
-- chamber reference pieces
-- a static Three.js demo
-- geometry validation checks
-- a maker-site upload bundle for Thingiverse/Printables-style releases
+- a reuse stockpile representing removed temporary material
 
-The default model is a `160 mm` finished pyramid. For desktop FDM printers, the sweet spot is probably a `100-120 mm` finished footprint. On my Flashforge Adventurer 4 Pro, `75%` scale is the best all-around kit size, while `62.5%` makes a nice compact display model.
+<figure>
+  <img
+    src="https://danieliser.github.io/giza-pyramid-kit/release/thingiverse/images/cover_full_ramp_system.png"
+    alt="A rendered full temporary ramp system around the stepped construction model."
+  />
+  <figcaption>The full temporary construction system: stepped mass, side ramps, corner landings, and broad top deck.</figcaption>
+</figure>
 
-## Caveat
+The project is parametric, so the proportions can be tuned from the command line:
 
-This is a conceptual model, not archaeological proof.
+```bash
+python3 generate_giza_kit.py --base-mm 120 --courses 12 --casing-rings 12
+python3 generate_giza_kit.py --base-mm 200 --height-mm 127.25 --ramp-width-mm 24
+```
 
-That distinction matters. The point is not to settle how the Great Pyramid was built. The point is to make a theory inspectable: where it feels elegant, where it strains, and what geometry it requires.
+The default finished pyramid is a 160 mm tabletop model. It is not trying to reproduce every block. It is trying to preserve the sequence: build up, set capstone, remove temporary works, finish downward.
 
-The model is useful precisely because it is arguable. You can point to a ramp, landing, capstone platform, casing layer, or chamber reference and ask, "Would this actually work?"
+## What You Can Print
 
-## Downloads
+The GitHub repo is here:
 
-- GitHub repository: [danieliser/giza-pyramid-kit](https://github.com/danieliser/giza-pyramid-kit)
-- Maker-site release packet: `release/thingiverse/giza-pyramid-construction-theory-stl-kit-v0.1.0.zip`
-- Animated demo: [open the browser demo](https://danieliser.github.io/giza-pyramid-kit/demo/)
+[danieliser/giza-pyramid-kit](https://github.com/danieliser/giza-pyramid-kit)
 
-## Next
+The files are organized around both printing and explanation:
 
-The next useful step is a real printed build. Renders are enough to publish a first release, but this model really wants a table, a pile of printed pieces, and a slow teardown sequence.
+```text
+dist/printable/
+  inner_stepped_core.stl
+  temporary_ramp_backfill.stl
+  temporary_ramp_local_underfill.stl
+  temporary_flat_capstone_platform.stl
+  capstone.stl
+  casing_ring_top_01.stl ... casing_ring_top_16.stl
+  reuse_material_stockpile_for_next_pyramid.stl
+
+dist/printable/core_layers/
+dist/printable/fill_layers/
+dist/printable/ramp_layers/
+dist/printable/chamber_layers/
+
+dist/constructed_states/
+  constructed_01_full_backfilled_ramp_system.stl
+  constructed_02_capstone_set_before_deramping.stl
+  constructed_03_partial_top_down_deramping.stl
+  constructed_04_finished_pyramid.stl
+```
+
+If you want the shortest physical story, print the constructed states first. They act like four snapshots:
+
+1. the full backfilled ramp system
+2. the capstone set before deramping
+3. the partial top-down deramping state
+4. the finished pyramid
+
+<figure>
+  <img
+    src="https://danieliser.github.io/giza-pyramid-kit/release/thingiverse/images/partial_top_down_deramping.png"
+    alt="A rendered partial top-down deramping state with casing emerging as temporary material is removed."
+  />
+  <figcaption>Halfway through the teardown: the temporary construction machine is disappearing while the finished pyramid emerges.</figcaption>
+</figure>
+
+If you want the argument in your hands, print the layers. Build the mound and ramps course by course, place the capstone, then remove upper ramp/fill pieces and replace them with casing rings as you work downward.
+
+That is the moment the model becomes useful. The eye starts asking better questions:
+
+- Are the ramps wide enough to read as working construction paths?
+- Do the landings make sense as staging and turn-around areas?
+- Does the top deck leave enough room around a small capstone?
+- Do the corner notches plausibly preserve alignment sight lines?
+- Does the removed temporary material feel like a meaningful stockpile?
+- Do the chamber references conflict with the build sequence?
+
+## The Chamber Problem
+
+Any Great Pyramid construction model eventually runs into the interior.
+
+This kit includes a schematic chamber reference: descending passage, ascending passage, Queen's Chamber, Grand Gallery, King's Chamber, relieving chambers, and simplified shaft references. It is not survey-grade. It is deliberately inflated for printable visibility.
+
+The important modeling choice is that the chamber references are sliced by construction layer. The lower chamber exists before the first courses. The internal voids appear as the mound builds up, instead of being drawn as a ghostly diagram that floats through a completed block.
+
+That made the model less pretty and more honest.
+
+## Why The Capstone Comes Early
+
+The capstone stage is the most interesting part of this theory to model.
+
+In a normal mental picture, the pyramid rises toward a point. The top is the last thing. In this theory, the point is placed while the pyramid is still surrounded by working mass. The builders do not need a tiny final work surface at the summit; they have a broad flat platform around it.
+
+That is why the capstone in this model is intentionally small relative to the deck. Earlier versions made it too large and the scene stopped matching the reference idea. Once the pyramidion became small, the top deck started to make sense: a work platform, not a pedestal.
+
+<figure>
+  <img
+    src="https://danieliser.github.io/giza-pyramid-kit/release/thingiverse/images/finished_pyramid.png"
+    alt="A rendered finished pyramid after top-down removal and casing placement."
+  />
+  <figcaption>The final state: all the temporary access geometry is gone, leaving the cased pyramid and capstone.</figcaption>
+</figure>
+
+## What This Is, And What It Is Not
+
+This is not a proof of how the Great Pyramid was built.
+
+It is also not a historical reconstruction in the strict sense. The proportions are tabletop-printable, the chamber insert is schematic, and the ramp system is a conceptual interpretation based on public descriptions and screenshots rather than original survey drawings or released 3D source files.
+
+What it does offer is a way to make the theory inspectable.
+
+I like that kind of model. It turns "I watched a video and it sounded convincing" into "here are the parts; here is where the idea works; here is where it strains; here is what I had to fudge to make it printable."
+
+That is a much better place to have the argument.
+
+## Try It
+
+The repo includes generated STL files, a Python generator, geometry validation, release renders, and the live animated viewer:
+
+- GitHub: [danieliser/giza-pyramid-kit](https://github.com/danieliser/giza-pyramid-kit)
+- Live demo: [danieliser.github.io/giza-pyramid-kit/demo](https://danieliser.github.io/giza-pyramid-kit/demo/)
+- Preview image used for sharing: [capstone before deramping](https://danieliser.github.io/giza-pyramid-kit/release/thingiverse/images/capstone_before_deramping.png)
+
+Generate everything locally:
+
+```bash
+git clone https://github.com/danieliser/giza-pyramid-kit.git
+cd giza-pyramid-kit
+make generate
+make validate
+make serve
+```
+
+Then open:
+
+```text
+http://localhost:8026/demo/
+```
+
+The next step is a real printed build. The computer model is already good at showing sequence. A table full of pieces will be better at showing where the idea fights back.
