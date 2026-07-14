@@ -1,0 +1,2298 @@
+{
+  "cost": 0.09,
+  "status_code": 20000,
+  "status_message": "Ok.",
+  "tasks": [
+    {
+      "cost": 0.09,
+      "data": {
+        "api": "keywords_data",
+        "function": "search_volume",
+        "keywords": [
+          "great pyramid construction theory",
+          "great pyramid building theory",
+          "great pyramid construction",
+          "great pyramid construction methods",
+          "great pyramid ramp theory",
+          "great pyramid internal ramp theory",
+          "pyramid construction theory",
+          "pyramid building theory",
+          "pyramid construction methods",
+          "pyramid ramp theory",
+          "pyramid internal ramp theory",
+          "egyptian pyramid construction theory",
+          "giza pyramid construction theory",
+          "giza pyramid construction",
+          "how were the pyramids built",
+          "how was the great pyramid built",
+          "how did they build the pyramids",
+          "how were egyptian pyramids built",
+          "how were the giza pyramids built",
+          "how did ancient egyptians build pyramids",
+          "giza pyramid stl",
+          "great pyramid stl",
+          "pyramid stl",
+          "pyramid stl file",
+          "pyramid 3d print",
+          "3d printable pyramid",
+          "3d printable pyramid model",
+          "great pyramid 3d model",
+          "giza pyramid 3d model",
+          "great pyramid model",
+          "giza pyramid model",
+          "pyramid construction model",
+          "giza construction model",
+          "pyramid ramp model",
+          "pyramid construction animation",
+          "great pyramid construction animation",
+          "pyramid internal chambers model",
+          "great pyramid internal chambers",
+          "great pyramid chambers model",
+          "huni choi pyramid",
+          "huni choi pyramid theory",
+          "top down pyramid construction",
+          "top down pyramid construction theory",
+          "pyramid switchback ramp",
+          "pyramid switchback ramp theory"
+        ],
+        "language_code": "en",
+        "location_code": 2840,
+        "se": "google_ads"
+      },
+      "id": "07140920-1713-0367-0000-86e41de36f74",
+      "path": [
+        "v3",
+        "keywords_data",
+        "google_ads",
+        "search_volume",
+        "live"
+      ],
+      "result": [
+        {
+          "competition": "LOW",
+          "competition_index": 4,
+          "cpc": null,
+          "high_top_of_page_bid": null,
+          "keyword": "great pyramid construction theory",
+          "language_code": "en",
+          "location_code": 2840,
+          "low_top_of_page_bid": null,
+          "monthly_searches": [
+            {
+              "month": 6,
+              "search_volume": 10,
+              "year": 2026
+            },
+            {
+              "month": 5,
+              "search_volume": 10,
+              "year": 2026
+            },
+            {
+              "month": 4,
+              "search_volume": 2900,
+              "year": 2026
+            },
+            {
+              "month": 3,
+              "search_volume": 0,
+              "year": 2026
+            },
+            {
+              "month": 2,
+              "search_volume": 10,
+              "year": 2026
+            },
+            {
+              "month": 1,
+              "search_volume": 50,
+              "year": 2026
+            },
+            {
+              "month": 12,
+              "search_volume": 0,
+              "year": 2025
+            },
+            {
+              "month": 11,
+              "search_volume": 0,
+              "year": 2025
+            },
+            {
+              "month": 10,
+              "search_volume": 0,
+              "year": 2025
+            },
+            {
+              "month": 9,
+              "search_volume": 0,
+              "year": 2025
+            },
+            {
+              "month": 8,
+              "search_volume": 0,
+              "year": 2025
+            },
+            {
+              "month": 7,
+              "search_volume": 0,
+              "year": 2025
+            }
+          ],
+          "search_partners": false,
+          "search_volume": 260,
+          "spell": null
+        },
+        {
+          "competition": null,
+          "competition_index": null,
+          "cpc": null,
+          "high_top_of_page_bid": null,
+          "keyword": "great pyramid building theory",
+          "language_code": "en",
+          "location_code": 2840,
+          "low_top_of_page_bid": null,
+          "monthly_searches": null,
+          "search_partners": false,
+          "search_volume": null,
+          "spell": null
+        },
+        {
+          "competition": "LOW",
+          "competition_index": 1,
+          "cpc": null,
+          "high_top_of_page_bid": null,
+          "keyword": "great pyramid construction",
+          "language_code": "en",
+          "location_code": 2840,
+          "low_top_of_page_bid": null,
+          "monthly_searches": [
+            {
+              "month": 6,
+              "search_volume": 140,
+              "year": 2026
+            },
+            {
+              "month": 5,
+              "search_volume": 260,
+              "year": 2026
+            },
+            {
+              "month": 4,
+              "search_volume": 260,
+              "year": 2026
+            },
+            {
+              "month": 3,
+              "search_volume": 210,
+              "year": 2026
+            },
+            {
+              "month": 2,
+              "search_volume": 390,
+              "year": 2026
+            },
+            {
+              "month": 1,
+              "search_volume": 320,
+              "year": 2026
+            },
+            {
+              "month": 12,
+              "search_volume": 260,
+              "year": 2025
+            },
+            {
+              "month": 11,
+              "search_volume": 320,
+              "year": 2025
+            },
+            {
+              "month": 10,
+              "search_volume": 390,
+              "year": 2025
+            },
+            {
+              "month": 9,
+              "search_volume": 390,
+              "year": 2025
+            },
+            {
+              "month": 8,
+              "search_volume": 390,
+              "year": 2025
+            },
+            {
+              "month": 7,
+              "search_volume": 140,
+              "year": 2025
+            }
+          ],
+          "search_partners": false,
+          "search_volume": 320,
+          "spell": null
+        },
+        {
+          "competition": null,
+          "competition_index": null,
+          "cpc": null,
+          "high_top_of_page_bid": null,
+          "keyword": "great pyramid construction methods",
+          "language_code": "en",
+          "location_code": 2840,
+          "low_top_of_page_bid": null,
+          "monthly_searches": null,
+          "search_partners": false,
+          "search_volume": null,
+          "spell": null
+        },
+        {
+          "competition": null,
+          "competition_index": null,
+          "cpc": null,
+          "high_top_of_page_bid": null,
+          "keyword": "great pyramid ramp theory",
+          "language_code": "en",
+          "location_code": 2840,
+          "low_top_of_page_bid": null,
+          "monthly_searches": null,
+          "search_partners": false,
+          "search_volume": null,
+          "spell": null
+        },
+        {
+          "competition": "LOW",
+          "competition_index": 0,
+          "cpc": null,
+          "high_top_of_page_bid": null,
+          "keyword": "great pyramid internal ramp theory",
+          "language_code": "en",
+          "location_code": 2840,
+          "low_top_of_page_bid": null,
+          "monthly_searches": [
+            {
+              "month": 6,
+              "search_volume": 10,
+              "year": 2026
+            },
+            {
+              "month": 5,
+              "search_volume": 20,
+              "year": 2026
+            },
+            {
+              "month": 4,
+              "search_volume": 10,
+              "year": 2026
+            },
+            {
+              "month": 3,
+              "search_volume": 10,
+              "year": 2026
+            },
+            {
+              "month": 2,
+              "search_volume": 20,
+              "year": 2026
+            },
+            {
+              "month": 1,
+              "search_volume": 20,
+              "year": 2026
+            },
+            {
+              "month": 12,
+              "search_volume": 10,
+              "year": 2025
+            },
+            {
+              "month": 11,
+              "search_volume": 10,
+              "year": 2025
+            },
+            {
+              "month": 10,
+              "search_volume": 10,
+              "year": 2025
+            },
+            {
+              "month": 9,
+              "search_volume": 10,
+              "year": 2025
+            },
+            {
+              "month": 8,
+              "search_volume": 10,
+              "year": 2025
+            },
+            {
+              "month": 7,
+              "search_volume": 10,
+              "year": 2025
+            }
+          ],
+          "search_partners": false,
+          "search_volume": 10,
+          "spell": null
+        },
+        {
+          "competition": "LOW",
+          "competition_index": 1,
+          "cpc": 0.02,
+          "high_top_of_page_bid": null,
+          "keyword": "pyramid construction theory",
+          "language_code": "en",
+          "location_code": 2840,
+          "low_top_of_page_bid": null,
+          "monthly_searches": [
+            {
+              "month": 6,
+              "search_volume": 480,
+              "year": 2026
+            },
+            {
+              "month": 5,
+              "search_volume": 880,
+              "year": 2026
+            },
+            {
+              "month": 4,
+              "search_volume": 880,
+              "year": 2026
+            },
+            {
+              "month": 3,
+              "search_volume": 880,
+              "year": 2026
+            },
+            {
+              "month": 2,
+              "search_volume": 1000,
+              "year": 2026
+            },
+            {
+              "month": 1,
+              "search_volume": 880,
+              "year": 2026
+            },
+            {
+              "month": 12,
+              "search_volume": 720,
+              "year": 2025
+            },
+            {
+              "month": 11,
+              "search_volume": 720,
+              "year": 2025
+            },
+            {
+              "month": 10,
+              "search_volume": 720,
+              "year": 2025
+            },
+            {
+              "month": 9,
+              "search_volume": 880,
+              "year": 2025
+            },
+            {
+              "month": 8,
+              "search_volume": 720,
+              "year": 2025
+            },
+            {
+              "month": 7,
+              "search_volume": 590,
+              "year": 2025
+            }
+          ],
+          "search_partners": false,
+          "search_volume": 720,
+          "spell": null
+        },
+        {
+          "competition": "LOW",
+          "competition_index": 1,
+          "cpc": 0.02,
+          "high_top_of_page_bid": null,
+          "keyword": "pyramid building theory",
+          "language_code": "en",
+          "location_code": 2840,
+          "low_top_of_page_bid": null,
+          "monthly_searches": [
+            {
+              "month": 6,
+              "search_volume": 480,
+              "year": 2026
+            },
+            {
+              "month": 5,
+              "search_volume": 880,
+              "year": 2026
+            },
+            {
+              "month": 4,
+              "search_volume": 880,
+              "year": 2026
+            },
+            {
+              "month": 3,
+              "search_volume": 880,
+              "year": 2026
+            },
+            {
+              "month": 2,
+              "search_volume": 1000,
+              "year": 2026
+            },
+            {
+              "month": 1,
+              "search_volume": 880,
+              "year": 2026
+            },
+            {
+              "month": 12,
+              "search_volume": 720,
+              "year": 2025
+            },
+            {
+              "month": 11,
+              "search_volume": 720,
+              "year": 2025
+            },
+            {
+              "month": 10,
+              "search_volume": 720,
+              "year": 2025
+            },
+            {
+              "month": 9,
+              "search_volume": 880,
+              "year": 2025
+            },
+            {
+              "month": 8,
+              "search_volume": 720,
+              "year": 2025
+            },
+            {
+              "month": 7,
+              "search_volume": 590,
+              "year": 2025
+            }
+          ],
+          "search_partners": false,
+          "search_volume": 720,
+          "spell": null
+        },
+        {
+          "competition": "LOW",
+          "competition_index": 0,
+          "cpc": null,
+          "high_top_of_page_bid": null,
+          "keyword": "pyramid construction methods",
+          "language_code": "en",
+          "location_code": 2840,
+          "low_top_of_page_bid": null,
+          "monthly_searches": [
+            {
+              "month": 6,
+              "search_volume": 10,
+              "year": 2026
+            },
+            {
+              "month": 5,
+              "search_volume": 10,
+              "year": 2026
+            },
+            {
+              "month": 4,
+              "search_volume": 20,
+              "year": 2026
+            },
+            {
+              "month": 3,
+              "search_volume": 20,
+              "year": 2026
+            },
+            {
+              "month": 2,
+              "search_volume": 20,
+              "year": 2026
+            },
+            {
+              "month": 1,
+              "search_volume": 20,
+              "year": 2026
+            },
+            {
+              "month": 12,
+              "search_volume": 10,
+              "year": 2025
+            },
+            {
+              "month": 11,
+              "search_volume": 10,
+              "year": 2025
+            },
+            {
+              "month": 10,
+              "search_volume": 10,
+              "year": 2025
+            },
+            {
+              "month": 9,
+              "search_volume": 20,
+              "year": 2025
+            },
+            {
+              "month": 8,
+              "search_volume": 30,
+              "year": 2025
+            },
+            {
+              "month": 7,
+              "search_volume": 20,
+              "year": 2025
+            }
+          ],
+          "search_partners": false,
+          "search_volume": 20,
+          "spell": null
+        },
+        {
+          "competition": "LOW",
+          "competition_index": 0,
+          "cpc": null,
+          "high_top_of_page_bid": null,
+          "keyword": "pyramid ramp theory",
+          "language_code": "en",
+          "location_code": 2840,
+          "low_top_of_page_bid": null,
+          "monthly_searches": [
+            {
+              "month": 6,
+              "search_volume": 30,
+              "year": 2026
+            },
+            {
+              "month": 5,
+              "search_volume": 50,
+              "year": 2026
+            },
+            {
+              "month": 4,
+              "search_volume": 90,
+              "year": 2026
+            },
+            {
+              "month": 3,
+              "search_volume": 50,
+              "year": 2026
+            },
+            {
+              "month": 2,
+              "search_volume": 90,
+              "year": 2026
+            },
+            {
+              "month": 1,
+              "search_volume": 90,
+              "year": 2026
+            },
+            {
+              "month": 12,
+              "search_volume": 40,
+              "year": 2025
+            },
+            {
+              "month": 11,
+              "search_volume": 50,
+              "year": 2025
+            },
+            {
+              "month": 10,
+              "search_volume": 70,
+              "year": 2025
+            },
+            {
+              "month": 9,
+              "search_volume": 70,
+              "year": 2025
+            },
+            {
+              "month": 8,
+              "search_volume": 40,
+              "year": 2025
+            },
+            {
+              "month": 7,
+              "search_volume": 20,
+              "year": 2025
+            }
+          ],
+          "search_partners": false,
+          "search_volume": 70,
+          "spell": null
+        },
+        {
+          "competition": "LOW",
+          "competition_index": 0,
+          "cpc": null,
+          "high_top_of_page_bid": null,
+          "keyword": "pyramid internal ramp theory",
+          "language_code": "en",
+          "location_code": 2840,
+          "low_top_of_page_bid": null,
+          "monthly_searches": [
+            {
+              "month": 6,
+              "search_volume": 20,
+              "year": 2026
+            },
+            {
+              "month": 5,
+              "search_volume": 30,
+              "year": 2026
+            },
+            {
+              "month": 4,
+              "search_volume": 40,
+              "year": 2026
+            },
+            {
+              "month": 3,
+              "search_volume": 30,
+              "year": 2026
+            },
+            {
+              "month": 2,
+              "search_volume": 40,
+              "year": 2026
+            },
+            {
+              "month": 1,
+              "search_volume": 50,
+              "year": 2026
+            },
+            {
+              "month": 12,
+              "search_volume": 40,
+              "year": 2025
+            },
+            {
+              "month": 11,
+              "search_volume": 40,
+              "year": 2025
+            },
+            {
+              "month": 10,
+              "search_volume": 40,
+              "year": 2025
+            },
+            {
+              "month": 9,
+              "search_volume": 20,
+              "year": 2025
+            },
+            {
+              "month": 8,
+              "search_volume": 10,
+              "year": 2025
+            },
+            {
+              "month": 7,
+              "search_volume": 10,
+              "year": 2025
+            }
+          ],
+          "search_partners": false,
+          "search_volume": 30,
+          "spell": null
+        },
+        {
+          "competition": null,
+          "competition_index": null,
+          "cpc": null,
+          "high_top_of_page_bid": null,
+          "keyword": "egyptian pyramid construction theory",
+          "language_code": "en",
+          "location_code": 2840,
+          "low_top_of_page_bid": null,
+          "monthly_searches": null,
+          "search_partners": false,
+          "search_volume": null,
+          "spell": null
+        },
+        {
+          "competition": null,
+          "competition_index": null,
+          "cpc": null,
+          "high_top_of_page_bid": null,
+          "keyword": "giza pyramid construction theory",
+          "language_code": "en",
+          "location_code": 2840,
+          "low_top_of_page_bid": null,
+          "monthly_searches": null,
+          "search_partners": false,
+          "search_volume": null,
+          "spell": null
+        },
+        {
+          "competition": "LOW",
+          "competition_index": 0,
+          "cpc": null,
+          "high_top_of_page_bid": null,
+          "keyword": "giza pyramid construction",
+          "language_code": "en",
+          "location_code": 2840,
+          "low_top_of_page_bid": null,
+          "monthly_searches": [
+            {
+              "month": 6,
+              "search_volume": 10,
+              "year": 2026
+            },
+            {
+              "month": 5,
+              "search_volume": 50,
+              "year": 2026
+            },
+            {
+              "month": 4,
+              "search_volume": 50,
+              "year": 2026
+            },
+            {
+              "month": 3,
+              "search_volume": 40,
+              "year": 2026
+            },
+            {
+              "month": 2,
+              "search_volume": 70,
+              "year": 2026
+            },
+            {
+              "month": 1,
+              "search_volume": 50,
+              "year": 2026
+            },
+            {
+              "month": 12,
+              "search_volume": 50,
+              "year": 2025
+            },
+            {
+              "month": 11,
+              "search_volume": 90,
+              "year": 2025
+            },
+            {
+              "month": 10,
+              "search_volume": 90,
+              "year": 2025
+            },
+            {
+              "month": 9,
+              "search_volume": 110,
+              "year": 2025
+            },
+            {
+              "month": 8,
+              "search_volume": 140,
+              "year": 2025
+            },
+            {
+              "month": 7,
+              "search_volume": 40,
+              "year": 2025
+            }
+          ],
+          "search_partners": false,
+          "search_volume": 70,
+          "spell": null
+        },
+        {
+          "competition": "LOW",
+          "competition_index": 2,
+          "cpc": 0.43,
+          "high_top_of_page_bid": 0.45,
+          "keyword": "how were the pyramids built",
+          "language_code": "en",
+          "location_code": 2840,
+          "low_top_of_page_bid": 0.03,
+          "monthly_searches": [
+            {
+              "month": 6,
+              "search_volume": 14800,
+              "year": 2026
+            },
+            {
+              "month": 5,
+              "search_volume": 18100,
+              "year": 2026
+            },
+            {
+              "month": 4,
+              "search_volume": 18100,
+              "year": 2026
+            },
+            {
+              "month": 3,
+              "search_volume": 22200,
+              "year": 2026
+            },
+            {
+              "month": 2,
+              "search_volume": 18100,
+              "year": 2026
+            },
+            {
+              "month": 1,
+              "search_volume": 22200,
+              "year": 2026
+            },
+            {
+              "month": 12,
+              "search_volume": 18100,
+              "year": 2025
+            },
+            {
+              "month": 11,
+              "search_volume": 18100,
+              "year": 2025
+            },
+            {
+              "month": 10,
+              "search_volume": 22200,
+              "year": 2025
+            },
+            {
+              "month": 9,
+              "search_volume": 18100,
+              "year": 2025
+            },
+            {
+              "month": 8,
+              "search_volume": 18100,
+              "year": 2025
+            },
+            {
+              "month": 7,
+              "search_volume": 14800,
+              "year": 2025
+            }
+          ],
+          "search_partners": false,
+          "search_volume": 18100,
+          "spell": null
+        },
+        {
+          "competition": "LOW",
+          "competition_index": 6,
+          "cpc": 0.17,
+          "high_top_of_page_bid": 0.21,
+          "keyword": "how was the great pyramid built",
+          "language_code": "en",
+          "location_code": 2840,
+          "low_top_of_page_bid": 0.04,
+          "monthly_searches": [
+            {
+              "month": 6,
+              "search_volume": 260,
+              "year": 2026
+            },
+            {
+              "month": 5,
+              "search_volume": 590,
+              "year": 2026
+            },
+            {
+              "month": 4,
+              "search_volume": 590,
+              "year": 2026
+            },
+            {
+              "month": 3,
+              "search_volume": 590,
+              "year": 2026
+            },
+            {
+              "month": 2,
+              "search_volume": 590,
+              "year": 2026
+            },
+            {
+              "month": 1,
+              "search_volume": 720,
+              "year": 2026
+            },
+            {
+              "month": 12,
+              "search_volume": 720,
+              "year": 2025
+            },
+            {
+              "month": 11,
+              "search_volume": 720,
+              "year": 2025
+            },
+            {
+              "month": 10,
+              "search_volume": 880,
+              "year": 2025
+            },
+            {
+              "month": 9,
+              "search_volume": 590,
+              "year": 2025
+            },
+            {
+              "month": 8,
+              "search_volume": 320,
+              "year": 2025
+            },
+            {
+              "month": 7,
+              "search_volume": 260,
+              "year": 2025
+            }
+          ],
+          "search_partners": false,
+          "search_volume": 590,
+          "spell": null
+        },
+        {
+          "competition": "LOW",
+          "competition_index": 2,
+          "cpc": 0.08,
+          "high_top_of_page_bid": 0.2,
+          "keyword": "how did they build the pyramids",
+          "language_code": "en",
+          "location_code": 2840,
+          "low_top_of_page_bid": 0.03,
+          "monthly_searches": [
+            {
+              "month": 6,
+              "search_volume": 2900,
+              "year": 2026
+            },
+            {
+              "month": 5,
+              "search_volume": 3600,
+              "year": 2026
+            },
+            {
+              "month": 4,
+              "search_volume": 3600,
+              "year": 2026
+            },
+            {
+              "month": 3,
+              "search_volume": 4400,
+              "year": 2026
+            },
+            {
+              "month": 2,
+              "search_volume": 3600,
+              "year": 2026
+            },
+            {
+              "month": 1,
+              "search_volume": 3600,
+              "year": 2026
+            },
+            {
+              "month": 12,
+              "search_volume": 3600,
+              "year": 2025
+            },
+            {
+              "month": 11,
+              "search_volume": 3600,
+              "year": 2025
+            },
+            {
+              "month": 10,
+              "search_volume": 3600,
+              "year": 2025
+            },
+            {
+              "month": 9,
+              "search_volume": 3600,
+              "year": 2025
+            },
+            {
+              "month": 8,
+              "search_volume": 2900,
+              "year": 2025
+            },
+            {
+              "month": 7,
+              "search_volume": 2900,
+              "year": 2025
+            }
+          ],
+          "search_partners": false,
+          "search_volume": 3600,
+          "spell": null
+        },
+        {
+          "competition": "LOW",
+          "competition_index": 2,
+          "cpc": 0.43,
+          "high_top_of_page_bid": 0.45,
+          "keyword": "how were egyptian pyramids built",
+          "language_code": "en",
+          "location_code": 2840,
+          "low_top_of_page_bid": 0.03,
+          "monthly_searches": [
+            {
+              "month": 6,
+              "search_volume": 14800,
+              "year": 2026
+            },
+            {
+              "month": 5,
+              "search_volume": 18100,
+              "year": 2026
+            },
+            {
+              "month": 4,
+              "search_volume": 18100,
+              "year": 2026
+            },
+            {
+              "month": 3,
+              "search_volume": 22200,
+              "year": 2026
+            },
+            {
+              "month": 2,
+              "search_volume": 18100,
+              "year": 2026
+            },
+            {
+              "month": 1,
+              "search_volume": 22200,
+              "year": 2026
+            },
+            {
+              "month": 12,
+              "search_volume": 18100,
+              "year": 2025
+            },
+            {
+              "month": 11,
+              "search_volume": 18100,
+              "year": 2025
+            },
+            {
+              "month": 10,
+              "search_volume": 22200,
+              "year": 2025
+            },
+            {
+              "month": 9,
+              "search_volume": 18100,
+              "year": 2025
+            },
+            {
+              "month": 8,
+              "search_volume": 18100,
+              "year": 2025
+            },
+            {
+              "month": 7,
+              "search_volume": 14800,
+              "year": 2025
+            }
+          ],
+          "search_partners": false,
+          "search_volume": 18100,
+          "spell": null
+        },
+        {
+          "competition": "LOW",
+          "competition_index": 2,
+          "cpc": 0.43,
+          "high_top_of_page_bid": 0.45,
+          "keyword": "how were the giza pyramids built",
+          "language_code": "en",
+          "location_code": 2840,
+          "low_top_of_page_bid": 0.03,
+          "monthly_searches": [
+            {
+              "month": 6,
+              "search_volume": 14800,
+              "year": 2026
+            },
+            {
+              "month": 5,
+              "search_volume": 18100,
+              "year": 2026
+            },
+            {
+              "month": 4,
+              "search_volume": 18100,
+              "year": 2026
+            },
+            {
+              "month": 3,
+              "search_volume": 22200,
+              "year": 2026
+            },
+            {
+              "month": 2,
+              "search_volume": 18100,
+              "year": 2026
+            },
+            {
+              "month": 1,
+              "search_volume": 22200,
+              "year": 2026
+            },
+            {
+              "month": 12,
+              "search_volume": 18100,
+              "year": 2025
+            },
+            {
+              "month": 11,
+              "search_volume": 18100,
+              "year": 2025
+            },
+            {
+              "month": 10,
+              "search_volume": 22200,
+              "year": 2025
+            },
+            {
+              "month": 9,
+              "search_volume": 18100,
+              "year": 2025
+            },
+            {
+              "month": 8,
+              "search_volume": 18100,
+              "year": 2025
+            },
+            {
+              "month": 7,
+              "search_volume": 14800,
+              "year": 2025
+            }
+          ],
+          "search_partners": false,
+          "search_volume": 18100,
+          "spell": null
+        },
+        {
+          "competition": "LOW",
+          "competition_index": 3,
+          "cpc": 0.82,
+          "high_top_of_page_bid": 0.15,
+          "keyword": "how did ancient egyptians build pyramids",
+          "language_code": "en",
+          "location_code": 2840,
+          "low_top_of_page_bid": 0.03,
+          "monthly_searches": [
+            {
+              "month": 6,
+              "search_volume": 2400,
+              "year": 2026
+            },
+            {
+              "month": 5,
+              "search_volume": 2900,
+              "year": 2026
+            },
+            {
+              "month": 4,
+              "search_volume": 3600,
+              "year": 2026
+            },
+            {
+              "month": 3,
+              "search_volume": 3600,
+              "year": 2026
+            },
+            {
+              "month": 2,
+              "search_volume": 3600,
+              "year": 2026
+            },
+            {
+              "month": 1,
+              "search_volume": 4400,
+              "year": 2026
+            },
+            {
+              "month": 12,
+              "search_volume": 3600,
+              "year": 2025
+            },
+            {
+              "month": 11,
+              "search_volume": 4400,
+              "year": 2025
+            },
+            {
+              "month": 10,
+              "search_volume": 4400,
+              "year": 2025
+            },
+            {
+              "month": 9,
+              "search_volume": 3600,
+              "year": 2025
+            },
+            {
+              "month": 8,
+              "search_volume": 2900,
+              "year": 2025
+            },
+            {
+              "month": 7,
+              "search_volume": 2400,
+              "year": 2025
+            }
+          ],
+          "search_partners": false,
+          "search_volume": 3600,
+          "spell": null
+        },
+        {
+          "competition": null,
+          "competition_index": null,
+          "cpc": null,
+          "high_top_of_page_bid": null,
+          "keyword": "giza pyramid stl",
+          "language_code": "en",
+          "location_code": 2840,
+          "low_top_of_page_bid": null,
+          "monthly_searches": null,
+          "search_partners": false,
+          "search_volume": null,
+          "spell": null
+        },
+        {
+          "competition": null,
+          "competition_index": null,
+          "cpc": null,
+          "high_top_of_page_bid": null,
+          "keyword": "great pyramid stl",
+          "language_code": "en",
+          "location_code": 2840,
+          "low_top_of_page_bid": null,
+          "monthly_searches": null,
+          "search_partners": false,
+          "search_volume": null,
+          "spell": null
+        },
+        {
+          "competition": "LOW",
+          "competition_index": 1,
+          "cpc": null,
+          "high_top_of_page_bid": null,
+          "keyword": "pyramid stl",
+          "language_code": "en",
+          "location_code": 2840,
+          "low_top_of_page_bid": null,
+          "monthly_searches": [
+            {
+              "month": 6,
+              "search_volume": 30,
+              "year": 2026
+            },
+            {
+              "month": 5,
+              "search_volume": 30,
+              "year": 2026
+            },
+            {
+              "month": 4,
+              "search_volume": 30,
+              "year": 2026
+            },
+            {
+              "month": 3,
+              "search_volume": 70,
+              "year": 2026
+            },
+            {
+              "month": 2,
+              "search_volume": 70,
+              "year": 2026
+            },
+            {
+              "month": 1,
+              "search_volume": 110,
+              "year": 2026
+            },
+            {
+              "month": 12,
+              "search_volume": 30,
+              "year": 2025
+            },
+            {
+              "month": 11,
+              "search_volume": 70,
+              "year": 2025
+            },
+            {
+              "month": 10,
+              "search_volume": 170,
+              "year": 2025
+            },
+            {
+              "month": 9,
+              "search_volume": 50,
+              "year": 2025
+            },
+            {
+              "month": 8,
+              "search_volume": 140,
+              "year": 2025
+            },
+            {
+              "month": 7,
+              "search_volume": 70,
+              "year": 2025
+            }
+          ],
+          "search_partners": false,
+          "search_volume": 70,
+          "spell": null
+        },
+        {
+          "competition": "LOW",
+          "competition_index": 0,
+          "cpc": null,
+          "high_top_of_page_bid": null,
+          "keyword": "pyramid stl file",
+          "language_code": "en",
+          "location_code": 2840,
+          "low_top_of_page_bid": null,
+          "monthly_searches": [
+            {
+              "month": 6,
+              "search_volume": 10,
+              "year": 2026
+            },
+            {
+              "month": 5,
+              "search_volume": 10,
+              "year": 2026
+            },
+            {
+              "month": 4,
+              "search_volume": 10,
+              "year": 2026
+            },
+            {
+              "month": 3,
+              "search_volume": 20,
+              "year": 2026
+            },
+            {
+              "month": 2,
+              "search_volume": 10,
+              "year": 2026
+            },
+            {
+              "month": 1,
+              "search_volume": 20,
+              "year": 2026
+            },
+            {
+              "month": 12,
+              "search_volume": 10,
+              "year": 2025
+            },
+            {
+              "month": 11,
+              "search_volume": 10,
+              "year": 2025
+            },
+            {
+              "month": 10,
+              "search_volume": 10,
+              "year": 2025
+            },
+            {
+              "month": 9,
+              "search_volume": 10,
+              "year": 2025
+            },
+            {
+              "month": 8,
+              "search_volume": 10,
+              "year": 2025
+            },
+            {
+              "month": 7,
+              "search_volume": 10,
+              "year": 2025
+            }
+          ],
+          "search_partners": false,
+          "search_volume": 10,
+          "spell": null
+        },
+        {
+          "competition": "HIGH",
+          "competition_index": 76,
+          "cpc": 0.27,
+          "high_top_of_page_bid": null,
+          "keyword": "pyramid 3d print",
+          "language_code": "en",
+          "location_code": 2840,
+          "low_top_of_page_bid": null,
+          "monthly_searches": [
+            {
+              "month": 6,
+              "search_volume": 260,
+              "year": 2026
+            },
+            {
+              "month": 5,
+              "search_volume": 390,
+              "year": 2026
+            },
+            {
+              "month": 4,
+              "search_volume": 590,
+              "year": 2026
+            },
+            {
+              "month": 3,
+              "search_volume": 480,
+              "year": 2026
+            },
+            {
+              "month": 2,
+              "search_volume": 480,
+              "year": 2026
+            },
+            {
+              "month": 1,
+              "search_volume": 480,
+              "year": 2026
+            },
+            {
+              "month": 12,
+              "search_volume": 480,
+              "year": 2025
+            },
+            {
+              "month": 11,
+              "search_volume": 390,
+              "year": 2025
+            },
+            {
+              "month": 10,
+              "search_volume": 320,
+              "year": 2025
+            },
+            {
+              "month": 9,
+              "search_volume": 210,
+              "year": 2025
+            },
+            {
+              "month": 8,
+              "search_volume": 210,
+              "year": 2025
+            },
+            {
+              "month": 7,
+              "search_volume": 140,
+              "year": 2025
+            }
+          ],
+          "search_partners": false,
+          "search_volume": 390,
+          "spell": null
+        },
+        {
+          "competition": "HIGH",
+          "competition_index": 76,
+          "cpc": 0.27,
+          "high_top_of_page_bid": null,
+          "keyword": "3d printable pyramid",
+          "language_code": "en",
+          "location_code": 2840,
+          "low_top_of_page_bid": null,
+          "monthly_searches": [
+            {
+              "month": 6,
+              "search_volume": 260,
+              "year": 2026
+            },
+            {
+              "month": 5,
+              "search_volume": 390,
+              "year": 2026
+            },
+            {
+              "month": 4,
+              "search_volume": 590,
+              "year": 2026
+            },
+            {
+              "month": 3,
+              "search_volume": 480,
+              "year": 2026
+            },
+            {
+              "month": 2,
+              "search_volume": 480,
+              "year": 2026
+            },
+            {
+              "month": 1,
+              "search_volume": 480,
+              "year": 2026
+            },
+            {
+              "month": 12,
+              "search_volume": 480,
+              "year": 2025
+            },
+            {
+              "month": 11,
+              "search_volume": 390,
+              "year": 2025
+            },
+            {
+              "month": 10,
+              "search_volume": 320,
+              "year": 2025
+            },
+            {
+              "month": 9,
+              "search_volume": 210,
+              "year": 2025
+            },
+            {
+              "month": 8,
+              "search_volume": 210,
+              "year": 2025
+            },
+            {
+              "month": 7,
+              "search_volume": 140,
+              "year": 2025
+            }
+          ],
+          "search_partners": false,
+          "search_volume": 390,
+          "spell": null
+        },
+        {
+          "competition": null,
+          "competition_index": null,
+          "cpc": null,
+          "high_top_of_page_bid": null,
+          "keyword": "3d printable pyramid model",
+          "language_code": "en",
+          "location_code": 2840,
+          "low_top_of_page_bid": null,
+          "monthly_searches": null,
+          "search_partners": false,
+          "search_volume": null,
+          "spell": null
+        },
+        {
+          "competition": "LOW",
+          "competition_index": 0,
+          "cpc": null,
+          "high_top_of_page_bid": null,
+          "keyword": "great pyramid 3d model",
+          "language_code": "en",
+          "location_code": 2840,
+          "low_top_of_page_bid": null,
+          "monthly_searches": [
+            {
+              "month": 6,
+              "search_volume": 20,
+              "year": 2026
+            },
+            {
+              "month": 5,
+              "search_volume": 40,
+              "year": 2026
+            },
+            {
+              "month": 4,
+              "search_volume": 50,
+              "year": 2026
+            },
+            {
+              "month": 3,
+              "search_volume": 40,
+              "year": 2026
+            },
+            {
+              "month": 2,
+              "search_volume": 50,
+              "year": 2026
+            },
+            {
+              "month": 1,
+              "search_volume": 30,
+              "year": 2026
+            },
+            {
+              "month": 12,
+              "search_volume": 50,
+              "year": 2025
+            },
+            {
+              "month": 11,
+              "search_volume": 50,
+              "year": 2025
+            },
+            {
+              "month": 10,
+              "search_volume": 20,
+              "year": 2025
+            },
+            {
+              "month": 9,
+              "search_volume": 20,
+              "year": 2025
+            },
+            {
+              "month": 8,
+              "search_volume": 30,
+              "year": 2025
+            },
+            {
+              "month": 7,
+              "search_volume": 20,
+              "year": 2025
+            }
+          ],
+          "search_partners": false,
+          "search_volume": 40,
+          "spell": null
+        },
+        {
+          "competition": "LOW",
+          "competition_index": 0,
+          "cpc": null,
+          "high_top_of_page_bid": null,
+          "keyword": "giza pyramid 3d model",
+          "language_code": "en",
+          "location_code": 2840,
+          "low_top_of_page_bid": null,
+          "monthly_searches": [
+            {
+              "month": 6,
+              "search_volume": 10,
+              "year": 2026
+            },
+            {
+              "month": 5,
+              "search_volume": 20,
+              "year": 2026
+            },
+            {
+              "month": 4,
+              "search_volume": 10,
+              "year": 2026
+            },
+            {
+              "month": 3,
+              "search_volume": 10,
+              "year": 2026
+            },
+            {
+              "month": 2,
+              "search_volume": 20,
+              "year": 2026
+            },
+            {
+              "month": 1,
+              "search_volume": 10,
+              "year": 2026
+            },
+            {
+              "month": 12,
+              "search_volume": 10,
+              "year": 2025
+            },
+            {
+              "month": 11,
+              "search_volume": 10,
+              "year": 2025
+            },
+            {
+              "month": 10,
+              "search_volume": 10,
+              "year": 2025
+            },
+            {
+              "month": 9,
+              "search_volume": 10,
+              "year": 2025
+            },
+            {
+              "month": 8,
+              "search_volume": 20,
+              "year": 2025
+            },
+            {
+              "month": 7,
+              "search_volume": 10,
+              "year": 2025
+            }
+          ],
+          "search_partners": false,
+          "search_volume": 10,
+          "spell": null
+        },
+        {
+          "competition": "MEDIUM",
+          "competition_index": 64,
+          "cpc": 0.37,
+          "high_top_of_page_bid": null,
+          "keyword": "great pyramid model",
+          "language_code": "en",
+          "location_code": 2840,
+          "low_top_of_page_bid": null,
+          "monthly_searches": [
+            {
+              "month": 6,
+              "search_volume": 50,
+              "year": 2026
+            },
+            {
+              "month": 5,
+              "search_volume": 110,
+              "year": 2026
+            },
+            {
+              "month": 4,
+              "search_volume": 110,
+              "year": 2026
+            },
+            {
+              "month": 3,
+              "search_volume": 90,
+              "year": 2026
+            },
+            {
+              "month": 2,
+              "search_volume": 90,
+              "year": 2026
+            },
+            {
+              "month": 1,
+              "search_volume": 110,
+              "year": 2026
+            },
+            {
+              "month": 12,
+              "search_volume": 110,
+              "year": 2025
+            },
+            {
+              "month": 11,
+              "search_volume": 140,
+              "year": 2025
+            },
+            {
+              "month": 10,
+              "search_volume": 110,
+              "year": 2025
+            },
+            {
+              "month": 9,
+              "search_volume": 70,
+              "year": 2025
+            },
+            {
+              "month": 8,
+              "search_volume": 50,
+              "year": 2025
+            },
+            {
+              "month": 7,
+              "search_volume": 50,
+              "year": 2025
+            }
+          ],
+          "search_partners": false,
+          "search_volume": 90,
+          "spell": null
+        },
+        {
+          "competition": "MEDIUM",
+          "competition_index": 64,
+          "cpc": 0.37,
+          "high_top_of_page_bid": null,
+          "keyword": "giza pyramid model",
+          "language_code": "en",
+          "location_code": 2840,
+          "low_top_of_page_bid": null,
+          "monthly_searches": [
+            {
+              "month": 6,
+              "search_volume": 50,
+              "year": 2026
+            },
+            {
+              "month": 5,
+              "search_volume": 110,
+              "year": 2026
+            },
+            {
+              "month": 4,
+              "search_volume": 110,
+              "year": 2026
+            },
+            {
+              "month": 3,
+              "search_volume": 90,
+              "year": 2026
+            },
+            {
+              "month": 2,
+              "search_volume": 90,
+              "year": 2026
+            },
+            {
+              "month": 1,
+              "search_volume": 110,
+              "year": 2026
+            },
+            {
+              "month": 12,
+              "search_volume": 110,
+              "year": 2025
+            },
+            {
+              "month": 11,
+              "search_volume": 140,
+              "year": 2025
+            },
+            {
+              "month": 10,
+              "search_volume": 110,
+              "year": 2025
+            },
+            {
+              "month": 9,
+              "search_volume": 70,
+              "year": 2025
+            },
+            {
+              "month": 8,
+              "search_volume": 50,
+              "year": 2025
+            },
+            {
+              "month": 7,
+              "search_volume": 50,
+              "year": 2025
+            }
+          ],
+          "search_partners": false,
+          "search_volume": 90,
+          "spell": null
+        },
+        {
+          "competition": null,
+          "competition_index": null,
+          "cpc": null,
+          "high_top_of_page_bid": null,
+          "keyword": "pyramid construction model",
+          "language_code": "en",
+          "location_code": 2840,
+          "low_top_of_page_bid": null,
+          "monthly_searches": null,
+          "search_partners": false,
+          "search_volume": null,
+          "spell": null
+        },
+        {
+          "competition": null,
+          "competition_index": null,
+          "cpc": null,
+          "high_top_of_page_bid": null,
+          "keyword": "giza construction model",
+          "language_code": "en",
+          "location_code": 2840,
+          "low_top_of_page_bid": null,
+          "monthly_searches": null,
+          "search_partners": false,
+          "search_volume": null,
+          "spell": null
+        },
+        {
+          "competition": null,
+          "competition_index": null,
+          "cpc": null,
+          "high_top_of_page_bid": null,
+          "keyword": "pyramid ramp model",
+          "language_code": "en",
+          "location_code": 2840,
+          "low_top_of_page_bid": null,
+          "monthly_searches": null,
+          "search_partners": false,
+          "search_volume": null,
+          "spell": null
+        },
+        {
+          "competition": null,
+          "competition_index": null,
+          "cpc": null,
+          "high_top_of_page_bid": null,
+          "keyword": "pyramid construction animation",
+          "language_code": "en",
+          "location_code": 2840,
+          "low_top_of_page_bid": null,
+          "monthly_searches": [
+            {
+              "month": 6,
+              "search_volume": 0,
+              "year": 2026
+            },
+            {
+              "month": 5,
+              "search_volume": 10,
+              "year": 2026
+            },
+            {
+              "month": 4,
+              "search_volume": 0,
+              "year": 2026
+            },
+            {
+              "month": 3,
+              "search_volume": 10,
+              "year": 2026
+            },
+            {
+              "month": 2,
+              "search_volume": 10,
+              "year": 2026
+            },
+            {
+              "month": 1,
+              "search_volume": 10,
+              "year": 2026
+            },
+            {
+              "month": 12,
+              "search_volume": 0,
+              "year": 2025
+            },
+            {
+              "month": 11,
+              "search_volume": 10,
+              "year": 2025
+            },
+            {
+              "month": 10,
+              "search_volume": 0,
+              "year": 2025
+            },
+            {
+              "month": 9,
+              "search_volume": 10,
+              "year": 2025
+            },
+            {
+              "month": 8,
+              "search_volume": 10,
+              "year": 2025
+            },
+            {
+              "month": 7,
+              "search_volume": 0,
+              "year": 2025
+            }
+          ],
+          "search_partners": false,
+          "search_volume": 10,
+          "spell": null
+        },
+        {
+          "competition": null,
+          "competition_index": null,
+          "cpc": null,
+          "high_top_of_page_bid": null,
+          "keyword": "great pyramid construction animation",
+          "language_code": "en",
+          "location_code": 2840,
+          "low_top_of_page_bid": null,
+          "monthly_searches": null,
+          "search_partners": false,
+          "search_volume": null,
+          "spell": null
+        },
+        {
+          "competition": null,
+          "competition_index": null,
+          "cpc": null,
+          "high_top_of_page_bid": null,
+          "keyword": "pyramid internal chambers model",
+          "language_code": "en",
+          "location_code": 2840,
+          "low_top_of_page_bid": null,
+          "monthly_searches": null,
+          "search_partners": false,
+          "search_volume": null,
+          "spell": null
+        },
+        {
+          "competition": null,
+          "competition_index": null,
+          "cpc": null,
+          "high_top_of_page_bid": null,
+          "keyword": "great pyramid internal chambers",
+          "language_code": "en",
+          "location_code": 2840,
+          "low_top_of_page_bid": null,
+          "monthly_searches": null,
+          "search_partners": false,
+          "search_volume": null,
+          "spell": null
+        },
+        {
+          "competition": null,
+          "competition_index": null,
+          "cpc": null,
+          "high_top_of_page_bid": null,
+          "keyword": "great pyramid chambers model",
+          "language_code": "en",
+          "location_code": 2840,
+          "low_top_of_page_bid": null,
+          "monthly_searches": null,
+          "search_partners": false,
+          "search_volume": null,
+          "spell": null
+        },
+        {
+          "competition": "LOW",
+          "competition_index": 0,
+          "cpc": null,
+          "high_top_of_page_bid": null,
+          "keyword": "huni choi pyramid",
+          "language_code": "en",
+          "location_code": 2840,
+          "low_top_of_page_bid": null,
+          "monthly_searches": [
+            {
+              "month": 6,
+              "search_volume": 20,
+              "year": 2026
+            },
+            {
+              "month": 5,
+              "search_volume": 20,
+              "year": 2026
+            },
+            {
+              "month": 4,
+              "search_volume": 10,
+              "year": 2026
+            },
+            {
+              "month": 3,
+              "search_volume": 20,
+              "year": 2026
+            },
+            {
+              "month": 2,
+              "search_volume": 110,
+              "year": 2026
+            },
+            {
+              "month": 1,
+              "search_volume": 10,
+              "year": 2026
+            },
+            {
+              "month": 12,
+              "search_volume": 0,
+              "year": 2025
+            },
+            {
+              "month": 11,
+              "search_volume": 0,
+              "year": 2025
+            },
+            {
+              "month": 10,
+              "search_volume": 0,
+              "year": 2025
+            },
+            {
+              "month": 9,
+              "search_volume": 0,
+              "year": 2025
+            },
+            {
+              "month": 8,
+              "search_volume": 0,
+              "year": 2025
+            },
+            {
+              "month": 7,
+              "search_volume": 0,
+              "year": 2025
+            }
+          ],
+          "search_partners": false,
+          "search_volume": 20,
+          "spell": null
+        },
+        {
+          "competition": "LOW",
+          "competition_index": 0,
+          "cpc": null,
+          "high_top_of_page_bid": null,
+          "keyword": "huni choi pyramid theory",
+          "language_code": "en",
+          "location_code": 2840,
+          "low_top_of_page_bid": null,
+          "monthly_searches": [
+            {
+              "month": 6,
+              "search_volume": 10,
+              "year": 2026
+            },
+            {
+              "month": 5,
+              "search_volume": 20,
+              "year": 2026
+            },
+            {
+              "month": 4,
+              "search_volume": 10,
+              "year": 2026
+            },
+            {
+              "month": 3,
+              "search_volume": 30,
+              "year": 2026
+            },
+            {
+              "month": 2,
+              "search_volume": 40,
+              "year": 2026
+            },
+            {
+              "month": 1,
+              "search_volume": 0,
+              "year": 2026
+            },
+            {
+              "month": 12,
+              "search_volume": 0,
+              "year": 2025
+            },
+            {
+              "month": 11,
+              "search_volume": 0,
+              "year": 2025
+            },
+            {
+              "month": 10,
+              "search_volume": 0,
+              "year": 2025
+            },
+            {
+              "month": 9,
+              "search_volume": 0,
+              "year": 2025
+            },
+            {
+              "month": 8,
+              "search_volume": 0,
+              "year": 2025
+            },
+            {
+              "month": 7,
+              "search_volume": 0,
+              "year": 2025
+            }
+          ],
+          "search_partners": false,
+          "search_volume": 10,
+          "spell": null
+        },
+        {
+          "competition": null,
+          "competition_index": null,
+          "cpc": null,
+          "high_top_of_page_bid": null,
+          "keyword": "top down pyramid construction",
+          "language_code": "en",
+          "location_code": 2840,
+          "low_top_of_page_bid": null,
+          "monthly_searches": null,
+          "search_partners": false,
+          "search_volume": null,
+          "spell": null
+        },
+        {
+          "competition": null,
+          "competition_index": null,
+          "cpc": null,
+          "high_top_of_page_bid": null,
+          "keyword": "top down pyramid construction theory",
+          "language_code": "en",
+          "location_code": 2840,
+          "low_top_of_page_bid": null,
+          "monthly_searches": null,
+          "search_partners": false,
+          "search_volume": null,
+          "spell": null
+        },
+        {
+          "competition": null,
+          "competition_index": null,
+          "cpc": null,
+          "high_top_of_page_bid": null,
+          "keyword": "pyramid switchback ramp",
+          "language_code": "en",
+          "location_code": 2840,
+          "low_top_of_page_bid": null,
+          "monthly_searches": null,
+          "search_partners": false,
+          "search_volume": null,
+          "spell": null
+        },
+        {
+          "competition": null,
+          "competition_index": null,
+          "cpc": null,
+          "high_top_of_page_bid": null,
+          "keyword": "pyramid switchback ramp theory",
+          "language_code": "en",
+          "location_code": 2840,
+          "low_top_of_page_bid": null,
+          "monthly_searches": null,
+          "search_partners": false,
+          "search_volume": null,
+          "spell": null
+        }
+      ],
+      "result_count": 45,
+      "status_code": 20000,
+      "status_message": "Ok.",
+      "time": "2.6956 sec."
+    }
+  ],
+  "tasks_count": 1,
+  "tasks_error": 0,
+  "time": "2.7879 sec.",
+  "version": "0.1.20260713"
+}
