@@ -62,8 +62,8 @@ The default finished pyramid is `160 x 160 x 101.8 mm`. The full temporary ramp 
 
 For a Flashforge Adventurer 4 Pro:
 
-- `75%` scale is the best all-around kit size
-- `62.5%` scale is a compact display size
+- `62.5%` scale is the recommended modular filming size
+- `75%` fits nominally but leaves almost no margin on the 200 mm bed axis
 - `50%` is close to the practical lower limit with a 0.4 mm nozzle
 
 The modular stackable pieces include `0.35 mm` XY clearance by default around the core/fill and fill/ramp-support interfaces. If your printer tends to make tight assemblies, regenerate the kit with `--stack-clearance-mm 0.5`.
@@ -91,6 +91,6 @@ giza, pyramid, egypt, archaeology, construction, educational, stl, 3d-printing, 
 
 ## Suggested License Selection
 
-Recommended maker-site license: Creative Commons Attribution-NonCommercial-ShareAlike 4.0.
+Maker-site license: Creative Commons Attribution-NonCommercial-ShareAlike 4.0.
 
-Do not publish until the final license is selected in the upload UI. The GitHub repo currently treats this as a release decision, not a silent default.
+The software source in the GitHub repository is separately licensed under MIT.

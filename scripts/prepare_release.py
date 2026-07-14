@@ -41,6 +41,8 @@ COPY_DIRS = [
 COPY_FILES = [
     (ROOT / "README.md", BUNDLE / "README_GITHUB_PROJECT.md"),
     (ROOT / "docs" / "PRINTING.md", BUNDLE / "PRINTING.md"),
+    (ROOT / "docs" / "POST_PRINT_GUIDE.md", BUNDLE / "POST_PRINT_GUIDE.md"),
+    (ROOT / "LICENSE-ASSETS.md", BUNDLE / "LICENSE-ASSETS.md"),
     (ROOT / "dist" / "manifest.json", BUNDLE / "manifest.json"),
     (RELEASE / "LISTING.md", BUNDLE / "THINGIVERSE_LISTING.md"),
     (RELEASE / "UPLOAD_CHECKLIST.md", BUNDLE / "UPLOAD_CHECKLIST.md"),

@@ -47,9 +47,7 @@ Replace them with real print photos once available.
 
 ## License Decision
 
-Recommended: Creative Commons Attribution-NonCommercial-ShareAlike 4.0.
-
-This is only a recommendation. Pick the final license deliberately in the platform UI before publishing. If you want commercial print sales allowed, use a less restrictive Creative Commons license instead.
+Select Creative Commons Attribution-NonCommercial-ShareAlike 4.0 in the platform UI. Confirm that `LICENSE-ASSETS.md` is present in the upload bundle. The GitHub software source is separately licensed under MIT.
 
 ## Final QA
 
@@ -59,4 +57,4 @@ This is only a recommendation. Pick the final license deliberately in the platfo
 - Confirm the full temporary state fits only at the intended scale
 - Confirm the description says this is conceptual, not archaeological proof
 - Confirm the GitHub link is live
-- Confirm the selected license matches your intent
+- Confirm the listing license is CC BY-NC-SA 4.0

@@ -46,6 +46,7 @@ No Python package install is required; the generator uses only the Python standa
 - `demo/` contains the static animated viewer.
 - `dist/` contains generated printable STLs, demo STLs, constructed states, and the manifest. It is intentionally included for GitHub downloads.
 - `docs/PRINTING.md` has scale and printer notes, including Flashforge Adventurer 4 Pro guidance.
+- `docs/POST_PRINT_GUIDE.md` has the first-print MVP, time/material estimates, fit test, assembly order, and filming checklist.
 - `docs/PUBLISHING.md` has the GitHub and maker-site publishing checklist.
 - `docs/BLOG_POST_DRAFT.md` is a ready-draft article for danieliser.com.
 - `release/thingiverse/` contains maker-site listing copy, upload checklist, generated preview renders, and the upload bundle.
@@ -173,7 +174,7 @@ The generated STL units are millimeters.
 
 ## Printing
 
-See `docs/PRINTING.md` for scale guidance. The short version: the finished 160 mm pyramid fits many desktop printers, but the full all-sides temporary ramp state is about 265 mm wide. The stackable construction pieces include `0.35 mm` XY clearance by default. On a Flashforge Adventurer 4 Pro, `75%` scale is the best all-around kit size, and `62.5%` is a good compact display size.
+See `docs/PRINTING.md` for scale guidance and `docs/POST_PRINT_GUIDE.md` for the first physical build. The short version: the finished 160 mm pyramid fits many desktop printers, but the full all-sides temporary ramp state is about 265 mm wide. The stackable construction pieces include `0.35 mm` XY clearance by default. On a Flashforge Adventurer 4 Pro, `62.5%` is the recommended modular filming scale; the nominal `75%` state leaves almost no margin on the bed's 200 mm axis.
 
 ## Animated Demo
 
@@ -212,4 +213,7 @@ This creates preview renders, a curated upload folder, and `release/thingiverse/
 
 ## License
 
-No final open-source or model-sharing license has been selected yet. The maker-site release notes recommend Creative Commons Attribution-NonCommercial-ShareAlike 4.0 as a starting point, but the final license should be selected deliberately before publishing.
+This project uses two licenses:
+
+- The Python generator, validator, browser demo source, and other software code are licensed under the [MIT License](LICENSE).
+- The STL models, generated model files, release images, and documentation are licensed under [Creative Commons Attribution-NonCommercial-ShareAlike 4.0](LICENSE-ASSETS.md).

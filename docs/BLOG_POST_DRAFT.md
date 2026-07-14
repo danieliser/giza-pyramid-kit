@@ -33,7 +33,11 @@ The pyramids are especially like that. Say "ramp" and everyone nods, but which r
 
 Most explanations of the Great Pyramid collapse into a diagram too quickly. The diagram tells you what the theory wants to be true. It does not always tell you whether the geometry can breathe.
 
-So I built a printable version of one of the stranger recent ideas: a Giza pyramid construction theory where the pyramid is first overbuilt as a stepped working mass, the capstone is placed on a broad flat platform, and then the temporary ramps and fill are removed from the top down while the final casing is installed.
+So I built a printable version of one of the stranger recent ideas.
+
+The theory starts by overbuilding the pyramid as a stepped working mass. The capstone goes onto a broad flat platform early. Then the temporary ramps and fill come off from the top down while the final casing goes on.
+
+That is a very different machine.
 
 <figure>
   <img
@@ -45,7 +49,9 @@ So I built a printable version of one of the stranger recent ideas: a Giza pyram
 
 ## The Idea That Sent Me Down The Ramp
 
-The model in this repo follows the broad shape of the Huni Choi / DamiLee version of the top-down theory. It is **not** the familiar spiral ramp theory, and it is not the integrated-edge-ramp theory I initially confused it with.
+I took one wrong turn before I found the theory I was actually trying to model.
+
+The version in this repo follows the broad shape of the Huni Choi / DamiLee top-down theory. It is **not** the familiar spiral ramp theory. It is also not the integrated-edge-ramp theory I initially confused it with.
 
 The public trail I found looks roughly like this:
 
@@ -71,7 +77,9 @@ I am not presenting this as archaeological proof. I am treating it as a geometry
 
 ## Watch The Model Build And Unbuild Itself
 
-The repo includes a live Three.js demo that loops through the sequence: below-grade chamber, stepped inner mound, temporary fill, switchback ramps, capstone, top-down deramping, casing, and reuse pile.
+A still render kept lying to me.
+
+It could show the parts, but not whether one construction state could become the next. So the repo includes a live Three.js demo that loops through the sequence: below-grade chamber, stepped inner mound, temporary fill, switchback ramps, capstone, top-down deramping, casing, and reuse pile.
 
 <div style="position: relative; width: 100%; height: clamp(420px, 65vw, 720px); border: 1px solid rgba(0,0,0,0.14); border-radius: 8px; overflow: hidden; background: #f6f2e8;">
   <iframe
@@ -128,11 +136,15 @@ The default finished pyramid is a 160 mm tabletop model. It is not trying to rep
 
 ## What The Geometry Review Changed
 
-The first printable version also made a classic CAD assumption: pieces that touch perfectly on screen will stack perfectly after extrusion. They will not. Exact contact leaves no room for first-layer spread, extrusion variance, or a slightly enthusiastic printer.
+Then the pieces started fitting too perfectly.
 
-The current kit now builds `0.35 mm` of XY clearance around the core/fill and fill/ramp-support interfaces. The cut fill slabs and ramp supports were also rebuilt as single watertight boundary meshes instead of collections of adjacent boxes, and chamber references are clipped to the same course heights as the construction layers around them.
+That is a classic CAD mistake. Parts that touch perfectly on screen do not stack perfectly after extrusion. Exact contact leaves no room for first-layer spread, extrusion variance, or a slightly enthusiastic printer.
 
-The validator now checks closed positive-volume solids, layer bounds, reserved cutouts, chamber slices, and the requested stack clearance. After that review, all 324 STLs, the browser demo assets, release renders, and maker-site bundle were regenerated together.
+The current kit builds `0.35 mm` of XY clearance around the core/fill and fill/ramp-support interfaces. I also rebuilt the cut fill slabs and ramp supports as single watertight boundary meshes instead of collections of adjacent boxes. Chamber references are clipped to the same course heights as the construction layers around them.
+
+The validator now checks closed positive-volume solids, layer bounds, reserved cutouts, chamber slices, and the requested stack clearance. After that review, I regenerated all 324 STLs along with the browser assets, release renders, and maker-site bundle.
+
+Nothing gets to quietly keep the old geometry.
 
 There is one practical catch: scaling an STL in the slicer scales its clearances too. At `75%`, the default `0.35 mm` gap becomes about `0.26 mm`. For the most reliable modular fit, regenerate at the target physical size while leaving the clearance at `0.35 mm` or higher:
 
@@ -144,6 +156,8 @@ python3 generate_giza_kit.py --base-mm 100 --stack-clearance-mm 0.5
 That is a small detail, but it is the difference between a model that merely looks assembled and one whose removable layers can actually sit down where the math says they should.
 
 ## What You Can Print
+
+At some point, a geometry argument needs to leave the screen.
 
 The GitHub repo is here:
 
@@ -211,11 +225,15 @@ That made the model less pretty and more honest.
 
 ## Why The Capstone Comes Early
 
-The capstone stage is the most interesting part of this theory to model.
+I got the capstone wrong more than once.
+
+That made it the most interesting part of the theory to model.
 
 In a normal mental picture, the pyramid rises toward a point. The top is the last thing. In this theory, the point is placed while the pyramid is still surrounded by working mass. The builders do not need a tiny final work surface at the summit; they have a broad flat platform around it.
 
-That is why the capstone in this model is intentionally small relative to the deck. Earlier versions made it too large and the scene stopped matching the reference idea. Once the pyramidion became small, the top deck started to make sense: a work platform, not a pedestal.
+That is why the capstone in this model is intentionally small relative to the deck. Earlier versions made it too large. The scene stopped matching the reference idea.
+
+Once the pyramidion became small, the top deck started to make sense. It was a work platform, not a pedestal.
 
 <figure>
   <img
@@ -238,6 +256,8 @@ I like that kind of model. It turns "I watched a video and it sounded convincing
 That is a much better place to have the argument.
 
 ## Try It
+
+It is ready to be argued with.
 
 The repo includes generated STL files, a Python generator, geometry validation, release renders, and the live animated viewer:
 

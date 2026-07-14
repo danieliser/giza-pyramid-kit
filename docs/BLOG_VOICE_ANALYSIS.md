@@ -20,6 +20,20 @@ The pass threshold is `z >= -1.0`. The draft is slightly off-center for the
 personal-site corpus, but it is much closer to passing than failing. The fail
 threshold is `z < -3.0`.
 
+## Revision Result
+
+The first restrained voice pass changed section openings, split overloaded
+sentences, added several short conclusions, and introduced a few concrete
+first-person modeling mistakes without changing the article's claims.
+
+- Before revision: `z = -1.33`
+- After revision: `z = -1.11`
+- Result: `WARN`, narrowly below the `-1.0` pass threshold
+
+A second experiment added more profile-specific transition phrases. It scored
+worse at `z = -1.26`, so those phrases were reverted. The better first revision
+is retained; the embedding score remains a guardrail rather than a writing target.
+
 ## Structural Fingerprint Lint
 
 ### Matches

@@ -4,9 +4,9 @@ This project is intended to publish as a standalone GitHub repository from the `
 
 ## Before First Push
 
-1. Choose a license.
-   - No open-source license has been selected yet.
-   - Until a license is added, public GitHub visitors can view the code but do not receive reuse rights.
+1. Confirm the dual-license notices are included.
+   - Software source: MIT (`LICENSE`).
+   - Models, generated STLs, images, and documentation: CC BY-NC-SA 4.0 (`LICENSE-ASSETS.md`).
 2. Regenerate the STL kit:
 
    ```bash
@@ -87,6 +87,6 @@ release/thingiverse/UPLOAD_CHECKLIST.md
 release/thingiverse/LICENSE_NOTE.md
 ```
 
-The bundle intentionally does not silently assign a final public license. Select the license in the platform upload UI before publishing. The recommended starting point for this educational kit is `Creative Commons Attribution-NonCommercial-ShareAlike 4.0`.
+Select `Creative Commons Attribution-NonCommercial-ShareAlike 4.0` in the maker platform's upload UI so the listing matches `LICENSE-ASSETS.md` in the bundle.
 
 Replace the generated preview renders with real print photos when a physical test print is available.

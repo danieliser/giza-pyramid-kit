@@ -19,8 +19,8 @@ Recommended scales:
 | Scale | Finished footprint | Temporary state footprint | Notes |
 |---:|---:|---:|---|
 | `100%` | `160 mm` | `265 mm` | Best detail. Finished pyramid fits; full temporary state needs splitting. |
-| `75%` | `120 mm` | `199 mm` | Best all-around kit scale for Adventurer 4 Pro bed fit. |
-| `62.5%` | `100 mm` | `166 mm` | Nice compact display size with readable ramps and courses. |
+| `75%` | `120 mm` | `199 mm` | Fits nominally, but leaves almost no margin on the bed's 200 mm axis. |
+| `62.5%` | `100 mm` | `166 mm` | Recommended modular filming scale with readable ramps and safe bed margin. |
 | `50%` | `80 mm` | `133 mm` | Practical lower limit with a `0.4 mm` nozzle; expect delicate casing/chamber details. |
 | `<50%` | `<80 mm` | varies | Treat as a simplified visual model unless details are thickened. |
 
@@ -36,7 +36,7 @@ Slicer scaling also scales the clearances. A `75%` slicer-scale print reduces th
 
 ## Scaling Strategy
 
-For a simple slicer-scale test, start at `75%` or `62.5%`.
+For a simple slicer-scale test, start at `62.5%`. Use `75%` only for pieces that have enough bed margin after the slicer adds any brim, skirt, or placement clearance.
 
 For a polished miniature, regenerate with thicker features instead of only scaling down:
 
@@ -45,3 +45,9 @@ python3 generate_giza_kit.py --base-mm 100 --ramp-width-mm 12 --courses 14 --cas
 ```
 
 Future mini presets should keep casing walls, chamber rods, and the top platform above the nozzle's reliable feature size instead of scaling every detail proportionally.
+
+## First-Print Budget
+
+For a working build-and-deramp filming kit at `62.5%`, plan on roughly `45-65 hours` and `600-900 g` of PLA. A fast static before/after pair at `50%` is roughly `18-28 hours` and `300-400 g`.
+
+These are geometry-based planning ranges. Record FlashPrint's estimate before starting and the actual elapsed time afterward. The complete fit-test, print order, assembly, filming, and results log are in [`POST_PRINT_GUIDE.md`](POST_PRINT_GUIDE.md).
