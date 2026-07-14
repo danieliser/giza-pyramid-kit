@@ -3,11 +3,22 @@ title: "Printing a Pyramid Theory: A Buildable Giza Construction Model"
 slug: "printable-giza-construction-theory"
 date: 2026-07-14
 status: ready-draft
-excerpt: "A story about turning a speculative top-down pyramid construction idea into a printable STL kit, a browser animation, and a physical way to argue with the geometry."
+excerpt: "Explore a printable Great Pyramid construction theory with layered STL files, internal chambers, switchback ramps, and an animated top-down build demo."
+seo_title: "Great Pyramid Construction Theory: Printable STL Model"
+meta_description: "Explore a printable Great Pyramid construction theory with layered STL files, internal chambers, switchback ramps, and an animated top-down build demo."
+focus_keyword: "Great Pyramid construction theory"
+secondary_keywords:
+  - pyramid ramp theory
+  - how were the pyramids built
+  - Giza pyramid STL
+  - 3D printable pyramid model
+  - top-down pyramid construction
 tags:
   - 3d-printing
   - geometry
   - pyramids
+  - great-pyramid
+  - construction-theory
   - experiments
   - stl
 hero_image: "https://danieliser.github.io/giza-pyramid-kit/release/thingiverse/images/capstone_before_deramping.png?v=4271355"
