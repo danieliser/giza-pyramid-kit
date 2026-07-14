@@ -102,6 +102,7 @@ class KitParams:
     ramp_margin_mm: float = 6.0
     ramp_platform_fraction: float = 0.25
     landing_corner_notch_fraction: float = 0.35
+    stack_clearance_mm: float = 0.35
     top_platform_half_fraction: float = 0.24
     temporary_overbuild_mm: float = 0.0
     platform_thickness_mm: float = 0.9
@@ -194,7 +195,9 @@ def ramp_lane_count() -> int:
 
 
 def ramp_floor_z(p: KitParams, level: int) -> float:
-    return max(0.0, course_z(p, level) - p.ramp_thickness_mm)
+    if level <= 0:
+        return 0.0
+    return max(course_z(p, level - 1), course_z(p, level) - p.ramp_thickness_mm)
 
 
 def ramp_top_z(p: KitParams, level: int) -> float:
@@ -436,19 +439,7 @@ def add_stepped_core_course(mesh: Mesh, p: KitParams, level: int) -> None:
     z0 = level * dz
     z1 = (level + 1) * dz
     half = core_half_at_fraction(p, level / p.courses)
-    next_half = core_half_at_fraction(p, (level + 1) / p.courses)
-
-    if level == 0:
-        add_horizontal_square(mesh, 0.0, half, flip=True)
-
-    mesh.add_quad((-half, -half, z0), (half, -half, z0), (half, -half, z1), (-half, -half, z1))
-    mesh.add_quad((half, -half, z0), (half, half, z0), (half, half, z1), (half, -half, z1))
-    mesh.add_quad((half, half, z0), (-half, half, z0), (-half, half, z1), (half, half, z1))
-    mesh.add_quad((-half, half, z0), (-half, -half, z0), (-half, -half, z1), (-half, half, z1))
-
-    add_horizontal_square_ring(mesh, z1, half, next_half)
-    if level == p.courses - 1:
-        add_horizontal_square(mesh, z1, next_half)
+    add_box(mesh, -half, half, -half, half, z0, z1)
 
 
 def make_stepped_core_layer(p: KitParams, level: int) -> Mesh:
@@ -486,19 +477,7 @@ def make_temporary_backfill(p: KitParams, max_z: float | None = None) -> Mesh:
         if max_z is not None and z1 > max_z:
             continue
         half = backfill_half_at_level(p, i)
-        next_half = backfill_half_at_level(p, i + 1)
-
-        if i == 0:
-            add_horizontal_square(mesh, 0.0, half, flip=True)
-
-        mesh.add_quad((-half, -half, z0), (half, -half, z0), (half, -half, z1), (-half, -half, z1))
-        mesh.add_quad((half, -half, z0), (half, half, z0), (half, half, z1), (half, -half, z1))
-        mesh.add_quad((half, half, z0), (-half, half, z0), (-half, half, z1), (half, half, z1))
-        mesh.add_quad((-half, half, z0), (-half, -half, z0), (-half, -half, z1), (-half, half, z1))
-
-        add_horizontal_square_ring(mesh, z1, half, next_half)
-        if i == p.courses - 1:
-            add_horizontal_square(mesh, z1, next_half)
+        add_box(mesh, -half, half, -half, half, z0, z1)
     return mesh
 
 
@@ -530,14 +509,48 @@ def point_in_rect(x: float, y: float, rect: Rect2) -> bool:
     return xmin <= x <= xmax and ymin <= y <= ymax
 
 
+def expanded_rect(rect: Rect2, amount: float) -> Rect2:
+    xmin, xmax, ymin, ymax = rect
+    return (xmin - amount, xmax + amount, ymin - amount, ymax + amount)
+
+
 def slab_cut_rects(p: KitParams, slab_level: int) -> list[Rect2]:
     levels = {slab_level}
     if slab_level + 1 < ramp_level_count(p):
         levels.add(slab_level + 1)
     rects: list[Rect2] = []
     for level in sorted(levels):
-        rects.extend(ramp_cut_rects_for_level(p, level))
+        rects.extend(expanded_rect(rect, p.stack_clearance_mm) for rect in ramp_cut_rects_for_level(p, level))
     return rects
+
+
+def core_cut_rect_for_level(p: KitParams, level: int) -> Rect2:
+    half = core_half_at_fraction(p, level / p.courses) + p.stack_clearance_mm
+    return (-half, half, -half, half)
+
+
+def temporary_fill_cut_rects(p: KitParams, level: int) -> list[Rect2]:
+    return [core_cut_rect_for_level(p, level), *slab_cut_rects(p, level)]
+
+
+def corner_notch_cut_rects(inner: float, outer: float, notch_fraction: float) -> list[Rect2]:
+    notch_fraction = min(0.7, max(0.05, notch_fraction))
+    width = outer - inner
+    notch = width * notch_fraction
+    return [
+        (outer - notch, outer, outer - notch, outer),
+        (outer - notch, outer, -outer, -outer + notch),
+        (-outer, -outer + notch, -outer, -outer + notch),
+        (-outer, -outer + notch, outer - notch, outer),
+    ]
+
+
+def ramp_underfill_cut_rects(p: KitParams, level: int) -> list[Rect2]:
+    inner, outer = ramp_lane_bounds(p, level, 0)
+    return [
+        (-inner - p.stack_clearance_mm, inner + p.stack_clearance_mm, -inner - p.stack_clearance_mm, inner + p.stack_clearance_mm),
+        *(expanded_rect(rect, p.stack_clearance_mm) for rect in corner_notch_cut_rects(inner, outer, p.landing_corner_notch_fraction)),
+    ]
 
 
 def add_cut_square_slab(mesh: Mesh, half: float, z0: float, z1: float, cut_rects: list[Rect2]) -> None:
@@ -553,21 +566,52 @@ def add_cut_square_slab(mesh: Mesh, half: float, z0: float, z1: float, cut_rects
 
     x_values = sorted(xs)
     y_values = sorted(ys)
+    occupied: list[list[bool]] = []
+    for xi in range(len(x_values) - 1):
+        xmin = x_values[xi]
+        xmax = x_values[xi + 1]
+        column: list[bool] = []
+        if xmax <= xmin:
+            occupied.append(column)
+            continue
+        for yi in range(len(y_values) - 1):
+            ymin = y_values[yi]
+            ymax = y_values[yi + 1]
+            if ymax <= ymin:
+                column.append(False)
+                continue
+            cx = (xmin + xmax) / 2.0
+            cy = (ymin + ymax) / 2.0
+            column.append(not any(point_in_rect(cx, cy, rect) for rect in active_cuts))
+        occupied.append(column)
+
+    def cell_is_occupied(xi: int, yi: int) -> bool:
+        return 0 <= xi < len(occupied) and 0 <= yi < len(occupied[xi]) and occupied[xi][yi]
+
     for xi in range(len(x_values) - 1):
         xmin = x_values[xi]
         xmax = x_values[xi + 1]
         if xmax <= xmin:
             continue
         for yi in range(len(y_values) - 1):
+            if not cell_is_occupied(xi, yi):
+                continue
             ymin = y_values[yi]
             ymax = y_values[yi + 1]
             if ymax <= ymin:
                 continue
-            cx = (xmin + xmax) / 2.0
-            cy = (ymin + ymax) / 2.0
-            if any(point_in_rect(cx, cy, rect) for rect in active_cuts):
-                continue
-            add_box(mesh, xmin, xmax, ymin, ymax, z0, z1)
+
+            mesh.add_quad((xmin, ymin, z1), (xmax, ymin, z1), (xmax, ymax, z1), (xmin, ymax, z1))
+            mesh.add_quad((xmin, ymax, z0), (xmax, ymax, z0), (xmax, ymin, z0), (xmin, ymin, z0))
+
+            if not cell_is_occupied(xi, yi - 1):
+                mesh.add_quad((xmin, ymin, z0), (xmax, ymin, z0), (xmax, ymin, z1), (xmin, ymin, z1))
+            if not cell_is_occupied(xi + 1, yi):
+                mesh.add_quad((xmax, ymin, z0), (xmax, ymax, z0), (xmax, ymax, z1), (xmax, ymin, z1))
+            if not cell_is_occupied(xi, yi + 1):
+                mesh.add_quad((xmax, ymax, z0), (xmin, ymax, z0), (xmin, ymax, z1), (xmax, ymax, z1))
+            if not cell_is_occupied(xi - 1, yi):
+                mesh.add_quad((xmin, ymax, z0), (xmin, ymin, z0), (xmin, ymin, z1), (xmin, ymax, z1))
 
 
 def make_cut_temporary_backfill(p: KitParams, max_z: float | None = None) -> Mesh:
@@ -578,7 +622,7 @@ def make_cut_temporary_backfill(p: KitParams, max_z: float | None = None) -> Mes
         if max_z is not None and z1 > max_z:
             continue
         half = backfill_half_at_level(p, i)
-        add_cut_square_slab(mesh, half, z0, z1, slab_cut_rects(p, i))
+        add_cut_square_slab(mesh, half, z0, z1, temporary_fill_cut_rects(p, i))
     return mesh
 
 
@@ -587,7 +631,7 @@ def make_cut_temporary_backfill_layer(p: KitParams, level: int) -> Mesh:
     z0 = course_z(p, level)
     z1 = course_z(p, level + 1)
     half = backfill_half_at_level(p, level)
-    add_cut_square_slab(mesh, half, z0, z1, slab_cut_rects(p, level))
+    add_cut_square_slab(mesh, half, z0, z1, temporary_fill_cut_rects(p, level))
     return mesh
 
 
@@ -907,11 +951,10 @@ def make_side_ramp_underfill(p: KitParams, face: int, max_z: float | None = None
     for level in range(1, ramp_level_count(p)):
         if max_z is not None and ramp_top_z(p, level) > max_z:
             continue
-        _, outer = ramp_lane_bounds(p, level, 0)
-        inner = temporary_work_half(p, course_z(p, level)) + p.ramp_gap_mm
+        inner, outer = ramp_lane_bounds(p, level, 0)
         zmin = course_z(p, level - 1)
-        zmax = course_z(p, level)
-        add_oriented_box(mesh, transform, -outer, outer, inner, outer, zmin, zmax)
+        zmax = ramp_floor_z(p, level)
+        add_oriented_box(mesh, transform, -inner, inner, inner, outer, zmin, zmax)
     return mesh
 
 
@@ -921,18 +964,17 @@ def make_side_ramp_underfill_layer(p: KitParams, face: int, level: int) -> Mesh:
     if level <= 0:
         return mesh
     transform = face_transform(face)
-    _, outer = ramp_lane_bounds(p, level, 0)
-    inner = temporary_work_half(p, course_z(p, level)) + p.ramp_gap_mm
+    inner, outer = ramp_lane_bounds(p, level, 0)
     zmin = course_z(p, level - 1)
-    zmax = course_z(p, level)
-    add_oriented_box(mesh, transform, -outer, outer, inner, outer, zmin, zmax)
+    zmax = ramp_floor_z(p, level)
+    add_oriented_box(mesh, transform, -inner, inner, inner, outer, zmin, zmax)
     return mesh
 
 
 def make_corner_ramp_underfill(p: KitParams, corner: str, level: int) -> Mesh:
     inner, outer = ramp_lane_bounds(p, level, 0)
     zmin = course_z(p, level - 1)
-    zmax = course_z(p, level)
+    zmax = ramp_floor_z(p, level)
     mesh = Mesh(f"temporary_switchback_corner_underfill_{corner}_level_{level + 1:02d}")
     bounds = {
         "ne": (inner, outer, inner, outer),
@@ -948,21 +990,23 @@ def make_ramp_underfill_layer(p: KitParams, level: int) -> Mesh:
     mesh = Mesh(f"temporary_switchback_ramp_underfill_layer_{level + 1:02d}")
     if level <= 0:
         return mesh
-    for face in range(4):
-        mesh.extend(make_side_ramp_underfill_layer(p, face, level))
-    for corner in ("ne", "se", "sw", "nw"):
-        mesh.extend(make_corner_ramp_underfill(p, corner, level))
+    _, outer = ramp_lane_bounds(p, level, 0)
+    add_cut_square_slab(mesh, outer, course_z(p, level - 1), ramp_floor_z(p, level), ramp_underfill_cut_rects(p, level))
     return mesh
 
 
 def make_ramp_underfill(p: KitParams, max_z: float | None = None) -> tuple[Mesh, dict[str, Mesh]]:
     all_underfill = Mesh("temporary_switchback_ramp_underfill_all_sides")
     face_underfills: dict[str, Mesh] = {}
+    for level in range(1, ramp_level_count(p)):
+        if max_z is not None and ramp_top_z(p, level) > max_z:
+            continue
+        all_underfill.extend(make_ramp_underfill_layer(p, level))
+
     face_names = ["north", "east", "south", "west"]
     for face, face_name in enumerate(face_names):
         side = make_side_ramp_underfill(p, face, max_z)
         face_underfills[face_name] = side
-        all_underfill.extend(side)
 
     corner_underfill = Mesh("temporary_switchback_corner_underfill")
     for level in range(1, ramp_level_count(p)):
@@ -971,7 +1015,6 @@ def make_ramp_underfill(p: KitParams, max_z: float | None = None) -> tuple[Mesh,
         for corner in ("ne", "se", "sw", "nw"):
             support = make_corner_ramp_underfill(p, corner, level)
             corner_underfill.extend(support)
-            all_underfill.extend(support)
     face_underfills["corner_landings"] = corner_underfill
     return all_underfill, face_underfills
 
@@ -1108,9 +1151,19 @@ def make_internal_chambers_reference(p: KitParams, zmin_mm: float | None = None,
         return lo, hi
 
     def tunnel(y0: float, z0: float, y1: float, z1: float, width: float, height: float) -> None:
+        effective_height_m = max(m(height), 1.15) / scale
         if clip_min_m is not None or clip_max_m is not None:
             min_z = clip_min_m if clip_min_m is not None else -1_000_000.0
             max_z = clip_max_m if clip_max_m is not None else 1_000_000.0
+            length_yz = math.hypot(y1 - y0, z1 - z0)
+            if length_yz <= 0.000001:
+                return
+            normal_z = (y1 - y0) / length_yz
+            section_z_margin = abs(normal_z) * effective_height_m / 2.0
+            min_z += section_z_margin
+            max_z -= section_z_margin
+            if max_z < min_z:
+                return
             if abs(z1 - z0) < 0.000001:
                 if z0 < min_z or z0 > max_z:
                     return
@@ -1126,7 +1179,7 @@ def make_internal_chambers_reference(p: KitParams, zmin_mm: float | None = None,
                 z0 = original_z0 + (z1 - original_z0) * t0
                 y1 = original_y0 + (y1 - original_y0) * t1
                 z1 = original_z0 + (z1 - original_z0) * t1
-        add_yz_tunnel(mesh, m(y0), m(z0), m(y1), m(z1), max(m(width), 1.15), max(m(height), 1.15))
+        add_yz_tunnel(mesh, m(y0), m(z0), m(y1), m(z1), max(m(width), 1.15), m(effective_height_m))
 
     def chamber_box(center_y: float, z_floor: float, width_x: float, depth_y: float, height: float) -> None:
         z_range = clipped_range(z_floor, z_floor + height)
@@ -1390,11 +1443,11 @@ def generate(p: KitParams) -> list[dict[str, object]]:
     stages = [
         (
             "stage_01_inner_core_with_temporary_switchback_ramps.stl",
-            combine("stage_01_cut_mound_single_switchback_ramps", [cut_backfill, supported_ramps_all]),
+            combine("stage_01_cut_mound_single_switchback_ramps", [core, cut_backfill, supported_ramps_all]),
         ),
         (
             "stage_02_capstone_on_flat_platform_before_deramping.stl",
-            combine("stage_02_capstone_platform", [cut_backfill, supported_ramps_all, platform, capstone]),
+            combine("stage_02_capstone_platform", [core, cut_backfill, supported_ramps_all, platform, capstone]),
         ),
         (
             "stage_03_upper_ramps_removed_top_casing_added.stl",
@@ -1419,11 +1472,11 @@ def generate(p: KitParams) -> list[dict[str, object]]:
     constructed_states = [
         (
             "constructed_01_full_backfilled_ramp_system.stl",
-            combine("constructed_01_full_supported_ramp_system", [cut_backfill, supported_ramps_all]),
+            combine("constructed_01_full_supported_ramp_system", [core, cut_backfill, supported_ramps_all]),
         ),
         (
             "constructed_02_capstone_set_before_deramping.stl",
-            combine("constructed_02_capstone_set_before_deramping", [cut_backfill, supported_ramps_all, platform, capstone]),
+            combine("constructed_02_capstone_set_before_deramping", [core, cut_backfill, supported_ramps_all, platform, capstone]),
         ),
         (
             "constructed_03_partial_top_down_deramping.stl",
@@ -1453,6 +1506,7 @@ def generate(p: KitParams) -> list[dict[str, object]]:
             "ramp_margin_mm": p.ramp_margin_mm,
             "ramp_platform_fraction": p.ramp_platform_fraction,
             "landing_corner_notch_fraction": p.landing_corner_notch_fraction,
+            "stack_clearance_mm": p.stack_clearance_mm,
             "top_platform_half_fraction": p.top_platform_half_fraction,
             "temporary_overbuild_mm": p.temporary_overbuild_mm,
             "computed_temporary_overbuild_mm": round(temporary_overbuild_offset(p), 3),
@@ -1473,6 +1527,7 @@ def build_arg_parser() -> argparse.ArgumentParser:
     parser.add_argument("--casing-rings", default=16, type=int, help="Number of removable casing rings.")
     parser.add_argument("--ramp-width-mm", default=18.0, type=float, help="Temporary ramp ribbon width.")
     parser.add_argument("--ramp-gap-mm", default=4.0, type=float, help="Gap between temporary work deck/face and ramp ribbon.")
+    parser.add_argument("--stack-clearance-mm", default=0.35, type=float, help="Extra XY clearance around stackable/removable printed parts.")
     parser.add_argument("--top-platform-half-fraction", default=0.24, type=float, help="Temporary top work-deck half-width as a fraction of finished base width.")
     parser.add_argument("--temporary-overbuild-mm", default=0.0, type=float, help="Uniform outward offset for the temporary overbuilt work mass. Default 0 infers it from the top deck size.")
     parser.add_argument("--core-base-fraction", default=0.65, type=float, help="Inner core base half-width as fraction of final half-width.")
@@ -1495,6 +1550,7 @@ def params_from_args(args: argparse.Namespace) -> KitParams:
         casing_rings=args.casing_rings,
         ramp_width_mm=args.ramp_width_mm,
         ramp_gap_mm=args.ramp_gap_mm,
+        stack_clearance_mm=args.stack_clearance_mm,
         top_platform_half_fraction=args.top_platform_half_fraction,
         temporary_overbuild_mm=args.temporary_overbuild_mm,
         core_base_fraction=args.core_base_fraction,

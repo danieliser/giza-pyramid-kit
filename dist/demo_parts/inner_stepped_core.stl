@@ -13,6 +13,20 @@ solid inner_stepped_mound_core
       vertex -52 -52 0
     endloop
   endfacet
+  facet normal 0 0 1
+    outer loop
+      vertex -52 -52 5.925
+      vertex 52 -52 5.925
+      vertex 52 52 5.925
+    endloop
+  endfacet
+  facet normal 0 0 1
+    outer loop
+      vertex -52 -52 5.925
+      vertex 52 52 5.925
+      vertex -52 52 5.925
+    endloop
+  endfacet
   facet normal 0 -1 0
     outer loop
       vertex -52 -52 0
@@ -69,60 +83,32 @@ solid inner_stepped_mound_core
       vertex -52 52 5.925
     endloop
   endfacet
-  facet normal 0 0 1
+  facet normal 0 0 -1
     outer loop
-      vertex -52 -52 5.925
-      vertex 52 -52 5.925
-      vertex 52 -48.96316 5.925
-    endloop
-  endfacet
-  facet normal 0 0 1
-    outer loop
-      vertex -52 -52 5.925
-      vertex 52 -48.96316 5.925
-      vertex -52 -48.96316 5.925
-    endloop
-  endfacet
-  facet normal 0 0 1
-    outer loop
-      vertex 48.96316 -48.96316 5.925
-      vertex 52 -48.96316 5.925
-      vertex 52 48.96316 5.925
-    endloop
-  endfacet
-  facet normal 0 0 1
-    outer loop
-      vertex 48.96316 -48.96316 5.925
-      vertex 52 48.96316 5.925
+      vertex -48.96316 48.96316 5.925
       vertex 48.96316 48.96316 5.925
+      vertex 48.96316 -48.96316 5.925
     endloop
   endfacet
-  facet normal 0 0 1
+  facet normal 0 0 -1
     outer loop
-      vertex -52 48.96316 5.925
-      vertex 52 48.96316 5.925
-      vertex 52 52 5.925
-    endloop
-  endfacet
-  facet normal 0 0 1
-    outer loop
-      vertex -52 48.96316 5.925
-      vertex 52 52 5.925
-      vertex -52 52 5.925
-    endloop
-  endfacet
-  facet normal 0 0 1
-    outer loop
-      vertex -52 -48.96316 5.925
+      vertex -48.96316 48.96316 5.925
+      vertex 48.96316 -48.96316 5.925
       vertex -48.96316 -48.96316 5.925
-      vertex -48.96316 48.96316 5.925
     endloop
   endfacet
   facet normal 0 0 1
     outer loop
-      vertex -52 -48.96316 5.925
-      vertex -48.96316 48.96316 5.925
-      vertex -52 48.96316 5.925
+      vertex -48.96316 -48.96316 11.85
+      vertex 48.96316 -48.96316 11.85
+      vertex 48.96316 48.96316 11.85
+    endloop
+  endfacet
+  facet normal 0 0 1
+    outer loop
+      vertex -48.96316 -48.96316 11.85
+      vertex 48.96316 48.96316 11.85
+      vertex -48.96316 48.96316 11.85
     endloop
   endfacet
   facet normal 0 -1 0
@@ -181,60 +167,32 @@ solid inner_stepped_mound_core
       vertex -48.96316 48.96316 11.85
     endloop
   endfacet
-  facet normal 0 0 1
+  facet normal 0 0 -1
     outer loop
-      vertex -48.96316 -48.96316 11.85
-      vertex 48.96316 -48.96316 11.85
-      vertex 48.96316 -45.92633 11.85
-    endloop
-  endfacet
-  facet normal 0 0 1
-    outer loop
-      vertex -48.96316 -48.96316 11.85
-      vertex 48.96316 -45.92633 11.85
-      vertex -48.96316 -45.92633 11.85
-    endloop
-  endfacet
-  facet normal 0 0 1
-    outer loop
-      vertex 45.92633 -45.92633 11.85
-      vertex 48.96316 -45.92633 11.85
-      vertex 48.96316 45.92633 11.85
-    endloop
-  endfacet
-  facet normal 0 0 1
-    outer loop
-      vertex 45.92633 -45.92633 11.85
-      vertex 48.96316 45.92633 11.85
+      vertex -45.92633 45.92633 11.85
       vertex 45.92633 45.92633 11.85
+      vertex 45.92633 -45.92633 11.85
     endloop
   endfacet
-  facet normal 0 0 1
+  facet normal 0 0 -1
     outer loop
-      vertex -48.96316 45.92633 11.85
-      vertex 48.96316 45.92633 11.85
-      vertex 48.96316 48.96316 11.85
-    endloop
-  endfacet
-  facet normal 0 0 1
-    outer loop
-      vertex -48.96316 45.92633 11.85
-      vertex 48.96316 48.96316 11.85
-      vertex -48.96316 48.96316 11.85
-    endloop
-  endfacet
-  facet normal 0 0 1
-    outer loop
-      vertex -48.96316 -45.92633 11.85
+      vertex -45.92633 45.92633 11.85
+      vertex 45.92633 -45.92633 11.85
       vertex -45.92633 -45.92633 11.85
-      vertex -45.92633 45.92633 11.85
     endloop
   endfacet
   facet normal 0 0 1
     outer loop
-      vertex -48.96316 -45.92633 11.85
-      vertex -45.92633 45.92633 11.85
-      vertex -48.96316 45.92633 11.85
+      vertex -45.92633 -45.92633 17.775
+      vertex 45.92633 -45.92633 17.775
+      vertex 45.92633 45.92633 17.775
+    endloop
+  endfacet
+  facet normal 0 0 1
+    outer loop
+      vertex -45.92633 -45.92633 17.775
+      vertex 45.92633 45.92633 17.775
+      vertex -45.92633 45.92633 17.775
     endloop
   endfacet
   facet normal 0 -1 0
@@ -293,60 +251,32 @@ solid inner_stepped_mound_core
       vertex -45.92633 45.92633 17.775
     endloop
   endfacet
-  facet normal 0 0 1
+  facet normal 0 0 -1
     outer loop
-      vertex -45.92633 -45.92633 17.775
-      vertex 45.92633 -45.92633 17.775
-      vertex 45.92633 -42.88949 17.775
-    endloop
-  endfacet
-  facet normal 0 0 1
-    outer loop
-      vertex -45.92633 -45.92633 17.775
-      vertex 45.92633 -42.88949 17.775
-      vertex -45.92633 -42.88949 17.775
-    endloop
-  endfacet
-  facet normal 0 0 1
-    outer loop
-      vertex 42.88949 -42.88949 17.775
-      vertex 45.92633 -42.88949 17.775
-      vertex 45.92633 42.88949 17.775
-    endloop
-  endfacet
-  facet normal 0 0 1
-    outer loop
-      vertex 42.88949 -42.88949 17.775
-      vertex 45.92633 42.88949 17.775
+      vertex -42.88949 42.88949 17.775
       vertex 42.88949 42.88949 17.775
+      vertex 42.88949 -42.88949 17.775
     endloop
   endfacet
-  facet normal 0 0 1
+  facet normal 0 0 -1
     outer loop
-      vertex -45.92633 42.88949 17.775
-      vertex 45.92633 42.88949 17.775
-      vertex 45.92633 45.92633 17.775
-    endloop
-  endfacet
-  facet normal 0 0 1
-    outer loop
-      vertex -45.92633 42.88949 17.775
-      vertex 45.92633 45.92633 17.775
-      vertex -45.92633 45.92633 17.775
-    endloop
-  endfacet
-  facet normal 0 0 1
-    outer loop
-      vertex -45.92633 -42.88949 17.775
+      vertex -42.88949 42.88949 17.775
+      vertex 42.88949 -42.88949 17.775
       vertex -42.88949 -42.88949 17.775
-      vertex -42.88949 42.88949 17.775
     endloop
   endfacet
   facet normal 0 0 1
     outer loop
-      vertex -45.92633 -42.88949 17.775
-      vertex -42.88949 42.88949 17.775
-      vertex -45.92633 42.88949 17.775
+      vertex -42.88949 -42.88949 23.7
+      vertex 42.88949 -42.88949 23.7
+      vertex 42.88949 42.88949 23.7
+    endloop
+  endfacet
+  facet normal 0 0 1
+    outer loop
+      vertex -42.88949 -42.88949 23.7
+      vertex 42.88949 42.88949 23.7
+      vertex -42.88949 42.88949 23.7
     endloop
   endfacet
   facet normal 0 -1 0
@@ -405,60 +335,32 @@ solid inner_stepped_mound_core
       vertex -42.88949 42.88949 23.7
     endloop
   endfacet
-  facet normal 0 0 1
+  facet normal 0 0 -1
     outer loop
-      vertex -42.88949 -42.88949 23.7
-      vertex 42.88949 -42.88949 23.7
-      vertex 42.88949 -39.85265 23.7
-    endloop
-  endfacet
-  facet normal 0 0 1
-    outer loop
-      vertex -42.88949 -42.88949 23.7
-      vertex 42.88949 -39.85265 23.7
-      vertex -42.88949 -39.85265 23.7
-    endloop
-  endfacet
-  facet normal 0 0 1
-    outer loop
-      vertex 39.85265 -39.85265 23.7
-      vertex 42.88949 -39.85265 23.7
-      vertex 42.88949 39.85265 23.7
-    endloop
-  endfacet
-  facet normal 0 0 1
-    outer loop
-      vertex 39.85265 -39.85265 23.7
-      vertex 42.88949 39.85265 23.7
+      vertex -39.85265 39.85265 23.7
       vertex 39.85265 39.85265 23.7
+      vertex 39.85265 -39.85265 23.7
     endloop
   endfacet
-  facet normal 0 0 1
+  facet normal 0 0 -1
     outer loop
-      vertex -42.88949 39.85265 23.7
-      vertex 42.88949 39.85265 23.7
-      vertex 42.88949 42.88949 23.7
-    endloop
-  endfacet
-  facet normal 0 0 1
-    outer loop
-      vertex -42.88949 39.85265 23.7
-      vertex 42.88949 42.88949 23.7
-      vertex -42.88949 42.88949 23.7
-    endloop
-  endfacet
-  facet normal 0 0 1
-    outer loop
-      vertex -42.88949 -39.85265 23.7
+      vertex -39.85265 39.85265 23.7
+      vertex 39.85265 -39.85265 23.7
       vertex -39.85265 -39.85265 23.7
-      vertex -39.85265 39.85265 23.7
     endloop
   endfacet
   facet normal 0 0 1
     outer loop
-      vertex -42.88949 -39.85265 23.7
-      vertex -39.85265 39.85265 23.7
-      vertex -42.88949 39.85265 23.7
+      vertex -39.85265 -39.85265 29.625
+      vertex 39.85265 -39.85265 29.625
+      vertex 39.85265 39.85265 29.625
+    endloop
+  endfacet
+  facet normal 0 0 1
+    outer loop
+      vertex -39.85265 -39.85265 29.625
+      vertex 39.85265 39.85265 29.625
+      vertex -39.85265 39.85265 29.625
     endloop
   endfacet
   facet normal 0 -1 0
@@ -517,60 +419,32 @@ solid inner_stepped_mound_core
       vertex -39.85265 39.85265 29.625
     endloop
   endfacet
-  facet normal 0 0 1
+  facet normal 0 0 -1
     outer loop
-      vertex -39.85265 -39.85265 29.625
-      vertex 39.85265 -39.85265 29.625
-      vertex 39.85265 -36.81582 29.625
-    endloop
-  endfacet
-  facet normal 0 0 1
-    outer loop
-      vertex -39.85265 -39.85265 29.625
-      vertex 39.85265 -36.81582 29.625
-      vertex -39.85265 -36.81582 29.625
-    endloop
-  endfacet
-  facet normal 0 0 1
-    outer loop
-      vertex 36.81582 -36.81582 29.625
-      vertex 39.85265 -36.81582 29.625
-      vertex 39.85265 36.81582 29.625
-    endloop
-  endfacet
-  facet normal 0 0 1
-    outer loop
-      vertex 36.81582 -36.81582 29.625
-      vertex 39.85265 36.81582 29.625
+      vertex -36.81582 36.81582 29.625
       vertex 36.81582 36.81582 29.625
+      vertex 36.81582 -36.81582 29.625
     endloop
   endfacet
-  facet normal 0 0 1
+  facet normal 0 0 -1
     outer loop
-      vertex -39.85265 36.81582 29.625
-      vertex 39.85265 36.81582 29.625
-      vertex 39.85265 39.85265 29.625
-    endloop
-  endfacet
-  facet normal 0 0 1
-    outer loop
-      vertex -39.85265 36.81582 29.625
-      vertex 39.85265 39.85265 29.625
-      vertex -39.85265 39.85265 29.625
-    endloop
-  endfacet
-  facet normal 0 0 1
-    outer loop
-      vertex -39.85265 -36.81582 29.625
+      vertex -36.81582 36.81582 29.625
+      vertex 36.81582 -36.81582 29.625
       vertex -36.81582 -36.81582 29.625
-      vertex -36.81582 36.81582 29.625
     endloop
   endfacet
   facet normal 0 0 1
     outer loop
-      vertex -39.85265 -36.81582 29.625
-      vertex -36.81582 36.81582 29.625
-      vertex -39.85265 36.81582 29.625
+      vertex -36.81582 -36.81582 35.55
+      vertex 36.81582 -36.81582 35.55
+      vertex 36.81582 36.81582 35.55
+    endloop
+  endfacet
+  facet normal 0 0 1
+    outer loop
+      vertex -36.81582 -36.81582 35.55
+      vertex 36.81582 36.81582 35.55
+      vertex -36.81582 36.81582 35.55
     endloop
   endfacet
   facet normal 0 -1 0
@@ -629,60 +503,32 @@ solid inner_stepped_mound_core
       vertex -36.81582 36.81582 35.55
     endloop
   endfacet
-  facet normal 0 0 1
+  facet normal 0 0 -1
     outer loop
-      vertex -36.81582 -36.81582 35.55
-      vertex 36.81582 -36.81582 35.55
-      vertex 36.81582 -33.77898 35.55
-    endloop
-  endfacet
-  facet normal 0 0 1
-    outer loop
-      vertex -36.81582 -36.81582 35.55
-      vertex 36.81582 -33.77898 35.55
-      vertex -36.81582 -33.77898 35.55
-    endloop
-  endfacet
-  facet normal 0 0 1
-    outer loop
-      vertex 33.77898 -33.77898 35.55
-      vertex 36.81582 -33.77898 35.55
-      vertex 36.81582 33.77898 35.55
-    endloop
-  endfacet
-  facet normal 0 0 1
-    outer loop
-      vertex 33.77898 -33.77898 35.55
-      vertex 36.81582 33.77898 35.55
+      vertex -33.77898 33.77898 35.55
       vertex 33.77898 33.77898 35.55
+      vertex 33.77898 -33.77898 35.55
     endloop
   endfacet
-  facet normal 0 0 1
+  facet normal 0 0 -1
     outer loop
-      vertex -36.81582 33.77898 35.55
-      vertex 36.81582 33.77898 35.55
-      vertex 36.81582 36.81582 35.55
-    endloop
-  endfacet
-  facet normal 0 0 1
-    outer loop
-      vertex -36.81582 33.77898 35.55
-      vertex 36.81582 36.81582 35.55
-      vertex -36.81582 36.81582 35.55
-    endloop
-  endfacet
-  facet normal 0 0 1
-    outer loop
-      vertex -36.81582 -33.77898 35.55
+      vertex -33.77898 33.77898 35.55
+      vertex 33.77898 -33.77898 35.55
       vertex -33.77898 -33.77898 35.55
-      vertex -33.77898 33.77898 35.55
     endloop
   endfacet
   facet normal 0 0 1
     outer loop
-      vertex -36.81582 -33.77898 35.55
-      vertex -33.77898 33.77898 35.55
-      vertex -36.81582 33.77898 35.55
+      vertex -33.77898 -33.77898 41.475
+      vertex 33.77898 -33.77898 41.475
+      vertex 33.77898 33.77898 41.475
+    endloop
+  endfacet
+  facet normal 0 0 1
+    outer loop
+      vertex -33.77898 -33.77898 41.475
+      vertex 33.77898 33.77898 41.475
+      vertex -33.77898 33.77898 41.475
     endloop
   endfacet
   facet normal 0 -1 0
@@ -741,60 +587,32 @@ solid inner_stepped_mound_core
       vertex -33.77898 33.77898 41.475
     endloop
   endfacet
-  facet normal 0 0 1
+  facet normal 0 0 -1
     outer loop
-      vertex -33.77898 -33.77898 41.475
-      vertex 33.77898 -33.77898 41.475
-      vertex 33.77898 -30.74214 41.475
-    endloop
-  endfacet
-  facet normal 0 0 1
-    outer loop
-      vertex -33.77898 -33.77898 41.475
-      vertex 33.77898 -30.74214 41.475
-      vertex -33.77898 -30.74214 41.475
-    endloop
-  endfacet
-  facet normal 0 0 1
-    outer loop
-      vertex 30.74214 -30.74214 41.475
-      vertex 33.77898 -30.74214 41.475
-      vertex 33.77898 30.74214 41.475
-    endloop
-  endfacet
-  facet normal 0 0 1
-    outer loop
-      vertex 30.74214 -30.74214 41.475
-      vertex 33.77898 30.74214 41.475
+      vertex -30.74214 30.74214 41.475
       vertex 30.74214 30.74214 41.475
+      vertex 30.74214 -30.74214 41.475
     endloop
   endfacet
-  facet normal 0 0 1
+  facet normal 0 0 -1
     outer loop
-      vertex -33.77898 30.74214 41.475
-      vertex 33.77898 30.74214 41.475
-      vertex 33.77898 33.77898 41.475
-    endloop
-  endfacet
-  facet normal 0 0 1
-    outer loop
-      vertex -33.77898 30.74214 41.475
-      vertex 33.77898 33.77898 41.475
-      vertex -33.77898 33.77898 41.475
-    endloop
-  endfacet
-  facet normal 0 0 1
-    outer loop
-      vertex -33.77898 -30.74214 41.475
+      vertex -30.74214 30.74214 41.475
+      vertex 30.74214 -30.74214 41.475
       vertex -30.74214 -30.74214 41.475
-      vertex -30.74214 30.74214 41.475
     endloop
   endfacet
   facet normal 0 0 1
     outer loop
-      vertex -33.77898 -30.74214 41.475
-      vertex -30.74214 30.74214 41.475
-      vertex -33.77898 30.74214 41.475
+      vertex -30.74214 -30.74214 47.4
+      vertex 30.74214 -30.74214 47.4
+      vertex 30.74214 30.74214 47.4
+    endloop
+  endfacet
+  facet normal 0 0 1
+    outer loop
+      vertex -30.74214 -30.74214 47.4
+      vertex 30.74214 30.74214 47.4
+      vertex -30.74214 30.74214 47.4
     endloop
   endfacet
   facet normal 0 -1 0
@@ -853,60 +671,32 @@ solid inner_stepped_mound_core
       vertex -30.74214 30.74214 47.4
     endloop
   endfacet
-  facet normal 0 0 1
+  facet normal 0 0 -1
     outer loop
-      vertex -30.74214 -30.74214 47.4
-      vertex 30.74214 -30.74214 47.4
-      vertex 30.74214 -27.7053 47.4
-    endloop
-  endfacet
-  facet normal 0 0 1
-    outer loop
-      vertex -30.74214 -30.74214 47.4
-      vertex 30.74214 -27.7053 47.4
-      vertex -30.74214 -27.7053 47.4
-    endloop
-  endfacet
-  facet normal 0 0 1
-    outer loop
-      vertex 27.7053 -27.7053 47.4
-      vertex 30.74214 -27.7053 47.4
-      vertex 30.74214 27.7053 47.4
-    endloop
-  endfacet
-  facet normal 0 0 1
-    outer loop
-      vertex 27.7053 -27.7053 47.4
-      vertex 30.74214 27.7053 47.4
+      vertex -27.7053 27.7053 47.4
       vertex 27.7053 27.7053 47.4
+      vertex 27.7053 -27.7053 47.4
     endloop
   endfacet
-  facet normal 0 0 1
+  facet normal 0 0 -1
     outer loop
-      vertex -30.74214 27.7053 47.4
-      vertex 30.74214 27.7053 47.4
-      vertex 30.74214 30.74214 47.4
-    endloop
-  endfacet
-  facet normal 0 0 1
-    outer loop
-      vertex -30.74214 27.7053 47.4
-      vertex 30.74214 30.74214 47.4
-      vertex -30.74214 30.74214 47.4
-    endloop
-  endfacet
-  facet normal 0 0 1
-    outer loop
-      vertex -30.74214 -27.7053 47.4
+      vertex -27.7053 27.7053 47.4
+      vertex 27.7053 -27.7053 47.4
       vertex -27.7053 -27.7053 47.4
-      vertex -27.7053 27.7053 47.4
     endloop
   endfacet
   facet normal 0 0 1
     outer loop
-      vertex -30.74214 -27.7053 47.4
-      vertex -27.7053 27.7053 47.4
-      vertex -30.74214 27.7053 47.4
+      vertex -27.7053 -27.7053 53.325
+      vertex 27.7053 -27.7053 53.325
+      vertex 27.7053 27.7053 53.325
+    endloop
+  endfacet
+  facet normal 0 0 1
+    outer loop
+      vertex -27.7053 -27.7053 53.325
+      vertex 27.7053 27.7053 53.325
+      vertex -27.7053 27.7053 53.325
     endloop
   endfacet
   facet normal 0 -1 0
@@ -965,60 +755,32 @@ solid inner_stepped_mound_core
       vertex -27.7053 27.7053 53.325
     endloop
   endfacet
-  facet normal 0 0 1
+  facet normal 0 0 -1
     outer loop
-      vertex -27.7053 -27.7053 53.325
-      vertex 27.7053 -27.7053 53.325
-      vertex 27.7053 -24.66847 53.325
-    endloop
-  endfacet
-  facet normal 0 0 1
-    outer loop
-      vertex -27.7053 -27.7053 53.325
-      vertex 27.7053 -24.66847 53.325
-      vertex -27.7053 -24.66847 53.325
-    endloop
-  endfacet
-  facet normal 0 0 1
-    outer loop
-      vertex 24.66847 -24.66847 53.325
-      vertex 27.7053 -24.66847 53.325
-      vertex 27.7053 24.66847 53.325
-    endloop
-  endfacet
-  facet normal 0 0 1
-    outer loop
-      vertex 24.66847 -24.66847 53.325
-      vertex 27.7053 24.66847 53.325
+      vertex -24.66847 24.66847 53.325
       vertex 24.66847 24.66847 53.325
+      vertex 24.66847 -24.66847 53.325
     endloop
   endfacet
-  facet normal 0 0 1
+  facet normal 0 0 -1
     outer loop
-      vertex -27.7053 24.66847 53.325
-      vertex 27.7053 24.66847 53.325
-      vertex 27.7053 27.7053 53.325
-    endloop
-  endfacet
-  facet normal 0 0 1
-    outer loop
-      vertex -27.7053 24.66847 53.325
-      vertex 27.7053 27.7053 53.325
-      vertex -27.7053 27.7053 53.325
-    endloop
-  endfacet
-  facet normal 0 0 1
-    outer loop
-      vertex -27.7053 -24.66847 53.325
+      vertex -24.66847 24.66847 53.325
+      vertex 24.66847 -24.66847 53.325
       vertex -24.66847 -24.66847 53.325
-      vertex -24.66847 24.66847 53.325
     endloop
   endfacet
   facet normal 0 0 1
     outer loop
-      vertex -27.7053 -24.66847 53.325
-      vertex -24.66847 24.66847 53.325
-      vertex -27.7053 24.66847 53.325
+      vertex -24.66847 -24.66847 59.25
+      vertex 24.66847 -24.66847 59.25
+      vertex 24.66847 24.66847 59.25
+    endloop
+  endfacet
+  facet normal 0 0 1
+    outer loop
+      vertex -24.66847 -24.66847 59.25
+      vertex 24.66847 24.66847 59.25
+      vertex -24.66847 24.66847 59.25
     endloop
   endfacet
   facet normal 0 -1 0
@@ -1077,60 +839,32 @@ solid inner_stepped_mound_core
       vertex -24.66847 24.66847 59.25
     endloop
   endfacet
-  facet normal 0 0 1
+  facet normal 0 0 -1
     outer loop
-      vertex -24.66847 -24.66847 59.25
-      vertex 24.66847 -24.66847 59.25
-      vertex 24.66847 -21.63163 59.25
-    endloop
-  endfacet
-  facet normal 0 0 1
-    outer loop
-      vertex -24.66847 -24.66847 59.25
-      vertex 24.66847 -21.63163 59.25
-      vertex -24.66847 -21.63163 59.25
-    endloop
-  endfacet
-  facet normal 0 0 1
-    outer loop
-      vertex 21.63163 -21.63163 59.25
-      vertex 24.66847 -21.63163 59.25
-      vertex 24.66847 21.63163 59.25
-    endloop
-  endfacet
-  facet normal 0 0 1
-    outer loop
-      vertex 21.63163 -21.63163 59.25
-      vertex 24.66847 21.63163 59.25
+      vertex -21.63163 21.63163 59.25
       vertex 21.63163 21.63163 59.25
+      vertex 21.63163 -21.63163 59.25
     endloop
   endfacet
-  facet normal 0 0 1
+  facet normal 0 0 -1
     outer loop
-      vertex -24.66847 21.63163 59.25
-      vertex 24.66847 21.63163 59.25
-      vertex 24.66847 24.66847 59.25
-    endloop
-  endfacet
-  facet normal 0 0 1
-    outer loop
-      vertex -24.66847 21.63163 59.25
-      vertex 24.66847 24.66847 59.25
-      vertex -24.66847 24.66847 59.25
-    endloop
-  endfacet
-  facet normal 0 0 1
-    outer loop
-      vertex -24.66847 -21.63163 59.25
+      vertex -21.63163 21.63163 59.25
+      vertex 21.63163 -21.63163 59.25
       vertex -21.63163 -21.63163 59.25
-      vertex -21.63163 21.63163 59.25
     endloop
   endfacet
   facet normal 0 0 1
     outer loop
-      vertex -24.66847 -21.63163 59.25
-      vertex -21.63163 21.63163 59.25
-      vertex -24.66847 21.63163 59.25
+      vertex -21.63163 -21.63163 65.175
+      vertex 21.63163 -21.63163 65.175
+      vertex 21.63163 21.63163 65.175
+    endloop
+  endfacet
+  facet normal 0 0 1
+    outer loop
+      vertex -21.63163 -21.63163 65.175
+      vertex 21.63163 21.63163 65.175
+      vertex -21.63163 21.63163 65.175
     endloop
   endfacet
   facet normal 0 -1 0
@@ -1189,60 +923,32 @@ solid inner_stepped_mound_core
       vertex -21.63163 21.63163 65.175
     endloop
   endfacet
-  facet normal 0 0 1
+  facet normal 0 0 -1
     outer loop
-      vertex -21.63163 -21.63163 65.175
-      vertex 21.63163 -21.63163 65.175
-      vertex 21.63163 -18.59479 65.175
-    endloop
-  endfacet
-  facet normal 0 0 1
-    outer loop
-      vertex -21.63163 -21.63163 65.175
-      vertex 21.63163 -18.59479 65.175
-      vertex -21.63163 -18.59479 65.175
-    endloop
-  endfacet
-  facet normal 0 0 1
-    outer loop
-      vertex 18.59479 -18.59479 65.175
-      vertex 21.63163 -18.59479 65.175
-      vertex 21.63163 18.59479 65.175
-    endloop
-  endfacet
-  facet normal 0 0 1
-    outer loop
-      vertex 18.59479 -18.59479 65.175
-      vertex 21.63163 18.59479 65.175
+      vertex -18.59479 18.59479 65.175
       vertex 18.59479 18.59479 65.175
+      vertex 18.59479 -18.59479 65.175
     endloop
   endfacet
-  facet normal 0 0 1
+  facet normal 0 0 -1
     outer loop
-      vertex -21.63163 18.59479 65.175
-      vertex 21.63163 18.59479 65.175
-      vertex 21.63163 21.63163 65.175
-    endloop
-  endfacet
-  facet normal 0 0 1
-    outer loop
-      vertex -21.63163 18.59479 65.175
-      vertex 21.63163 21.63163 65.175
-      vertex -21.63163 21.63163 65.175
-    endloop
-  endfacet
-  facet normal 0 0 1
-    outer loop
-      vertex -21.63163 -18.59479 65.175
+      vertex -18.59479 18.59479 65.175
+      vertex 18.59479 -18.59479 65.175
       vertex -18.59479 -18.59479 65.175
-      vertex -18.59479 18.59479 65.175
     endloop
   endfacet
   facet normal 0 0 1
     outer loop
-      vertex -21.63163 -18.59479 65.175
-      vertex -18.59479 18.59479 65.175
-      vertex -21.63163 18.59479 65.175
+      vertex -18.59479 -18.59479 71.1
+      vertex 18.59479 -18.59479 71.1
+      vertex 18.59479 18.59479 71.1
+    endloop
+  endfacet
+  facet normal 0 0 1
+    outer loop
+      vertex -18.59479 -18.59479 71.1
+      vertex 18.59479 18.59479 71.1
+      vertex -18.59479 18.59479 71.1
     endloop
   endfacet
   facet normal 0 -1 0
@@ -1301,60 +1007,32 @@ solid inner_stepped_mound_core
       vertex -18.59479 18.59479 71.1
     endloop
   endfacet
-  facet normal 0 0 1
+  facet normal 0 0 -1
     outer loop
-      vertex -18.59479 -18.59479 71.1
-      vertex 18.59479 -18.59479 71.1
-      vertex 18.59479 -15.55796 71.1
-    endloop
-  endfacet
-  facet normal 0 0 1
-    outer loop
-      vertex -18.59479 -18.59479 71.1
-      vertex 18.59479 -15.55796 71.1
-      vertex -18.59479 -15.55796 71.1
-    endloop
-  endfacet
-  facet normal 0 0 1
-    outer loop
-      vertex 15.55796 -15.55796 71.1
-      vertex 18.59479 -15.55796 71.1
-      vertex 18.59479 15.55796 71.1
-    endloop
-  endfacet
-  facet normal 0 0 1
-    outer loop
-      vertex 15.55796 -15.55796 71.1
-      vertex 18.59479 15.55796 71.1
+      vertex -15.55796 15.55796 71.1
       vertex 15.55796 15.55796 71.1
+      vertex 15.55796 -15.55796 71.1
     endloop
   endfacet
-  facet normal 0 0 1
+  facet normal 0 0 -1
     outer loop
-      vertex -18.59479 15.55796 71.1
-      vertex 18.59479 15.55796 71.1
-      vertex 18.59479 18.59479 71.1
-    endloop
-  endfacet
-  facet normal 0 0 1
-    outer loop
-      vertex -18.59479 15.55796 71.1
-      vertex 18.59479 18.59479 71.1
-      vertex -18.59479 18.59479 71.1
-    endloop
-  endfacet
-  facet normal 0 0 1
-    outer loop
-      vertex -18.59479 -15.55796 71.1
+      vertex -15.55796 15.55796 71.1
+      vertex 15.55796 -15.55796 71.1
       vertex -15.55796 -15.55796 71.1
-      vertex -15.55796 15.55796 71.1
     endloop
   endfacet
   facet normal 0 0 1
     outer loop
-      vertex -18.59479 -15.55796 71.1
-      vertex -15.55796 15.55796 71.1
-      vertex -18.59479 15.55796 71.1
+      vertex -15.55796 -15.55796 77.025
+      vertex 15.55796 -15.55796 77.025
+      vertex 15.55796 15.55796 77.025
+    endloop
+  endfacet
+  facet normal 0 0 1
+    outer loop
+      vertex -15.55796 -15.55796 77.025
+      vertex 15.55796 15.55796 77.025
+      vertex -15.55796 15.55796 77.025
     endloop
   endfacet
   facet normal 0 -1 0
@@ -1413,60 +1091,32 @@ solid inner_stepped_mound_core
       vertex -15.55796 15.55796 77.025
     endloop
   endfacet
-  facet normal 0 0 1
+  facet normal 0 0 -1
     outer loop
-      vertex -15.55796 -15.55796 77.025
-      vertex 15.55796 -15.55796 77.025
-      vertex 15.55796 -12.52112 77.025
-    endloop
-  endfacet
-  facet normal 0 0 1
-    outer loop
-      vertex -15.55796 -15.55796 77.025
-      vertex 15.55796 -12.52112 77.025
-      vertex -15.55796 -12.52112 77.025
-    endloop
-  endfacet
-  facet normal 0 0 1
-    outer loop
-      vertex 12.52112 -12.52112 77.025
-      vertex 15.55796 -12.52112 77.025
-      vertex 15.55796 12.52112 77.025
-    endloop
-  endfacet
-  facet normal 0 0 1
-    outer loop
-      vertex 12.52112 -12.52112 77.025
-      vertex 15.55796 12.52112 77.025
+      vertex -12.52112 12.52112 77.025
       vertex 12.52112 12.52112 77.025
+      vertex 12.52112 -12.52112 77.025
     endloop
   endfacet
-  facet normal 0 0 1
+  facet normal 0 0 -1
     outer loop
-      vertex -15.55796 12.52112 77.025
-      vertex 15.55796 12.52112 77.025
-      vertex 15.55796 15.55796 77.025
-    endloop
-  endfacet
-  facet normal 0 0 1
-    outer loop
-      vertex -15.55796 12.52112 77.025
-      vertex 15.55796 15.55796 77.025
-      vertex -15.55796 15.55796 77.025
-    endloop
-  endfacet
-  facet normal 0 0 1
-    outer loop
-      vertex -15.55796 -12.52112 77.025
+      vertex -12.52112 12.52112 77.025
+      vertex 12.52112 -12.52112 77.025
       vertex -12.52112 -12.52112 77.025
-      vertex -12.52112 12.52112 77.025
     endloop
   endfacet
   facet normal 0 0 1
     outer loop
-      vertex -15.55796 -12.52112 77.025
-      vertex -12.52112 12.52112 77.025
-      vertex -15.55796 12.52112 77.025
+      vertex -12.52112 -12.52112 82.95
+      vertex 12.52112 -12.52112 82.95
+      vertex 12.52112 12.52112 82.95
+    endloop
+  endfacet
+  facet normal 0 0 1
+    outer loop
+      vertex -12.52112 -12.52112 82.95
+      vertex 12.52112 12.52112 82.95
+      vertex -12.52112 12.52112 82.95
     endloop
   endfacet
   facet normal 0 -1 0
@@ -1525,60 +1175,32 @@ solid inner_stepped_mound_core
       vertex -12.52112 12.52112 82.95
     endloop
   endfacet
-  facet normal 0 0 1
+  facet normal 0 0 -1
     outer loop
-      vertex -12.52112 -12.52112 82.95
-      vertex 12.52112 -12.52112 82.95
-      vertex 12.52112 -9.484283 82.95
-    endloop
-  endfacet
-  facet normal 0 0 1
-    outer loop
-      vertex -12.52112 -12.52112 82.95
-      vertex 12.52112 -9.484283 82.95
-      vertex -12.52112 -9.484283 82.95
-    endloop
-  endfacet
-  facet normal 0 0 1
-    outer loop
-      vertex 9.484283 -9.484283 82.95
-      vertex 12.52112 -9.484283 82.95
-      vertex 12.52112 9.484283 82.95
-    endloop
-  endfacet
-  facet normal 0 0 1
-    outer loop
-      vertex 9.484283 -9.484283 82.95
-      vertex 12.52112 9.484283 82.95
+      vertex -9.484283 9.484283 82.95
       vertex 9.484283 9.484283 82.95
+      vertex 9.484283 -9.484283 82.95
     endloop
   endfacet
-  facet normal 0 0 1
+  facet normal 0 0 -1
     outer loop
-      vertex -12.52112 9.484283 82.95
-      vertex 12.52112 9.484283 82.95
-      vertex 12.52112 12.52112 82.95
-    endloop
-  endfacet
-  facet normal 0 0 1
-    outer loop
-      vertex -12.52112 9.484283 82.95
-      vertex 12.52112 12.52112 82.95
-      vertex -12.52112 12.52112 82.95
-    endloop
-  endfacet
-  facet normal 0 0 1
-    outer loop
-      vertex -12.52112 -9.484283 82.95
+      vertex -9.484283 9.484283 82.95
+      vertex 9.484283 -9.484283 82.95
       vertex -9.484283 -9.484283 82.95
-      vertex -9.484283 9.484283 82.95
     endloop
   endfacet
   facet normal 0 0 1
     outer loop
-      vertex -12.52112 -9.484283 82.95
-      vertex -9.484283 9.484283 82.95
-      vertex -12.52112 9.484283 82.95
+      vertex -9.484283 -9.484283 88.875
+      vertex 9.484283 -9.484283 88.875
+      vertex 9.484283 9.484283 88.875
+    endloop
+  endfacet
+  facet normal 0 0 1
+    outer loop
+      vertex -9.484283 -9.484283 88.875
+      vertex 9.484283 9.484283 88.875
+      vertex -9.484283 9.484283 88.875
     endloop
   endfacet
   facet normal 0 -1 0
@@ -1637,60 +1259,32 @@ solid inner_stepped_mound_core
       vertex -9.484283 9.484283 88.875
     endloop
   endfacet
-  facet normal 0 0 1
+  facet normal 0 0 -1
     outer loop
-      vertex -9.484283 -9.484283 88.875
-      vertex 9.484283 -9.484283 88.875
-      vertex 9.484283 -6.447446 88.875
-    endloop
-  endfacet
-  facet normal 0 0 1
-    outer loop
-      vertex -9.484283 -9.484283 88.875
-      vertex 9.484283 -6.447446 88.875
-      vertex -9.484283 -6.447446 88.875
-    endloop
-  endfacet
-  facet normal 0 0 1
-    outer loop
-      vertex 6.447446 -6.447446 88.875
-      vertex 9.484283 -6.447446 88.875
-      vertex 9.484283 6.447446 88.875
-    endloop
-  endfacet
-  facet normal 0 0 1
-    outer loop
-      vertex 6.447446 -6.447446 88.875
-      vertex 9.484283 6.447446 88.875
+      vertex -6.447446 6.447446 88.875
       vertex 6.447446 6.447446 88.875
+      vertex 6.447446 -6.447446 88.875
     endloop
   endfacet
-  facet normal 0 0 1
+  facet normal 0 0 -1
     outer loop
-      vertex -9.484283 6.447446 88.875
-      vertex 9.484283 6.447446 88.875
-      vertex 9.484283 9.484283 88.875
-    endloop
-  endfacet
-  facet normal 0 0 1
-    outer loop
-      vertex -9.484283 6.447446 88.875
-      vertex 9.484283 9.484283 88.875
-      vertex -9.484283 9.484283 88.875
-    endloop
-  endfacet
-  facet normal 0 0 1
-    outer loop
-      vertex -9.484283 -6.447446 88.875
+      vertex -6.447446 6.447446 88.875
+      vertex 6.447446 -6.447446 88.875
       vertex -6.447446 -6.447446 88.875
-      vertex -6.447446 6.447446 88.875
     endloop
   endfacet
   facet normal 0 0 1
     outer loop
-      vertex -9.484283 -6.447446 88.875
-      vertex -6.447446 6.447446 88.875
-      vertex -9.484283 6.447446 88.875
+      vertex -6.447446 -6.447446 94.8
+      vertex 6.447446 -6.447446 94.8
+      vertex 6.447446 6.447446 94.8
+    endloop
+  endfacet
+  facet normal 0 0 1
+    outer loop
+      vertex -6.447446 -6.447446 94.8
+      vertex 6.447446 6.447446 94.8
+      vertex -6.447446 6.447446 94.8
     endloop
   endfacet
   facet normal 0 -1 0
@@ -1747,76 +1341,6 @@ solid inner_stepped_mound_core
       vertex -6.447446 6.447446 88.875
       vertex -6.447446 -6.447446 94.8
       vertex -6.447446 6.447446 94.8
-    endloop
-  endfacet
-  facet normal 0 0 1
-    outer loop
-      vertex -6.447446 -6.447446 94.8
-      vertex 6.447446 -6.447446 94.8
-      vertex 6.447446 -3.410609 94.8
-    endloop
-  endfacet
-  facet normal 0 0 1
-    outer loop
-      vertex -6.447446 -6.447446 94.8
-      vertex 6.447446 -3.410609 94.8
-      vertex -6.447446 -3.410609 94.8
-    endloop
-  endfacet
-  facet normal 0 0 1
-    outer loop
-      vertex 3.410609 -3.410609 94.8
-      vertex 6.447446 -3.410609 94.8
-      vertex 6.447446 3.410609 94.8
-    endloop
-  endfacet
-  facet normal 0 0 1
-    outer loop
-      vertex 3.410609 -3.410609 94.8
-      vertex 6.447446 3.410609 94.8
-      vertex 3.410609 3.410609 94.8
-    endloop
-  endfacet
-  facet normal 0 0 1
-    outer loop
-      vertex -6.447446 3.410609 94.8
-      vertex 6.447446 3.410609 94.8
-      vertex 6.447446 6.447446 94.8
-    endloop
-  endfacet
-  facet normal 0 0 1
-    outer loop
-      vertex -6.447446 3.410609 94.8
-      vertex 6.447446 6.447446 94.8
-      vertex -6.447446 6.447446 94.8
-    endloop
-  endfacet
-  facet normal 0 0 1
-    outer loop
-      vertex -6.447446 -3.410609 94.8
-      vertex -3.410609 -3.410609 94.8
-      vertex -3.410609 3.410609 94.8
-    endloop
-  endfacet
-  facet normal 0 0 1
-    outer loop
-      vertex -6.447446 -3.410609 94.8
-      vertex -3.410609 3.410609 94.8
-      vertex -6.447446 3.410609 94.8
-    endloop
-  endfacet
-  facet normal 0 0 1
-    outer loop
-      vertex -3.410609 -3.410609 94.8
-      vertex 3.410609 -3.410609 94.8
-      vertex 3.410609 3.410609 94.8
-    endloop
-  endfacet
-  facet normal 0 0 1
-    outer loop
-      vertex -3.410609 -3.410609 94.8
-      vertex 3.410609 3.410609 94.8
-      vertex -3.410609 3.410609 94.8
     endloop
   endfacet
 endsolid inner_stepped_mound_core

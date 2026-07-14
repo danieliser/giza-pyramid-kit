@@ -1,16 +1,16 @@
 solid internal_chambers_subterranean_precut
   facet normal -0 0.8944276 0.4472128
     outer loop
-      vertex -0.575 46.83069 0.5142959
-      vertex 0.575 46.83069 0.5142959
-      vertex 0.575 47.34498 -0.5142959
+      vertex -0.575 45.80209 2.220446e-16
+      vertex 0.575 45.80209 2.220446e-16
+      vertex 0.575 46.31639 -1.028592
     endloop
   endfacet
   facet normal 0 0.8944276 0.4472128
     outer loop
-      vertex -0.575 46.83069 0.5142959
-      vertex 0.575 47.34498 -0.5142959
-      vertex -0.575 47.34498 -0.5142959
+      vertex -0.575 45.80209 2.220446e-16
+      vertex 0.575 46.31639 -1.028592
+      vertex -0.575 46.31639 -1.028592
     endloop
   endfacet
   facet normal 0 -0.8944276 -0.4472128
@@ -29,58 +29,58 @@ solid internal_chambers_subterranean_precut
   endfacet
   facet normal 0 -0.4472128 0.8944276
     outer loop
-      vertex -0.575 46.83069 0.5142959
+      vertex -0.575 45.80209 2.220446e-16
       vertex -0.575 8.330926 -18.73554
       vertex 0.575 8.330926 -18.73554
     endloop
   endfacet
   facet normal 0 -0.4472128 0.8944276
     outer loop
-      vertex -0.575 46.83069 0.5142959
+      vertex -0.575 45.80209 2.220446e-16
       vertex 0.575 8.330926 -18.73554
-      vertex 0.575 46.83069 0.5142959
+      vertex 0.575 45.80209 2.220446e-16
     endloop
   endfacet
   facet normal 1 0 0
     outer loop
-      vertex 0.575 46.83069 0.5142959
+      vertex 0.575 45.80209 2.220446e-16
       vertex 0.575 8.330926 -18.73554
       vertex 0.575 8.84522 -19.76413
     endloop
   endfacet
   facet normal 1 0 0
     outer loop
-      vertex 0.575 46.83069 0.5142959
+      vertex 0.575 45.80209 2.220446e-16
       vertex 0.575 8.84522 -19.76413
-      vertex 0.575 47.34498 -0.5142959
+      vertex 0.575 46.31639 -1.028592
     endloop
   endfacet
   facet normal 0 0.4472128 -0.8944276
     outer loop
-      vertex 0.575 47.34498 -0.5142959
+      vertex 0.575 46.31639 -1.028592
       vertex 0.575 8.84522 -19.76413
       vertex -0.575 8.84522 -19.76413
     endloop
   endfacet
   facet normal 0 0.4472128 -0.8944276
     outer loop
-      vertex 0.575 47.34498 -0.5142959
+      vertex 0.575 46.31639 -1.028592
       vertex -0.575 8.84522 -19.76413
-      vertex -0.575 47.34498 -0.5142959
+      vertex -0.575 46.31639 -1.028592
     endloop
   endfacet
   facet normal -1 0 0
     outer loop
-      vertex -0.575 47.34498 -0.5142959
+      vertex -0.575 46.31639 -1.028592
       vertex -0.575 8.84522 -19.76413
       vertex -0.575 8.330926 -18.73554
     endloop
   endfacet
   facet normal -1 -0 0
     outer loop
-      vertex -0.575 47.34498 -0.5142959
+      vertex -0.575 46.31639 -1.028592
       vertex -0.575 8.330926 -18.73554
-      vertex -0.575 46.83069 0.5142959
+      vertex -0.575 45.80209 2.220446e-16
     endloop
   endfacet
   facet normal -0 1 0

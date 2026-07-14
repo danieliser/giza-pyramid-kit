@@ -1,4 +1,32 @@
 solid inner_stepped_mound_layer_09
+  facet normal 0 0 -1
+    outer loop
+      vertex -27.7053 27.7053 47.4
+      vertex 27.7053 27.7053 47.4
+      vertex 27.7053 -27.7053 47.4
+    endloop
+  endfacet
+  facet normal 0 0 -1
+    outer loop
+      vertex -27.7053 27.7053 47.4
+      vertex 27.7053 -27.7053 47.4
+      vertex -27.7053 -27.7053 47.4
+    endloop
+  endfacet
+  facet normal 0 0 1
+    outer loop
+      vertex -27.7053 -27.7053 53.325
+      vertex 27.7053 -27.7053 53.325
+      vertex 27.7053 27.7053 53.325
+    endloop
+  endfacet
+  facet normal 0 0 1
+    outer loop
+      vertex -27.7053 -27.7053 53.325
+      vertex 27.7053 27.7053 53.325
+      vertex -27.7053 27.7053 53.325
+    endloop
+  endfacet
   facet normal 0 -1 0
     outer loop
       vertex -27.7053 -27.7053 47.4
@@ -53,62 +81,6 @@ solid inner_stepped_mound_layer_09
       vertex -27.7053 27.7053 47.4
       vertex -27.7053 -27.7053 53.325
       vertex -27.7053 27.7053 53.325
-    endloop
-  endfacet
-  facet normal 0 0 1
-    outer loop
-      vertex -27.7053 -27.7053 53.325
-      vertex 27.7053 -27.7053 53.325
-      vertex 27.7053 -24.66847 53.325
-    endloop
-  endfacet
-  facet normal 0 0 1
-    outer loop
-      vertex -27.7053 -27.7053 53.325
-      vertex 27.7053 -24.66847 53.325
-      vertex -27.7053 -24.66847 53.325
-    endloop
-  endfacet
-  facet normal 0 0 1
-    outer loop
-      vertex 24.66847 -24.66847 53.325
-      vertex 27.7053 -24.66847 53.325
-      vertex 27.7053 24.66847 53.325
-    endloop
-  endfacet
-  facet normal 0 0 1
-    outer loop
-      vertex 24.66847 -24.66847 53.325
-      vertex 27.7053 24.66847 53.325
-      vertex 24.66847 24.66847 53.325
-    endloop
-  endfacet
-  facet normal 0 0 1
-    outer loop
-      vertex -27.7053 24.66847 53.325
-      vertex 27.7053 24.66847 53.325
-      vertex 27.7053 27.7053 53.325
-    endloop
-  endfacet
-  facet normal 0 0 1
-    outer loop
-      vertex -27.7053 24.66847 53.325
-      vertex 27.7053 27.7053 53.325
-      vertex -27.7053 27.7053 53.325
-    endloop
-  endfacet
-  facet normal 0 0 1
-    outer loop
-      vertex -27.7053 -24.66847 53.325
-      vertex -24.66847 -24.66847 53.325
-      vertex -24.66847 24.66847 53.325
-    endloop
-  endfacet
-  facet normal 0 0 1
-    outer loop
-      vertex -27.7053 -24.66847 53.325
-      vertex -24.66847 24.66847 53.325
-      vertex -27.7053 24.66847 53.325
     endloop
   endfacet
 endsolid inner_stepped_mound_layer_09

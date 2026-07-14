@@ -8,6 +8,7 @@ The default kit is sized for millimeters:
 - Ramp width: `18 mm`
 - Minimum casing wall: `1.2 mm`
 - Temporary top platform thickness: `0.9 mm`
+- Stackable-part XY clearance: `0.35 mm`
 
 ## Flashforge Adventurer 4 Pro
 
@@ -24,6 +25,14 @@ Recommended scales:
 | `<50%` | `<80 mm` | varies | Treat as a simplified visual model unless details are thickened. |
 
 For small prints, use PLA, `0.12-0.16 mm` layer height, 2-3 walls, and thin-wall handling if available in the slicer. The capstone, chamber reference pieces, and individual ramp segments benefit from a brim.
+
+The modular stackable pieces have `0.35 mm` XY clearance by default around core/fill and fill/ramp-support interfaces. If your printer tends to make tight parts, regenerate with a larger value, for example:
+
+```bash
+python3 generate_giza_kit.py --stack-clearance-mm 0.5
+```
+
+Slicer scaling also scales the clearances. A `75%` slicer-scale print reduces the default `0.35 mm` clearance to about `0.26 mm`. For the best-fitting modular kit, regenerate at the target physical size and keep `--stack-clearance-mm` at `0.35` or higher.
 
 ## Scaling Strategy
 

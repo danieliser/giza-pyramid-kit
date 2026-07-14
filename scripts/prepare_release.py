@@ -89,6 +89,7 @@ def build_render_scenes() -> list[tuple[str, list[RenderPart]]]:
     cut_backfill = make_cut_temporary_backfill(params)
     ramp_underfill, _ = make_ramp_underfill(params)
     ramps_all, _, _ = make_ramps(params)
+    display_core = make_display_core_below_capstone(params)
     platform = make_platform(params)
     capstone = make_capstone(params)
     finished = make_finished_pyramid_surface(params)
@@ -97,7 +98,6 @@ def build_render_scenes() -> list[tuple[str, list[RenderPart]]]:
     top_backfill = make_cut_temporary_backfill(params, max_z=top_threshold)
     top_underfill, _ = make_ramp_underfill(params, max_z=top_threshold)
     top_ramps, _, _ = make_ramps(params, max_z=top_threshold)
-    display_core = make_display_core_below_capstone(params)
     display_casing = [make_casing_ring(params, i, include_caps=False) for i in range(params.casing_rings)]
     upper_casing = [ring for i, ring in enumerate(display_casing) if (i / params.casing_rings) >= 0.62]
 
@@ -106,6 +106,7 @@ def build_render_scenes() -> list[tuple[str, list[RenderPart]]]:
             "cover_full_ramp_system.png",
             [
                 (cut_backfill, COLORS["fill"]),
+                (display_core, COLORS["core"]),
                 (ramp_underfill, COLORS["underfill"]),
                 (ramps_all, COLORS["ramps"]),
             ],
@@ -114,6 +115,7 @@ def build_render_scenes() -> list[tuple[str, list[RenderPart]]]:
             "capstone_before_deramping.png",
             [
                 (cut_backfill, COLORS["fill"]),
+                (display_core, COLORS["core"]),
                 (ramp_underfill, COLORS["underfill"]),
                 (ramps_all, COLORS["ramps"]),
                 (platform, COLORS["platform"]),

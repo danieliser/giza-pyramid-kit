@@ -163,6 +163,7 @@ Useful flags:
 - `--courses`: number of stepped core courses and switchback levels.
 - `--casing-rings`: number of removable outer casing rings.
 - `--ramp-width-mm`: width of temporary ramp ribbons. The default is broad enough to read as a working construction path around the top deck.
+- `--stack-clearance-mm`: XY clearance around removable/stacked printed parts. Default is `0.35 mm`; increase it for looser fits or reduce it for tuned printers.
 - `--top-platform-half-fraction`: width of the broad temporary top work deck before the capstone is set.
 - `--temporary-overbuild-mm`: uniform outward offset for the temporary overbuilt work mass. Leave at `0` to infer it from the top deck size and widen every level evenly.
 - `--core-base-fraction`: how much of the final footprint is permanent inner core.
@@ -172,7 +173,7 @@ The generated STL units are millimeters.
 
 ## Printing
 
-See `docs/PRINTING.md` for scale guidance. The short version: the finished 160 mm pyramid fits many desktop printers, but the full all-sides temporary ramp state is about 265 mm wide. On a Flashforge Adventurer 4 Pro, `75%` scale is the best all-around kit size, and `62.5%` is a good compact display size.
+See `docs/PRINTING.md` for scale guidance. The short version: the finished 160 mm pyramid fits many desktop printers, but the full all-sides temporary ramp state is about 265 mm wide. The stackable construction pieces include `0.35 mm` XY clearance by default. On a Flashforge Adventurer 4 Pro, `75%` scale is the best all-around kit size, and `62.5%` is a good compact display size.
 
 ## Animated Demo
 
@@ -197,7 +198,7 @@ Run this after changing ramp math:
 python3 validate_geometry.py
 ```
 
-It checks that single-switchback ramps, notched corner landings, cut mound, and local underfill have positive geometry with upward sloped walking faces.
+It checks that single-switchback ramps, notched corner landings, cut mound, local underfill, chamber slices, capstone transition, and stack clearances are clean.
 
 ## Maker-Site Release
 

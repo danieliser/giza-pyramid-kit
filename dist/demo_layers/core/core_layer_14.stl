@@ -1,4 +1,32 @@
 solid inner_stepped_mound_layer_14
+  facet normal 0 0 -1
+    outer loop
+      vertex -12.52112 12.52112 77.025
+      vertex 12.52112 12.52112 77.025
+      vertex 12.52112 -12.52112 77.025
+    endloop
+  endfacet
+  facet normal 0 0 -1
+    outer loop
+      vertex -12.52112 12.52112 77.025
+      vertex 12.52112 -12.52112 77.025
+      vertex -12.52112 -12.52112 77.025
+    endloop
+  endfacet
+  facet normal 0 0 1
+    outer loop
+      vertex -12.52112 -12.52112 82.95
+      vertex 12.52112 -12.52112 82.95
+      vertex 12.52112 12.52112 82.95
+    endloop
+  endfacet
+  facet normal 0 0 1
+    outer loop
+      vertex -12.52112 -12.52112 82.95
+      vertex 12.52112 12.52112 82.95
+      vertex -12.52112 12.52112 82.95
+    endloop
+  endfacet
   facet normal 0 -1 0
     outer loop
       vertex -12.52112 -12.52112 77.025
@@ -53,62 +81,6 @@ solid inner_stepped_mound_layer_14
       vertex -12.52112 12.52112 77.025
       vertex -12.52112 -12.52112 82.95
       vertex -12.52112 12.52112 82.95
-    endloop
-  endfacet
-  facet normal 0 0 1
-    outer loop
-      vertex -12.52112 -12.52112 82.95
-      vertex 12.52112 -12.52112 82.95
-      vertex 12.52112 -9.484283 82.95
-    endloop
-  endfacet
-  facet normal 0 0 1
-    outer loop
-      vertex -12.52112 -12.52112 82.95
-      vertex 12.52112 -9.484283 82.95
-      vertex -12.52112 -9.484283 82.95
-    endloop
-  endfacet
-  facet normal 0 0 1
-    outer loop
-      vertex 9.484283 -9.484283 82.95
-      vertex 12.52112 -9.484283 82.95
-      vertex 12.52112 9.484283 82.95
-    endloop
-  endfacet
-  facet normal 0 0 1
-    outer loop
-      vertex 9.484283 -9.484283 82.95
-      vertex 12.52112 9.484283 82.95
-      vertex 9.484283 9.484283 82.95
-    endloop
-  endfacet
-  facet normal 0 0 1
-    outer loop
-      vertex -12.52112 9.484283 82.95
-      vertex 12.52112 9.484283 82.95
-      vertex 12.52112 12.52112 82.95
-    endloop
-  endfacet
-  facet normal 0 0 1
-    outer loop
-      vertex -12.52112 9.484283 82.95
-      vertex 12.52112 12.52112 82.95
-      vertex -12.52112 12.52112 82.95
-    endloop
-  endfacet
-  facet normal 0 0 1
-    outer loop
-      vertex -12.52112 -9.484283 82.95
-      vertex -9.484283 -9.484283 82.95
-      vertex -9.484283 9.484283 82.95
-    endloop
-  endfacet
-  facet normal 0 0 1
-    outer loop
-      vertex -12.52112 -9.484283 82.95
-      vertex -9.484283 9.484283 82.95
-      vertex -12.52112 9.484283 82.95
     endloop
   endfacet
 endsolid inner_stepped_mound_layer_14

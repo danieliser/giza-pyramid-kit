@@ -66,6 +66,10 @@ For a Flashforge Adventurer 4 Pro:
 - `62.5%` scale is a compact display size
 - `50%` is close to the practical lower limit with a 0.4 mm nozzle
 
+The modular stackable pieces include `0.35 mm` XY clearance by default around the core/fill and fill/ramp-support interfaces. If your printer tends to make tight assemblies, regenerate the kit with `--stack-clearance-mm 0.5`.
+
+If you scale the supplied STLs in the slicer, that clearance scales down too. For the best modular fit at smaller sizes, regenerate the kit at the target dimensions and keep `--stack-clearance-mm` at `0.35` or higher.
+
 ## Notes
 
 The chamber pieces are schematic references, not survey-grade voids. They are meant to help show where the known internal route could sit relative to the course-by-course build.

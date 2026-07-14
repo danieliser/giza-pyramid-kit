@@ -13,6 +13,20 @@ solid temporary_ramp_backfill
       vertex 2 2 0
     endloop
   endfacet
+  facet normal 0 0 1
+    outer loop
+      vertex 2 2 5.925
+      vertex 267.1418 2 5.925
+      vertex 267.1418 267.1418 5.925
+    endloop
+  endfacet
+  facet normal 0 0 1
+    outer loop
+      vertex 2 2 5.925
+      vertex 267.1418 267.1418 5.925
+      vertex 2 267.1418 5.925
+    endloop
+  endfacet
   facet normal 0 -1 0
     outer loop
       vertex 2 2 0
@@ -69,60 +83,32 @@ solid temporary_ramp_backfill
       vertex 2 267.1418 5.925
     endloop
   endfacet
-  facet normal 0 0 1
+  facet normal 0 0 -1
     outer loop
-      vertex 2 2 5.925
-      vertex 267.1418 2 5.925
-      vertex 267.1418 6.656189 5.925
-    endloop
-  endfacet
-  facet normal 0 0 1
-    outer loop
-      vertex 2 2 5.925
-      vertex 267.1418 6.656189 5.925
-      vertex 2 6.656189 5.925
-    endloop
-  endfacet
-  facet normal 0 0 1
-    outer loop
-      vertex 262.4857 6.656189 5.925
-      vertex 267.1418 6.656189 5.925
-      vertex 267.1418 262.4857 5.925
-    endloop
-  endfacet
-  facet normal 0 0 1
-    outer loop
-      vertex 262.4857 6.656189 5.925
-      vertex 267.1418 262.4857 5.925
+      vertex 6.656189 262.4857 5.925
       vertex 262.4857 262.4857 5.925
+      vertex 262.4857 6.656189 5.925
     endloop
   endfacet
-  facet normal 0 0 1
+  facet normal 0 0 -1
     outer loop
-      vertex 2 262.4857 5.925
-      vertex 267.1418 262.4857 5.925
-      vertex 267.1418 267.1418 5.925
-    endloop
-  endfacet
-  facet normal 0 0 1
-    outer loop
-      vertex 2 262.4857 5.925
-      vertex 267.1418 267.1418 5.925
-      vertex 2 267.1418 5.925
-    endloop
-  endfacet
-  facet normal 0 0 1
-    outer loop
-      vertex 2 6.656189 5.925
+      vertex 6.656189 262.4857 5.925
+      vertex 262.4857 6.656189 5.925
       vertex 6.656189 6.656189 5.925
-      vertex 6.656189 262.4857 5.925
     endloop
   endfacet
   facet normal 0 0 1
     outer loop
-      vertex 2 6.656189 5.925
-      vertex 6.656189 262.4857 5.925
-      vertex 2 262.4857 5.925
+      vertex 6.656189 6.656189 11.85
+      vertex 262.4857 6.656189 11.85
+      vertex 262.4857 262.4857 11.85
+    endloop
+  endfacet
+  facet normal 0 0 1
+    outer loop
+      vertex 6.656189 6.656189 11.85
+      vertex 262.4857 262.4857 11.85
+      vertex 6.656189 262.4857 11.85
     endloop
   endfacet
   facet normal 0 -1 0
@@ -181,60 +167,32 @@ solid temporary_ramp_backfill
       vertex 6.656189 262.4857 11.85
     endloop
   endfacet
-  facet normal 0 0 1
+  facet normal 0 0 -1
     outer loop
-      vertex 6.656189 6.656189 11.85
-      vertex 262.4857 6.656189 11.85
-      vertex 262.4857 11.31238 11.85
-    endloop
-  endfacet
-  facet normal 0 0 1
-    outer loop
-      vertex 6.656189 6.656189 11.85
-      vertex 262.4857 11.31238 11.85
-      vertex 6.656189 11.31238 11.85
-    endloop
-  endfacet
-  facet normal 0 0 1
-    outer loop
-      vertex 257.8295 11.31238 11.85
-      vertex 262.4857 11.31238 11.85
-      vertex 262.4857 257.8295 11.85
-    endloop
-  endfacet
-  facet normal 0 0 1
-    outer loop
-      vertex 257.8295 11.31238 11.85
-      vertex 262.4857 257.8295 11.85
+      vertex 11.31238 257.8295 11.85
       vertex 257.8295 257.8295 11.85
+      vertex 257.8295 11.31238 11.85
     endloop
   endfacet
-  facet normal 0 0 1
+  facet normal 0 0 -1
     outer loop
-      vertex 6.656189 257.8295 11.85
-      vertex 262.4857 257.8295 11.85
-      vertex 262.4857 262.4857 11.85
-    endloop
-  endfacet
-  facet normal 0 0 1
-    outer loop
-      vertex 6.656189 257.8295 11.85
-      vertex 262.4857 262.4857 11.85
-      vertex 6.656189 262.4857 11.85
-    endloop
-  endfacet
-  facet normal 0 0 1
-    outer loop
-      vertex 6.656189 11.31238 11.85
+      vertex 11.31238 257.8295 11.85
+      vertex 257.8295 11.31238 11.85
       vertex 11.31238 11.31238 11.85
-      vertex 11.31238 257.8295 11.85
     endloop
   endfacet
   facet normal 0 0 1
     outer loop
-      vertex 6.656189 11.31238 11.85
-      vertex 11.31238 257.8295 11.85
-      vertex 6.656189 257.8295 11.85
+      vertex 11.31238 11.31238 17.775
+      vertex 257.8295 11.31238 17.775
+      vertex 257.8295 257.8295 17.775
+    endloop
+  endfacet
+  facet normal 0 0 1
+    outer loop
+      vertex 11.31238 11.31238 17.775
+      vertex 257.8295 257.8295 17.775
+      vertex 11.31238 257.8295 17.775
     endloop
   endfacet
   facet normal 0 -1 0
@@ -293,60 +251,32 @@ solid temporary_ramp_backfill
       vertex 11.31238 257.8295 17.775
     endloop
   endfacet
-  facet normal 0 0 1
+  facet normal 0 0 -1
     outer loop
-      vertex 11.31238 11.31238 17.775
-      vertex 257.8295 11.31238 17.775
-      vertex 257.8295 15.96857 17.775
-    endloop
-  endfacet
-  facet normal 0 0 1
-    outer loop
-      vertex 11.31238 11.31238 17.775
-      vertex 257.8295 15.96857 17.775
-      vertex 11.31238 15.96857 17.775
-    endloop
-  endfacet
-  facet normal 0 0 1
-    outer loop
-      vertex 253.1733 15.96857 17.775
-      vertex 257.8295 15.96857 17.775
-      vertex 257.8295 253.1733 17.775
-    endloop
-  endfacet
-  facet normal 0 0 1
-    outer loop
-      vertex 253.1733 15.96857 17.775
-      vertex 257.8295 253.1733 17.775
+      vertex 15.96857 253.1733 17.775
       vertex 253.1733 253.1733 17.775
+      vertex 253.1733 15.96857 17.775
     endloop
   endfacet
-  facet normal 0 0 1
+  facet normal 0 0 -1
     outer loop
-      vertex 11.31238 253.1733 17.775
-      vertex 257.8295 253.1733 17.775
-      vertex 257.8295 257.8295 17.775
-    endloop
-  endfacet
-  facet normal 0 0 1
-    outer loop
-      vertex 11.31238 253.1733 17.775
-      vertex 257.8295 257.8295 17.775
-      vertex 11.31238 257.8295 17.775
-    endloop
-  endfacet
-  facet normal 0 0 1
-    outer loop
-      vertex 11.31238 15.96857 17.775
+      vertex 15.96857 253.1733 17.775
+      vertex 253.1733 15.96857 17.775
       vertex 15.96857 15.96857 17.775
-      vertex 15.96857 253.1733 17.775
     endloop
   endfacet
   facet normal 0 0 1
     outer loop
-      vertex 11.31238 15.96857 17.775
-      vertex 15.96857 253.1733 17.775
-      vertex 11.31238 253.1733 17.775
+      vertex 15.96857 15.96857 23.7
+      vertex 253.1733 15.96857 23.7
+      vertex 253.1733 253.1733 23.7
+    endloop
+  endfacet
+  facet normal 0 0 1
+    outer loop
+      vertex 15.96857 15.96857 23.7
+      vertex 253.1733 253.1733 23.7
+      vertex 15.96857 253.1733 23.7
     endloop
   endfacet
   facet normal 0 -1 0
@@ -405,60 +335,32 @@ solid temporary_ramp_backfill
       vertex 15.96857 253.1733 23.7
     endloop
   endfacet
-  facet normal 0 0 1
+  facet normal 0 0 -1
     outer loop
-      vertex 15.96857 15.96857 23.7
-      vertex 253.1733 15.96857 23.7
-      vertex 253.1733 20.62475 23.7
-    endloop
-  endfacet
-  facet normal 0 0 1
-    outer loop
-      vertex 15.96857 15.96857 23.7
-      vertex 253.1733 20.62475 23.7
-      vertex 15.96857 20.62475 23.7
-    endloop
-  endfacet
-  facet normal 0 0 1
-    outer loop
-      vertex 248.5171 20.62475 23.7
-      vertex 253.1733 20.62475 23.7
-      vertex 253.1733 248.5171 23.7
-    endloop
-  endfacet
-  facet normal 0 0 1
-    outer loop
-      vertex 248.5171 20.62475 23.7
-      vertex 253.1733 248.5171 23.7
+      vertex 20.62475 248.5171 23.7
       vertex 248.5171 248.5171 23.7
+      vertex 248.5171 20.62475 23.7
     endloop
   endfacet
-  facet normal 0 0 1
+  facet normal 0 0 -1
     outer loop
-      vertex 15.96857 248.5171 23.7
-      vertex 253.1733 248.5171 23.7
-      vertex 253.1733 253.1733 23.7
-    endloop
-  endfacet
-  facet normal 0 0 1
-    outer loop
-      vertex 15.96857 248.5171 23.7
-      vertex 253.1733 253.1733 23.7
-      vertex 15.96857 253.1733 23.7
-    endloop
-  endfacet
-  facet normal 0 0 1
-    outer loop
-      vertex 15.96857 20.62475 23.7
+      vertex 20.62475 248.5171 23.7
+      vertex 248.5171 20.62475 23.7
       vertex 20.62475 20.62475 23.7
-      vertex 20.62475 248.5171 23.7
     endloop
   endfacet
   facet normal 0 0 1
     outer loop
-      vertex 15.96857 20.62475 23.7
-      vertex 20.62475 248.5171 23.7
-      vertex 15.96857 248.5171 23.7
+      vertex 20.62475 20.62475 29.625
+      vertex 248.5171 20.62475 29.625
+      vertex 248.5171 248.5171 29.625
+    endloop
+  endfacet
+  facet normal 0 0 1
+    outer loop
+      vertex 20.62475 20.62475 29.625
+      vertex 248.5171 248.5171 29.625
+      vertex 20.62475 248.5171 29.625
     endloop
   endfacet
   facet normal 0 -1 0
@@ -517,60 +419,32 @@ solid temporary_ramp_backfill
       vertex 20.62475 248.5171 29.625
     endloop
   endfacet
-  facet normal 0 0 1
+  facet normal 0 0 -1
     outer loop
-      vertex 20.62475 20.62475 29.625
-      vertex 248.5171 20.62475 29.625
-      vertex 248.5171 25.28094 29.625
-    endloop
-  endfacet
-  facet normal 0 0 1
-    outer loop
-      vertex 20.62475 20.62475 29.625
-      vertex 248.5171 25.28094 29.625
-      vertex 20.62475 25.28094 29.625
-    endloop
-  endfacet
-  facet normal 0 0 1
-    outer loop
-      vertex 243.8609 25.28094 29.625
-      vertex 248.5171 25.28094 29.625
-      vertex 248.5171 243.8609 29.625
-    endloop
-  endfacet
-  facet normal 0 0 1
-    outer loop
-      vertex 243.8609 25.28094 29.625
-      vertex 248.5171 243.8609 29.625
+      vertex 25.28094 243.8609 29.625
       vertex 243.8609 243.8609 29.625
+      vertex 243.8609 25.28094 29.625
     endloop
   endfacet
-  facet normal 0 0 1
+  facet normal 0 0 -1
     outer loop
-      vertex 20.62475 243.8609 29.625
-      vertex 248.5171 243.8609 29.625
-      vertex 248.5171 248.5171 29.625
-    endloop
-  endfacet
-  facet normal 0 0 1
-    outer loop
-      vertex 20.62475 243.8609 29.625
-      vertex 248.5171 248.5171 29.625
-      vertex 20.62475 248.5171 29.625
-    endloop
-  endfacet
-  facet normal 0 0 1
-    outer loop
-      vertex 20.62475 25.28094 29.625
+      vertex 25.28094 243.8609 29.625
+      vertex 243.8609 25.28094 29.625
       vertex 25.28094 25.28094 29.625
-      vertex 25.28094 243.8609 29.625
     endloop
   endfacet
   facet normal 0 0 1
     outer loop
-      vertex 20.62475 25.28094 29.625
-      vertex 25.28094 243.8609 29.625
-      vertex 20.62475 243.8609 29.625
+      vertex 25.28094 25.28094 35.55
+      vertex 243.8609 25.28094 35.55
+      vertex 243.8609 243.8609 35.55
+    endloop
+  endfacet
+  facet normal 0 0 1
+    outer loop
+      vertex 25.28094 25.28094 35.55
+      vertex 243.8609 243.8609 35.55
+      vertex 25.28094 243.8609 35.55
     endloop
   endfacet
   facet normal 0 -1 0
@@ -629,60 +503,32 @@ solid temporary_ramp_backfill
       vertex 25.28094 243.8609 35.55
     endloop
   endfacet
-  facet normal 0 0 1
+  facet normal 0 0 -1
     outer loop
-      vertex 25.28094 25.28094 35.55
-      vertex 243.8609 25.28094 35.55
-      vertex 243.8609 29.93713 35.55
-    endloop
-  endfacet
-  facet normal 0 0 1
-    outer loop
-      vertex 25.28094 25.28094 35.55
-      vertex 243.8609 29.93713 35.55
-      vertex 25.28094 29.93713 35.55
-    endloop
-  endfacet
-  facet normal 0 0 1
-    outer loop
-      vertex 239.2047 29.93713 35.55
-      vertex 243.8609 29.93713 35.55
-      vertex 243.8609 239.2047 35.55
-    endloop
-  endfacet
-  facet normal 0 0 1
-    outer loop
-      vertex 239.2047 29.93713 35.55
-      vertex 243.8609 239.2047 35.55
+      vertex 29.93713 239.2047 35.55
       vertex 239.2047 239.2047 35.55
+      vertex 239.2047 29.93713 35.55
     endloop
   endfacet
-  facet normal 0 0 1
+  facet normal 0 0 -1
     outer loop
-      vertex 25.28094 239.2047 35.55
-      vertex 243.8609 239.2047 35.55
-      vertex 243.8609 243.8609 35.55
-    endloop
-  endfacet
-  facet normal 0 0 1
-    outer loop
-      vertex 25.28094 239.2047 35.55
-      vertex 243.8609 243.8609 35.55
-      vertex 25.28094 243.8609 35.55
-    endloop
-  endfacet
-  facet normal 0 0 1
-    outer loop
-      vertex 25.28094 29.93713 35.55
+      vertex 29.93713 239.2047 35.55
+      vertex 239.2047 29.93713 35.55
       vertex 29.93713 29.93713 35.55
-      vertex 29.93713 239.2047 35.55
     endloop
   endfacet
   facet normal 0 0 1
     outer loop
-      vertex 25.28094 29.93713 35.55
-      vertex 29.93713 239.2047 35.55
-      vertex 25.28094 239.2047 35.55
+      vertex 29.93713 29.93713 41.475
+      vertex 239.2047 29.93713 41.475
+      vertex 239.2047 239.2047 41.475
+    endloop
+  endfacet
+  facet normal 0 0 1
+    outer loop
+      vertex 29.93713 29.93713 41.475
+      vertex 239.2047 239.2047 41.475
+      vertex 29.93713 239.2047 41.475
     endloop
   endfacet
   facet normal 0 -1 0
@@ -741,60 +587,32 @@ solid temporary_ramp_backfill
       vertex 29.93713 239.2047 41.475
     endloop
   endfacet
-  facet normal 0 0 1
+  facet normal 0 0 -1
     outer loop
-      vertex 29.93713 29.93713 41.475
-      vertex 239.2047 29.93713 41.475
-      vertex 239.2047 34.59332 41.475
-    endloop
-  endfacet
-  facet normal 0 0 1
-    outer loop
-      vertex 29.93713 29.93713 41.475
-      vertex 239.2047 34.59332 41.475
-      vertex 29.93713 34.59332 41.475
-    endloop
-  endfacet
-  facet normal 0 0 1
-    outer loop
-      vertex 234.5485 34.59332 41.475
-      vertex 239.2047 34.59332 41.475
-      vertex 239.2047 234.5485 41.475
-    endloop
-  endfacet
-  facet normal 0 0 1
-    outer loop
-      vertex 234.5485 34.59332 41.475
-      vertex 239.2047 234.5485 41.475
+      vertex 34.59332 234.5485 41.475
       vertex 234.5485 234.5485 41.475
+      vertex 234.5485 34.59332 41.475
     endloop
   endfacet
-  facet normal 0 0 1
+  facet normal 0 0 -1
     outer loop
-      vertex 29.93713 234.5485 41.475
-      vertex 239.2047 234.5485 41.475
-      vertex 239.2047 239.2047 41.475
-    endloop
-  endfacet
-  facet normal 0 0 1
-    outer loop
-      vertex 29.93713 234.5485 41.475
-      vertex 239.2047 239.2047 41.475
-      vertex 29.93713 239.2047 41.475
-    endloop
-  endfacet
-  facet normal 0 0 1
-    outer loop
-      vertex 29.93713 34.59332 41.475
+      vertex 34.59332 234.5485 41.475
+      vertex 234.5485 34.59332 41.475
       vertex 34.59332 34.59332 41.475
-      vertex 34.59332 234.5485 41.475
     endloop
   endfacet
   facet normal 0 0 1
     outer loop
-      vertex 29.93713 34.59332 41.475
-      vertex 34.59332 234.5485 41.475
-      vertex 29.93713 234.5485 41.475
+      vertex 34.59332 34.59332 47.4
+      vertex 234.5485 34.59332 47.4
+      vertex 234.5485 234.5485 47.4
+    endloop
+  endfacet
+  facet normal 0 0 1
+    outer loop
+      vertex 34.59332 34.59332 47.4
+      vertex 234.5485 234.5485 47.4
+      vertex 34.59332 234.5485 47.4
     endloop
   endfacet
   facet normal 0 -1 0
@@ -853,60 +671,32 @@ solid temporary_ramp_backfill
       vertex 34.59332 234.5485 47.4
     endloop
   endfacet
-  facet normal 0 0 1
+  facet normal 0 0 -1
     outer loop
-      vertex 34.59332 34.59332 47.4
-      vertex 234.5485 34.59332 47.4
-      vertex 234.5485 39.24951 47.4
-    endloop
-  endfacet
-  facet normal 0 0 1
-    outer loop
-      vertex 34.59332 34.59332 47.4
-      vertex 234.5485 39.24951 47.4
-      vertex 34.59332 39.24951 47.4
-    endloop
-  endfacet
-  facet normal 0 0 1
-    outer loop
-      vertex 229.8923 39.24951 47.4
-      vertex 234.5485 39.24951 47.4
-      vertex 234.5485 229.8923 47.4
-    endloop
-  endfacet
-  facet normal 0 0 1
-    outer loop
-      vertex 229.8923 39.24951 47.4
-      vertex 234.5485 229.8923 47.4
+      vertex 39.24951 229.8923 47.4
       vertex 229.8923 229.8923 47.4
+      vertex 229.8923 39.24951 47.4
     endloop
   endfacet
-  facet normal 0 0 1
+  facet normal 0 0 -1
     outer loop
-      vertex 34.59332 229.8923 47.4
-      vertex 234.5485 229.8923 47.4
-      vertex 234.5485 234.5485 47.4
-    endloop
-  endfacet
-  facet normal 0 0 1
-    outer loop
-      vertex 34.59332 229.8923 47.4
-      vertex 234.5485 234.5485 47.4
-      vertex 34.59332 234.5485 47.4
-    endloop
-  endfacet
-  facet normal 0 0 1
-    outer loop
-      vertex 34.59332 39.24951 47.4
+      vertex 39.24951 229.8923 47.4
+      vertex 229.8923 39.24951 47.4
       vertex 39.24951 39.24951 47.4
-      vertex 39.24951 229.8923 47.4
     endloop
   endfacet
   facet normal 0 0 1
     outer loop
-      vertex 34.59332 39.24951 47.4
-      vertex 39.24951 229.8923 47.4
-      vertex 34.59332 229.8923 47.4
+      vertex 39.24951 39.24951 53.325
+      vertex 229.8923 39.24951 53.325
+      vertex 229.8923 229.8923 53.325
+    endloop
+  endfacet
+  facet normal 0 0 1
+    outer loop
+      vertex 39.24951 39.24951 53.325
+      vertex 229.8923 229.8923 53.325
+      vertex 39.24951 229.8923 53.325
     endloop
   endfacet
   facet normal 0 -1 0
@@ -965,60 +755,32 @@ solid temporary_ramp_backfill
       vertex 39.24951 229.8923 53.325
     endloop
   endfacet
-  facet normal 0 0 1
+  facet normal 0 0 -1
     outer loop
-      vertex 39.24951 39.24951 53.325
-      vertex 229.8923 39.24951 53.325
-      vertex 229.8923 43.9057 53.325
-    endloop
-  endfacet
-  facet normal 0 0 1
-    outer loop
-      vertex 39.24951 39.24951 53.325
-      vertex 229.8923 43.9057 53.325
-      vertex 39.24951 43.9057 53.325
-    endloop
-  endfacet
-  facet normal 0 0 1
-    outer loop
-      vertex 225.2361 43.9057 53.325
-      vertex 229.8923 43.9057 53.325
-      vertex 229.8923 225.2361 53.325
-    endloop
-  endfacet
-  facet normal 0 0 1
-    outer loop
-      vertex 225.2361 43.9057 53.325
-      vertex 229.8923 225.2361 53.325
+      vertex 43.9057 225.2361 53.325
       vertex 225.2361 225.2361 53.325
+      vertex 225.2361 43.9057 53.325
     endloop
   endfacet
-  facet normal 0 0 1
+  facet normal 0 0 -1
     outer loop
-      vertex 39.24951 225.2361 53.325
-      vertex 229.8923 225.2361 53.325
-      vertex 229.8923 229.8923 53.325
-    endloop
-  endfacet
-  facet normal 0 0 1
-    outer loop
-      vertex 39.24951 225.2361 53.325
-      vertex 229.8923 229.8923 53.325
-      vertex 39.24951 229.8923 53.325
-    endloop
-  endfacet
-  facet normal 0 0 1
-    outer loop
-      vertex 39.24951 43.9057 53.325
+      vertex 43.9057 225.2361 53.325
+      vertex 225.2361 43.9057 53.325
       vertex 43.9057 43.9057 53.325
-      vertex 43.9057 225.2361 53.325
     endloop
   endfacet
   facet normal 0 0 1
     outer loop
-      vertex 39.24951 43.9057 53.325
-      vertex 43.9057 225.2361 53.325
-      vertex 39.24951 225.2361 53.325
+      vertex 43.9057 43.9057 59.25
+      vertex 225.2361 43.9057 59.25
+      vertex 225.2361 225.2361 59.25
+    endloop
+  endfacet
+  facet normal 0 0 1
+    outer loop
+      vertex 43.9057 43.9057 59.25
+      vertex 225.2361 225.2361 59.25
+      vertex 43.9057 225.2361 59.25
     endloop
   endfacet
   facet normal 0 -1 0
@@ -1077,60 +839,32 @@ solid temporary_ramp_backfill
       vertex 43.9057 225.2361 59.25
     endloop
   endfacet
-  facet normal 0 0 1
+  facet normal 0 0 -1
     outer loop
-      vertex 43.9057 43.9057 59.25
-      vertex 225.2361 43.9057 59.25
-      vertex 225.2361 48.56189 59.25
-    endloop
-  endfacet
-  facet normal 0 0 1
-    outer loop
-      vertex 43.9057 43.9057 59.25
-      vertex 225.2361 48.56189 59.25
-      vertex 43.9057 48.56189 59.25
-    endloop
-  endfacet
-  facet normal 0 0 1
-    outer loop
-      vertex 220.58 48.56189 59.25
-      vertex 225.2361 48.56189 59.25
-      vertex 225.2361 220.58 59.25
-    endloop
-  endfacet
-  facet normal 0 0 1
-    outer loop
-      vertex 220.58 48.56189 59.25
-      vertex 225.2361 220.58 59.25
+      vertex 48.56189 220.58 59.25
       vertex 220.58 220.58 59.25
+      vertex 220.58 48.56189 59.25
     endloop
   endfacet
-  facet normal 0 0 1
+  facet normal 0 0 -1
     outer loop
-      vertex 43.9057 220.58 59.25
-      vertex 225.2361 220.58 59.25
-      vertex 225.2361 225.2361 59.25
-    endloop
-  endfacet
-  facet normal 0 0 1
-    outer loop
-      vertex 43.9057 220.58 59.25
-      vertex 225.2361 225.2361 59.25
-      vertex 43.9057 225.2361 59.25
-    endloop
-  endfacet
-  facet normal 0 0 1
-    outer loop
-      vertex 43.9057 48.56189 59.25
+      vertex 48.56189 220.58 59.25
+      vertex 220.58 48.56189 59.25
       vertex 48.56189 48.56189 59.25
-      vertex 48.56189 220.58 59.25
     endloop
   endfacet
   facet normal 0 0 1
     outer loop
-      vertex 43.9057 48.56189 59.25
-      vertex 48.56189 220.58 59.25
-      vertex 43.9057 220.58 59.25
+      vertex 48.56189 48.56189 65.175
+      vertex 220.58 48.56189 65.175
+      vertex 220.58 220.58 65.175
+    endloop
+  endfacet
+  facet normal 0 0 1
+    outer loop
+      vertex 48.56189 48.56189 65.175
+      vertex 220.58 220.58 65.175
+      vertex 48.56189 220.58 65.175
     endloop
   endfacet
   facet normal 0 -1 0
@@ -1189,60 +923,32 @@ solid temporary_ramp_backfill
       vertex 48.56189 220.58 65.175
     endloop
   endfacet
-  facet normal 0 0 1
+  facet normal 0 0 -1
     outer loop
-      vertex 48.56189 48.56189 65.175
-      vertex 220.58 48.56189 65.175
-      vertex 220.58 53.21807 65.175
-    endloop
-  endfacet
-  facet normal 0 0 1
-    outer loop
-      vertex 48.56189 48.56189 65.175
-      vertex 220.58 53.21807 65.175
-      vertex 48.56189 53.21807 65.175
-    endloop
-  endfacet
-  facet normal 0 0 1
-    outer loop
-      vertex 215.9238 53.21807 65.175
-      vertex 220.58 53.21807 65.175
-      vertex 220.58 215.9238 65.175
-    endloop
-  endfacet
-  facet normal 0 0 1
-    outer loop
-      vertex 215.9238 53.21807 65.175
-      vertex 220.58 215.9238 65.175
+      vertex 53.21807 215.9238 65.175
       vertex 215.9238 215.9238 65.175
+      vertex 215.9238 53.21807 65.175
     endloop
   endfacet
-  facet normal 0 0 1
+  facet normal 0 0 -1
     outer loop
-      vertex 48.56189 215.9238 65.175
-      vertex 220.58 215.9238 65.175
-      vertex 220.58 220.58 65.175
-    endloop
-  endfacet
-  facet normal 0 0 1
-    outer loop
-      vertex 48.56189 215.9238 65.175
-      vertex 220.58 220.58 65.175
-      vertex 48.56189 220.58 65.175
-    endloop
-  endfacet
-  facet normal 0 0 1
-    outer loop
-      vertex 48.56189 53.21807 65.175
+      vertex 53.21807 215.9238 65.175
+      vertex 215.9238 53.21807 65.175
       vertex 53.21807 53.21807 65.175
-      vertex 53.21807 215.9238 65.175
     endloop
   endfacet
   facet normal 0 0 1
     outer loop
-      vertex 48.56189 53.21807 65.175
-      vertex 53.21807 215.9238 65.175
-      vertex 48.56189 215.9238 65.175
+      vertex 53.21807 53.21807 71.1
+      vertex 215.9238 53.21807 71.1
+      vertex 215.9238 215.9238 71.1
+    endloop
+  endfacet
+  facet normal 0 0 1
+    outer loop
+      vertex 53.21807 53.21807 71.1
+      vertex 215.9238 215.9238 71.1
+      vertex 53.21807 215.9238 71.1
     endloop
   endfacet
   facet normal 0 -1 0
@@ -1301,60 +1007,32 @@ solid temporary_ramp_backfill
       vertex 53.21807 215.9238 71.1
     endloop
   endfacet
-  facet normal 0 0 1
+  facet normal 0 0 -1
     outer loop
-      vertex 53.21807 53.21807 71.1
-      vertex 215.9238 53.21807 71.1
-      vertex 215.9238 57.87426 71.1
-    endloop
-  endfacet
-  facet normal 0 0 1
-    outer loop
-      vertex 53.21807 53.21807 71.1
-      vertex 215.9238 57.87426 71.1
-      vertex 53.21807 57.87426 71.1
-    endloop
-  endfacet
-  facet normal 0 0 1
-    outer loop
-      vertex 211.2676 57.87426 71.1
-      vertex 215.9238 57.87426 71.1
-      vertex 215.9238 211.2676 71.1
-    endloop
-  endfacet
-  facet normal 0 0 1
-    outer loop
-      vertex 211.2676 57.87426 71.1
-      vertex 215.9238 211.2676 71.1
+      vertex 57.87426 211.2676 71.1
       vertex 211.2676 211.2676 71.1
+      vertex 211.2676 57.87426 71.1
     endloop
   endfacet
-  facet normal 0 0 1
+  facet normal 0 0 -1
     outer loop
-      vertex 53.21807 211.2676 71.1
-      vertex 215.9238 211.2676 71.1
-      vertex 215.9238 215.9238 71.1
-    endloop
-  endfacet
-  facet normal 0 0 1
-    outer loop
-      vertex 53.21807 211.2676 71.1
-      vertex 215.9238 215.9238 71.1
-      vertex 53.21807 215.9238 71.1
-    endloop
-  endfacet
-  facet normal 0 0 1
-    outer loop
-      vertex 53.21807 57.87426 71.1
+      vertex 57.87426 211.2676 71.1
+      vertex 211.2676 57.87426 71.1
       vertex 57.87426 57.87426 71.1
-      vertex 57.87426 211.2676 71.1
     endloop
   endfacet
   facet normal 0 0 1
     outer loop
-      vertex 53.21807 57.87426 71.1
-      vertex 57.87426 211.2676 71.1
-      vertex 53.21807 211.2676 71.1
+      vertex 57.87426 57.87426 77.025
+      vertex 211.2676 57.87426 77.025
+      vertex 211.2676 211.2676 77.025
+    endloop
+  endfacet
+  facet normal 0 0 1
+    outer loop
+      vertex 57.87426 57.87426 77.025
+      vertex 211.2676 211.2676 77.025
+      vertex 57.87426 211.2676 77.025
     endloop
   endfacet
   facet normal 0 -1 0
@@ -1413,60 +1091,32 @@ solid temporary_ramp_backfill
       vertex 57.87426 211.2676 77.025
     endloop
   endfacet
-  facet normal 0 0 1
+  facet normal 0 0 -1
     outer loop
-      vertex 57.87426 57.87426 77.025
-      vertex 211.2676 57.87426 77.025
-      vertex 211.2676 62.53045 77.025
-    endloop
-  endfacet
-  facet normal 0 0 1
-    outer loop
-      vertex 57.87426 57.87426 77.025
-      vertex 211.2676 62.53045 77.025
-      vertex 57.87426 62.53045 77.025
-    endloop
-  endfacet
-  facet normal 0 0 1
-    outer loop
-      vertex 206.6114 62.53045 77.025
-      vertex 211.2676 62.53045 77.025
-      vertex 211.2676 206.6114 77.025
-    endloop
-  endfacet
-  facet normal 0 0 1
-    outer loop
-      vertex 206.6114 62.53045 77.025
-      vertex 211.2676 206.6114 77.025
+      vertex 62.53045 206.6114 77.025
       vertex 206.6114 206.6114 77.025
+      vertex 206.6114 62.53045 77.025
     endloop
   endfacet
-  facet normal 0 0 1
+  facet normal 0 0 -1
     outer loop
-      vertex 57.87426 206.6114 77.025
-      vertex 211.2676 206.6114 77.025
-      vertex 211.2676 211.2676 77.025
-    endloop
-  endfacet
-  facet normal 0 0 1
-    outer loop
-      vertex 57.87426 206.6114 77.025
-      vertex 211.2676 211.2676 77.025
-      vertex 57.87426 211.2676 77.025
-    endloop
-  endfacet
-  facet normal 0 0 1
-    outer loop
-      vertex 57.87426 62.53045 77.025
+      vertex 62.53045 206.6114 77.025
+      vertex 206.6114 62.53045 77.025
       vertex 62.53045 62.53045 77.025
-      vertex 62.53045 206.6114 77.025
     endloop
   endfacet
   facet normal 0 0 1
     outer loop
-      vertex 57.87426 62.53045 77.025
-      vertex 62.53045 206.6114 77.025
-      vertex 57.87426 206.6114 77.025
+      vertex 62.53045 62.53045 82.95
+      vertex 206.6114 62.53045 82.95
+      vertex 206.6114 206.6114 82.95
+    endloop
+  endfacet
+  facet normal 0 0 1
+    outer loop
+      vertex 62.53045 62.53045 82.95
+      vertex 206.6114 206.6114 82.95
+      vertex 62.53045 206.6114 82.95
     endloop
   endfacet
   facet normal 0 -1 0
@@ -1525,60 +1175,32 @@ solid temporary_ramp_backfill
       vertex 62.53045 206.6114 82.95
     endloop
   endfacet
-  facet normal 0 0 1
+  facet normal 0 0 -1
     outer loop
-      vertex 62.53045 62.53045 82.95
-      vertex 206.6114 62.53045 82.95
-      vertex 206.6114 67.18664 82.95
-    endloop
-  endfacet
-  facet normal 0 0 1
-    outer loop
-      vertex 62.53045 62.53045 82.95
-      vertex 206.6114 67.18664 82.95
-      vertex 62.53045 67.18664 82.95
-    endloop
-  endfacet
-  facet normal 0 0 1
-    outer loop
-      vertex 201.9552 67.18664 82.95
-      vertex 206.6114 67.18664 82.95
-      vertex 206.6114 201.9552 82.95
-    endloop
-  endfacet
-  facet normal 0 0 1
-    outer loop
-      vertex 201.9552 67.18664 82.95
-      vertex 206.6114 201.9552 82.95
+      vertex 67.18664 201.9552 82.95
       vertex 201.9552 201.9552 82.95
+      vertex 201.9552 67.18664 82.95
     endloop
   endfacet
-  facet normal 0 0 1
+  facet normal 0 0 -1
     outer loop
-      vertex 62.53045 201.9552 82.95
-      vertex 206.6114 201.9552 82.95
-      vertex 206.6114 206.6114 82.95
-    endloop
-  endfacet
-  facet normal 0 0 1
-    outer loop
-      vertex 62.53045 201.9552 82.95
-      vertex 206.6114 206.6114 82.95
-      vertex 62.53045 206.6114 82.95
-    endloop
-  endfacet
-  facet normal 0 0 1
-    outer loop
-      vertex 62.53045 67.18664 82.95
+      vertex 67.18664 201.9552 82.95
+      vertex 201.9552 67.18664 82.95
       vertex 67.18664 67.18664 82.95
-      vertex 67.18664 201.9552 82.95
     endloop
   endfacet
   facet normal 0 0 1
     outer loop
-      vertex 62.53045 67.18664 82.95
-      vertex 67.18664 201.9552 82.95
-      vertex 62.53045 201.9552 82.95
+      vertex 67.18664 67.18664 88.875
+      vertex 201.9552 67.18664 88.875
+      vertex 201.9552 201.9552 88.875
+    endloop
+  endfacet
+  facet normal 0 0 1
+    outer loop
+      vertex 67.18664 67.18664 88.875
+      vertex 201.9552 201.9552 88.875
+      vertex 67.18664 201.9552 88.875
     endloop
   endfacet
   facet normal 0 -1 0
@@ -1637,60 +1259,32 @@ solid temporary_ramp_backfill
       vertex 67.18664 201.9552 88.875
     endloop
   endfacet
-  facet normal 0 0 1
+  facet normal 0 0 -1
     outer loop
-      vertex 67.18664 67.18664 88.875
-      vertex 201.9552 67.18664 88.875
-      vertex 201.9552 71.84283 88.875
-    endloop
-  endfacet
-  facet normal 0 0 1
-    outer loop
-      vertex 67.18664 67.18664 88.875
-      vertex 201.9552 71.84283 88.875
-      vertex 67.18664 71.84283 88.875
-    endloop
-  endfacet
-  facet normal 0 0 1
-    outer loop
-      vertex 197.299 71.84283 88.875
-      vertex 201.9552 71.84283 88.875
-      vertex 201.9552 197.299 88.875
-    endloop
-  endfacet
-  facet normal 0 0 1
-    outer loop
-      vertex 197.299 71.84283 88.875
-      vertex 201.9552 197.299 88.875
+      vertex 71.84283 197.299 88.875
       vertex 197.299 197.299 88.875
+      vertex 197.299 71.84283 88.875
     endloop
   endfacet
-  facet normal 0 0 1
+  facet normal 0 0 -1
     outer loop
-      vertex 67.18664 197.299 88.875
-      vertex 201.9552 197.299 88.875
-      vertex 201.9552 201.9552 88.875
-    endloop
-  endfacet
-  facet normal 0 0 1
-    outer loop
-      vertex 67.18664 197.299 88.875
-      vertex 201.9552 201.9552 88.875
-      vertex 67.18664 201.9552 88.875
-    endloop
-  endfacet
-  facet normal 0 0 1
-    outer loop
-      vertex 67.18664 71.84283 88.875
+      vertex 71.84283 197.299 88.875
+      vertex 197.299 71.84283 88.875
       vertex 71.84283 71.84283 88.875
-      vertex 71.84283 197.299 88.875
     endloop
   endfacet
   facet normal 0 0 1
     outer loop
-      vertex 67.18664 71.84283 88.875
-      vertex 71.84283 197.299 88.875
-      vertex 67.18664 197.299 88.875
+      vertex 71.84283 71.84283 94.8
+      vertex 197.299 71.84283 94.8
+      vertex 197.299 197.299 94.8
+    endloop
+  endfacet
+  facet normal 0 0 1
+    outer loop
+      vertex 71.84283 71.84283 94.8
+      vertex 197.299 197.299 94.8
+      vertex 71.84283 197.299 94.8
     endloop
   endfacet
   facet normal 0 -1 0
@@ -1747,76 +1341,6 @@ solid temporary_ramp_backfill
       vertex 71.84283 197.299 88.875
       vertex 71.84283 71.84283 94.8
       vertex 71.84283 197.299 94.8
-    endloop
-  endfacet
-  facet normal 0 0 1
-    outer loop
-      vertex 71.84283 71.84283 94.8
-      vertex 197.299 71.84283 94.8
-      vertex 197.299 74.17092 94.8
-    endloop
-  endfacet
-  facet normal 0 0 1
-    outer loop
-      vertex 71.84283 71.84283 94.8
-      vertex 197.299 74.17092 94.8
-      vertex 71.84283 74.17092 94.8
-    endloop
-  endfacet
-  facet normal 0 0 1
-    outer loop
-      vertex 194.9709 74.17092 94.8
-      vertex 197.299 74.17092 94.8
-      vertex 197.299 194.9709 94.8
-    endloop
-  endfacet
-  facet normal 0 0 1
-    outer loop
-      vertex 194.9709 74.17092 94.8
-      vertex 197.299 194.9709 94.8
-      vertex 194.9709 194.9709 94.8
-    endloop
-  endfacet
-  facet normal 0 0 1
-    outer loop
-      vertex 71.84283 194.9709 94.8
-      vertex 197.299 194.9709 94.8
-      vertex 197.299 197.299 94.8
-    endloop
-  endfacet
-  facet normal 0 0 1
-    outer loop
-      vertex 71.84283 194.9709 94.8
-      vertex 197.299 197.299 94.8
-      vertex 71.84283 197.299 94.8
-    endloop
-  endfacet
-  facet normal 0 0 1
-    outer loop
-      vertex 71.84283 74.17092 94.8
-      vertex 74.17092 74.17092 94.8
-      vertex 74.17092 194.9709 94.8
-    endloop
-  endfacet
-  facet normal 0 0 1
-    outer loop
-      vertex 71.84283 74.17092 94.8
-      vertex 74.17092 194.9709 94.8
-      vertex 71.84283 194.9709 94.8
-    endloop
-  endfacet
-  facet normal 0 0 1
-    outer loop
-      vertex 74.17092 74.17092 94.8
-      vertex 194.9709 74.17092 94.8
-      vertex 194.9709 194.9709 94.8
-    endloop
-  endfacet
-  facet normal 0 0 1
-    outer loop
-      vertex 74.17092 74.17092 94.8
-      vertex 194.9709 194.9709 94.8
-      vertex 74.17092 194.9709 94.8
     endloop
   endfacet
 endsolid temporary_ramp_backfill

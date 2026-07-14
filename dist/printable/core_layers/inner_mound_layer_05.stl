@@ -1,4 +1,32 @@
 solid inner_stepped_mound_layer_05
+  facet normal 0 0 -1
+    outer loop
+      vertex 2 81.7053 0
+      vertex 81.7053 81.7053 0
+      vertex 81.7053 2 0
+    endloop
+  endfacet
+  facet normal 0 0 -1
+    outer loop
+      vertex 2 81.7053 0
+      vertex 81.7053 2 0
+      vertex 2 2 0
+    endloop
+  endfacet
+  facet normal 0 0 1
+    outer loop
+      vertex 2 2 5.925
+      vertex 81.7053 2 5.925
+      vertex 81.7053 81.7053 5.925
+    endloop
+  endfacet
+  facet normal 0 0 1
+    outer loop
+      vertex 2 2 5.925
+      vertex 81.7053 81.7053 5.925
+      vertex 2 81.7053 5.925
+    endloop
+  endfacet
   facet normal 0 -1 0
     outer loop
       vertex 2 2 0
@@ -53,62 +81,6 @@ solid inner_stepped_mound_layer_05
       vertex 2 81.7053 0
       vertex 2 2 5.925
       vertex 2 81.7053 5.925
-    endloop
-  endfacet
-  facet normal 0 0 1
-    outer loop
-      vertex 2 2 5.925
-      vertex 81.7053 2 5.925
-      vertex 81.7053 5.036837 5.925
-    endloop
-  endfacet
-  facet normal 0 0 1
-    outer loop
-      vertex 2 2 5.925
-      vertex 81.7053 5.036837 5.925
-      vertex 2 5.036837 5.925
-    endloop
-  endfacet
-  facet normal 0 0 1
-    outer loop
-      vertex 78.66847 5.036837 5.925
-      vertex 81.7053 5.036837 5.925
-      vertex 81.7053 78.66847 5.925
-    endloop
-  endfacet
-  facet normal 0 0 1
-    outer loop
-      vertex 78.66847 5.036837 5.925
-      vertex 81.7053 78.66847 5.925
-      vertex 78.66847 78.66847 5.925
-    endloop
-  endfacet
-  facet normal 0 0 1
-    outer loop
-      vertex 2 78.66847 5.925
-      vertex 81.7053 78.66847 5.925
-      vertex 81.7053 81.7053 5.925
-    endloop
-  endfacet
-  facet normal 0 0 1
-    outer loop
-      vertex 2 78.66847 5.925
-      vertex 81.7053 81.7053 5.925
-      vertex 2 81.7053 5.925
-    endloop
-  endfacet
-  facet normal 0 0 1
-    outer loop
-      vertex 2 5.036837 5.925
-      vertex 5.036837 5.036837 5.925
-      vertex 5.036837 78.66847 5.925
-    endloop
-  endfacet
-  facet normal 0 0 1
-    outer loop
-      vertex 2 5.036837 5.925
-      vertex 5.036837 78.66847 5.925
-      vertex 2 78.66847 5.925
     endloop
   endfacet
 endsolid inner_stepped_mound_layer_05

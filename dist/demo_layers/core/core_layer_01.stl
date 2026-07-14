@@ -13,6 +13,20 @@ solid inner_stepped_mound_layer_01
       vertex -52 -52 0
     endloop
   endfacet
+  facet normal 0 0 1
+    outer loop
+      vertex -52 -52 5.925
+      vertex 52 -52 5.925
+      vertex 52 52 5.925
+    endloop
+  endfacet
+  facet normal 0 0 1
+    outer loop
+      vertex -52 -52 5.925
+      vertex 52 52 5.925
+      vertex -52 52 5.925
+    endloop
+  endfacet
   facet normal 0 -1 0
     outer loop
       vertex -52 -52 0
@@ -67,62 +81,6 @@ solid inner_stepped_mound_layer_01
       vertex -52 52 0
       vertex -52 -52 5.925
       vertex -52 52 5.925
-    endloop
-  endfacet
-  facet normal 0 0 1
-    outer loop
-      vertex -52 -52 5.925
-      vertex 52 -52 5.925
-      vertex 52 -48.96316 5.925
-    endloop
-  endfacet
-  facet normal 0 0 1
-    outer loop
-      vertex -52 -52 5.925
-      vertex 52 -48.96316 5.925
-      vertex -52 -48.96316 5.925
-    endloop
-  endfacet
-  facet normal 0 0 1
-    outer loop
-      vertex 48.96316 -48.96316 5.925
-      vertex 52 -48.96316 5.925
-      vertex 52 48.96316 5.925
-    endloop
-  endfacet
-  facet normal 0 0 1
-    outer loop
-      vertex 48.96316 -48.96316 5.925
-      vertex 52 48.96316 5.925
-      vertex 48.96316 48.96316 5.925
-    endloop
-  endfacet
-  facet normal 0 0 1
-    outer loop
-      vertex -52 48.96316 5.925
-      vertex 52 48.96316 5.925
-      vertex 52 52 5.925
-    endloop
-  endfacet
-  facet normal 0 0 1
-    outer loop
-      vertex -52 48.96316 5.925
-      vertex 52 52 5.925
-      vertex -52 52 5.925
-    endloop
-  endfacet
-  facet normal 0 0 1
-    outer loop
-      vertex -52 -48.96316 5.925
-      vertex -48.96316 -48.96316 5.925
-      vertex -48.96316 48.96316 5.925
-    endloop
-  endfacet
-  facet normal 0 0 1
-    outer loop
-      vertex -52 -48.96316 5.925
-      vertex -48.96316 48.96316 5.925
-      vertex -52 48.96316 5.925
     endloop
   endfacet
 endsolid inner_stepped_mound_layer_01
