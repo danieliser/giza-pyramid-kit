@@ -1,7 +1,7 @@
 ---
 title: "Printing a Pyramid Theory: A Buildable Giza Construction Model"
 slug: "printable-giza-construction-theory"
-date: 2026-07-13
+date: 2026-07-14
 status: ready-draft
 excerpt: "A story about turning a speculative top-down pyramid construction idea into a printable STL kit, a browser animation, and a physical way to argue with the geometry."
 tags:
@@ -10,11 +10,9 @@ tags:
   - pyramids
   - experiments
   - stl
-hero_image: "https://danieliser.github.io/giza-pyramid-kit/release/thingiverse/images/capstone_before_deramping.png"
+hero_image: "https://danieliser.github.io/giza-pyramid-kit/release/thingiverse/images/capstone_before_deramping.png?v=4271355"
 canonical_url: "https://danieliser.com/printable-giza-construction-theory"
 ---
-
-# Printing a Pyramid Theory
 
 Some ideas are hard to judge while they are trapped in words.
 
@@ -26,7 +24,7 @@ So I built a printable version of one of the stranger recent ideas: a Giza pyram
 
 <figure>
   <img
-    src="https://danieliser.github.io/giza-pyramid-kit/release/thingiverse/images/capstone_before_deramping.png"
+    src="https://danieliser.github.io/giza-pyramid-kit/release/thingiverse/images/capstone_before_deramping.png?v=4271355"
     alt="A rendered capstone set on a broad temporary platform before top-down deramping."
   />
   <figcaption>The moment that made the idea click for me: the capstone is already set, but the pyramid is still inside a temporary construction machine.</figcaption>
@@ -62,12 +60,14 @@ I am not presenting this as archaeological proof. I am treating it as a geometry
 
 The repo includes a live Three.js demo that loops through the sequence: below-grade chamber, stepped inner mound, temporary fill, switchback ramps, capstone, top-down deramping, casing, and reuse pile.
 
-<div style="position: relative; width: 100%; aspect-ratio: 16 / 9; border: 1px solid rgba(0,0,0,0.14); border-radius: 8px; overflow: hidden; background: #f6f2e8;">
+<div style="position: relative; width: 100%; height: clamp(420px, 65vw, 720px); border: 1px solid rgba(0,0,0,0.14); border-radius: 8px; overflow: hidden; background: #f6f2e8;">
   <iframe
-    src="https://danieliser.github.io/giza-pyramid-kit/demo/"
+    src="https://danieliser.github.io/giza-pyramid-kit/demo/?embed=1"
     title="Animated Giza pyramid construction theory STL demo"
     loading="lazy"
+    allow="fullscreen"
     allowfullscreen
+    referrerpolicy="strict-origin-when-cross-origin"
     style="position: absolute; inset: 0; width: 100%; height: 100%; border: 0;"
   ></iframe>
 </div>
@@ -98,7 +98,7 @@ The current generator produces:
 
 <figure>
   <img
-    src="https://danieliser.github.io/giza-pyramid-kit/release/thingiverse/images/cover_full_ramp_system.png"
+    src="https://danieliser.github.io/giza-pyramid-kit/release/thingiverse/images/cover_full_ramp_system.png?v=4271355"
     alt="A rendered full temporary ramp system around the stepped construction model."
   />
   <figcaption>The full temporary construction system: stepped mass, side ramps, corner landings, and broad top deck.</figcaption>
@@ -112,6 +112,23 @@ python3 generate_giza_kit.py --base-mm 200 --height-mm 127.25 --ramp-width-mm 24
 ```
 
 The default finished pyramid is a 160 mm tabletop model. It is not trying to reproduce every block. It is trying to preserve the sequence: build up, set capstone, remove temporary works, finish downward.
+
+## What The Geometry Review Changed
+
+The first printable version also made a classic CAD assumption: pieces that touch perfectly on screen will stack perfectly after extrusion. They will not. Exact contact leaves no room for first-layer spread, extrusion variance, or a slightly enthusiastic printer.
+
+The current kit now builds `0.35 mm` of XY clearance around the core/fill and fill/ramp-support interfaces. The cut fill slabs and ramp supports were also rebuilt as single watertight boundary meshes instead of collections of adjacent boxes, and chamber references are clipped to the same course heights as the construction layers around them.
+
+The validator now checks closed positive-volume solids, layer bounds, reserved cutouts, chamber slices, and the requested stack clearance. After that review, all 324 STLs, the browser demo assets, release renders, and maker-site bundle were regenerated together.
+
+There is one practical catch: scaling an STL in the slicer scales its clearances too. At `75%`, the default `0.35 mm` gap becomes about `0.26 mm`. For the most reliable modular fit, regenerate at the target physical size while leaving the clearance at `0.35 mm` or higher:
+
+```bash
+python3 generate_giza_kit.py --base-mm 120 --stack-clearance-mm 0.35
+python3 generate_giza_kit.py --base-mm 100 --stack-clearance-mm 0.5
+```
+
+That is a small detail, but it is the difference between a model that merely looks assembled and one whose removable layers can actually sit down where the math says they should.
 
 ## What You Can Print
 
@@ -152,7 +169,7 @@ If you want the shortest physical story, print the constructed states first. The
 
 <figure>
   <img
-    src="https://danieliser.github.io/giza-pyramid-kit/release/thingiverse/images/partial_top_down_deramping.png"
+    src="https://danieliser.github.io/giza-pyramid-kit/release/thingiverse/images/partial_top_down_deramping.png?v=4271355"
     alt="A rendered partial top-down deramping state with casing emerging as temporary material is removed."
   />
   <figcaption>Halfway through the teardown: the temporary construction machine is disappearing while the finished pyramid emerges.</figcaption>
@@ -189,7 +206,7 @@ That is why the capstone in this model is intentionally small relative to the de
 
 <figure>
   <img
-    src="https://danieliser.github.io/giza-pyramid-kit/release/thingiverse/images/finished_pyramid.png"
+    src="https://danieliser.github.io/giza-pyramid-kit/release/thingiverse/images/finished_pyramid.png?v=4271355"
     alt="A rendered finished pyramid after top-down removal and casing placement."
   />
   <figcaption>The final state: all the temporary access geometry is gone, leaving the cased pyramid and capstone.</figcaption>
@@ -213,7 +230,7 @@ The repo includes generated STL files, a Python generator, geometry validation, 
 
 - GitHub: [danieliser/giza-pyramid-kit](https://github.com/danieliser/giza-pyramid-kit)
 - Live demo: [danieliser.github.io/giza-pyramid-kit/demo](https://danieliser.github.io/giza-pyramid-kit/demo/)
-- Preview image used for sharing: [capstone before deramping](https://danieliser.github.io/giza-pyramid-kit/release/thingiverse/images/capstone_before_deramping.png)
+- Preview image used for sharing: [capstone before deramping](https://danieliser.github.io/giza-pyramid-kit/release/thingiverse/images/capstone_before_deramping.png?v=4271355)
 
 Generate everything locally:
 

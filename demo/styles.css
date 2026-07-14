@@ -125,15 +125,31 @@ body {
   position: absolute;
   left: 18px;
   top: 18px;
-  width: min(360px, calc(100vw - 36px));
+  width: min(390px, calc(100vw - 36px));
   display: grid;
-  gap: 14px;
+  gap: 12px;
   padding: 18px;
   background: var(--panel);
   border: 1px solid var(--line);
   border-radius: 8px;
   box-shadow: 0 18px 48px rgba(50, 38, 22, 0.18);
   backdrop-filter: blur(14px);
+}
+
+.panel-heading,
+.panel-copy,
+.timeline-control,
+.display-controls__body,
+.opacity-controls {
+  display: grid;
+}
+
+.panel-heading {
+  gap: 12px;
+}
+
+.panel-copy {
+  min-width: 0;
 }
 
 .panel-kicker {
@@ -167,11 +183,29 @@ h1 {
   line-height: 1.45;
 }
 
-.controls {
+.transport {
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 10px;
   align-items: center;
+}
+
+.timeline-control,
+.opacity-controls {
+  gap: 6px;
+}
+
+.display-controls {
+  min-width: 0;
+}
+
+.display-controls > summary {
+  display: none;
+}
+
+.display-controls__body {
+  gap: 12px;
+  padding-top: 2px;
 }
 
 button {
@@ -191,7 +225,6 @@ button:hover {
 }
 
 .range-label {
-  grid-column: 1 / -1;
   margin-top: 4px;
   color: var(--muted);
   font-size: 12px;
@@ -212,7 +245,6 @@ output {
 }
 
 input[type="range"] {
-  grid-column: 1 / -1;
   width: 100%;
   accent-color: var(--accent);
 }
@@ -247,6 +279,125 @@ input[type="range"] {
   border: 1px solid var(--line);
   border-radius: 8px;
   font-size: 14px;
+}
+
+html.is-embedded .github-corner {
+  top: auto;
+  right: 10px;
+  bottom: 10px;
+  width: auto;
+  height: auto;
+  padding: 8px 11px;
+  background: var(--accent-dark);
+  border: 1px solid rgba(255, 255, 255, 0.28);
+  border-radius: 7px;
+  box-shadow: 0 10px 24px rgba(50, 38, 22, 0.2);
+}
+
+html.is-embedded .github-corner::before,
+html.is-embedded .github-corner::after {
+  display: none;
+}
+
+html.is-embedded .github-corner__content {
+  position: static;
+  width: auto;
+  min-height: 0;
+  display: flex;
+  gap: 6px;
+  align-items: baseline;
+  background: transparent;
+  border: 0;
+  box-shadow: none;
+  transform: none;
+}
+
+html.is-embedded .github-corner__title {
+  font-size: 11px;
+}
+
+html.is-embedded .github-corner__subtitle {
+  font-size: 9px;
+}
+
+html.is-embedded .panel {
+  left: 10px;
+  right: 10px;
+  top: 10px;
+  width: auto;
+  max-height: calc(100% - 20px);
+  gap: 8px;
+  padding: 11px;
+  overflow: auto;
+}
+
+html.is-embedded .panel-heading {
+  grid-template-columns: minmax(0, 1fr) auto;
+  gap: 10px;
+  align-items: center;
+}
+
+html.is-embedded .panel-kicker,
+html.is-embedded .note {
+  display: none;
+}
+
+html.is-embedded h1 {
+  display: -webkit-box;
+  overflow: hidden;
+  font-size: 15px;
+  line-height: 1.2;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+}
+
+html.is-embedded .transport {
+  display: flex;
+  gap: 6px;
+}
+
+html.is-embedded button {
+  width: 58px;
+  height: 32px;
+  padding: 0 8px;
+  font-size: 12px;
+}
+
+html.is-embedded .timeline-control {
+  grid-template-columns: auto minmax(0, 1fr);
+  gap: 8px;
+  align-items: center;
+}
+
+html.is-embedded .timeline-control .range-label {
+  margin: 0;
+  font-size: 11px;
+}
+
+html.is-embedded .display-controls {
+  border-top: 1px solid var(--line);
+}
+
+html.is-embedded .display-controls > summary {
+  display: block;
+  padding: 8px 2px 0;
+  color: var(--accent-dark);
+  font-size: 11px;
+  font-weight: 800;
+  cursor: pointer;
+}
+
+html.is-embedded .display-controls__body {
+  gap: 10px;
+  padding-top: 8px;
+}
+
+html.is-embedded .display-controls:not([open]) .display-controls__body {
+  display: none;
+}
+
+html.is-embedded .toggles {
+  font-size: 12px;
 }
 
 @media (max-width: 720px) {
@@ -287,11 +438,11 @@ input[type="range"] {
   }
 
   .panel {
-    left: 12px;
-    right: 12px;
-    top: 12px;
+    left: 10px;
+    right: 10px;
+    top: 10px;
     width: auto;
-    padding: 14px;
+    padding: 12px;
   }
 
   h1 {

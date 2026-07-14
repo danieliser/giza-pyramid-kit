@@ -2,6 +2,10 @@ import * as THREE from "three";
 import { OrbitControls } from "three/addons/controls/OrbitControls.js";
 import { STLLoader } from "three/addons/loaders/STLLoader.js";
 
+const query = new URLSearchParams(window.location.search);
+const embedded = query.get("embed") === "1" || window.self !== window.top;
+document.documentElement.classList.toggle("is-embedded", embedded);
+
 const viewport = document.querySelector("#viewport");
 const loading = document.querySelector("#loading");
 const playButton = document.querySelector("#play");
@@ -13,6 +17,11 @@ const structureOpacityValue = document.querySelector("#structure-opacity-value")
 const chamberOpacityValue = document.querySelector("#chamber-opacity-value");
 const stageTitle = document.querySelector("#stage-title");
 const stageNote = document.querySelector("#stage-note");
+const displayControls = document.querySelector("#display-controls");
+
+if (embedded) {
+  displayControls?.removeAttribute("open");
+}
 
 window.__gizaDemoErrors = [];
 
@@ -64,6 +73,10 @@ controls.minPolarAngle = Math.PI * 0.04;
 controls.maxPolarAngle = Math.PI * 0.94;
 controls.minDistance = 95;
 controls.maxDistance = 560;
+
+const defaultCameraOffset = camera.position.clone().sub(controls.target);
+let cameraFitScale = 1;
+let sceneFramed = false;
 
 const sun = new THREE.DirectionalLight(0xffffff, 2.4);
 sun.position.set(-90, -125, 210);
@@ -290,6 +303,24 @@ function frameScene() {
   const center = bounds.getCenter(new THREE.Vector3());
   controls.target.copy(center);
   controls.target.z = 46;
+  camera.position.copy(controls.target).add(defaultCameraOffset);
+  cameraFitScale = 1;
+  sceneFramed = true;
+  fitCameraToAspect();
+  controls.update();
+}
+
+function fitCameraToAspect() {
+  if (!sceneFramed) return;
+  const aspect = Math.max(0.45, camera.aspect);
+  const nextScale = aspect < 1.05 ? Math.min(1.9, 1.05 / aspect) : 1;
+  const offset = camera.position.clone().sub(controls.target);
+  if (offset.lengthSq() < 0.0001) {
+    offset.copy(defaultCameraOffset);
+  }
+  offset.multiplyScalar(nextScale / cameraFitScale);
+  camera.position.copy(controls.target).add(offset);
+  cameraFitScale = nextScale;
   controls.update();
 }
 
@@ -519,6 +550,7 @@ function resize() {
   renderer.setSize(rect.width, rect.height, false);
   camera.aspect = rect.width / rect.height;
   camera.updateProjectionMatrix();
+  fitCameraToAspect();
 }
 
 function tick(now) {
