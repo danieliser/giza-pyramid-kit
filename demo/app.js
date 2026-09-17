@@ -51,7 +51,7 @@ scene.background = new THREE.Color(0xf6f2e8);
 
 const camera = new THREE.PerspectiveCamera(45, 1, 0.1, 1000);
 camera.up.set(0, 0, 1);
-camera.position.set(160, 320, 205);
+camera.position.set(-160, -320, 205);
 
 let renderer;
 try {
