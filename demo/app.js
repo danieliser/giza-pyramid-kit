@@ -51,7 +51,7 @@ scene.background = new THREE.Color(0xf6f2e8);
 
 const camera = new THREE.PerspectiveCamera(45, 1, 0.1, 1000);
 camera.up.set(0, 0, 1);
-camera.position.set(-185, -250, 175);
+camera.position.set(-320, 160, 205);
 
 let renderer;
 try {
@@ -67,12 +67,12 @@ renderer.shadowMap.type = THREE.PCFSoftShadowMap;
 viewport.appendChild(renderer.domElement);
 
 const controls = new OrbitControls(camera, renderer.domElement);
-controls.target.set(20, -8, 40);
+controls.target.set(0, 0, 46);
 controls.enableDamping = true;
 controls.minPolarAngle = Math.PI * 0.04;
 controls.maxPolarAngle = Math.PI * 0.94;
 controls.minDistance = 95;
-controls.maxDistance = 900;
+controls.maxDistance = 560;
 
 const defaultCameraOffset = camera.position.clone().sub(controls.target);
 let cameraFitScale = 1;
@@ -300,11 +300,8 @@ async function loadAll() {
 function frameScene() {
   const bounds = new THREE.Box3();
   parts.forEach((part) => bounds.expandByObject(part));
-  bounds.expandByObject(reusePile);
   const center = bounds.getCenter(new THREE.Vector3());
   controls.target.copy(center);
-  controls.target.x += 20;
-  controls.target.y -= 5;
   controls.target.z = 46;
   camera.position.copy(controls.target).add(defaultCameraOffset);
   cameraFitScale = 1;
@@ -316,7 +313,7 @@ function frameScene() {
 function fitCameraToAspect() {
   if (!sceneFramed) return;
   const aspect = Math.max(0.45, camera.aspect);
-  const nextScale = aspect < 1.05 ? Math.min(2.4, 1.05 / aspect) : 1;
+  const nextScale = aspect < 1.05 ? Math.min(1.9, 1.05 / aspect) : 1;
   const offset = camera.position.clone().sub(controls.target);
   if (offset.lengthSq() < 0.0001) {
     offset.copy(defaultCameraOffset);
@@ -391,7 +388,7 @@ function removedMaterialFraction(value) {
 
 function createReusePile() {
   reusePile.clear();
-  reusePile.position.set(80, -65, 0);
+  reusePile.position.set(210, -150, 0);
   reusePile.rotation.z = -0.12;
   reusePile.visible = false;
   scene.add(reusePile);
